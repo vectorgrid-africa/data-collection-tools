@@ -39,6 +39,9 @@ Welcome to the **VectorGrid Data Collection Tools** documentation. This site pro
    :caption: Reference Guides & Downloads
 
    codebooks
+   sops/sop_1_1
+   sops/sop_2_1
+   sops/sop_2_2
    sops/sop_2_4
    sops/sop_3_1
    downloads

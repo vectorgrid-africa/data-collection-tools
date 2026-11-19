@@ -70,3 +70,8 @@ Section 3: Verification
 
 - **Technician Name:** Full name or digital signature of the inspecting technician.
 - **Submission Timestamp:** Automated system time of status record.
+
+Field Logic & Relevance (ODK)
+-----------------------------
+* **Reason for Change:** Prompted only when ``habitat_status`` is not 1 (Inactive, Destroyed, Seasonal dry, or Flooded).
+* **Previous Status Verification:** Automatically compared against prior recorded state on ``HAB-REG`` to validate ecological or anthropogenic status transitions.

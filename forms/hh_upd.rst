@@ -164,3 +164,10 @@ Section 4: Demographics, Bed Nets & Vector Control Updates
      - Select One
      - Yes
      - New water bodies observed within 100 meters (1=Yes, 0=None observed)
+
+Field Logic & Relevance (ODK)
+-----------------------------
+* **Status Change Reason:** Prompted only when ``hh_operational_status`` is not Active (values 2, 3, or 5).
+* **Structural Material Inputs:** Prompts for replacement materials are relevant only if ``structural_changes = 1``.
+* **New Nets Count:** Prompted only if ``new_nets_acquired = 1``.
+* **Livestock Categories:** The choice question ``livestock_types`` is relevant only when ``livestock_present = 1``.

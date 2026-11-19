@@ -18,8 +18,16 @@ Associated Forms
 - :doc:`../forms/hh_upd`: Periodic household status update for dwelling modifications, occupant mobility, and net acquisitions.
 - :doc:`../forms/hh_beh`: Human behaviour observation of direct contact, outdoor vs. indoor sleeping patterns, and net usage.
 
+One Health & Host Environment Context
+-------------------------------------
+Household surveillance forms (``HH-REG`` and ``HH-UPD``) capture domestic animal shelters, distance to livestock corrals, and livestock presence (cattle, goats, pigs, chickens). These parameters provide essential context for:
+
+* **Host Selection & Foraging Behavior:** Providing host availability denominators to determine human blood index (HBI) and forage ratios from blood-fed vectors.
+* **Zoonotic Arbovirus Risk:** Evaluating proximity to potential amplifying hosts (pigs, goats, and cattle for zoonotic arboviruses such as Rift Valley fever).
+* **Peridomestic Vector Densities:** Assessing whether animal sheds divert vectors away from human sleeping rooms (zooprophylaxis) or attract elevated mosquito numbers to the compound.
+
 Relevant SOPs
 -------------
-- **SOP 1.1:** Site and Household Selection (Cluster sampling, random walk, enrollment).
-- **SOP 2.1:** Essential Metadata and Environmental Variables (GPS precision, geography standards).
-- **SOP 2.2.1:** Human-Mosquito Contact Sampling (DN-Mini and HLC observation protocols).
+- :doc:`../sops/sop_1_1`: Site and Household Selection (Cluster sampling, random walk, enrollment).
+- :doc:`../sops/sop_2_1`: Essential Metadata and Environmental Variables (GPS precision, geography standards).
+- :doc:`../sops/sop_2_2`: Adult Mosquito Trapping & Sampling Regimes (DN-Mini and HLC observation protocols).

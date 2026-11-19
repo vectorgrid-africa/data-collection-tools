@@ -36,7 +36,29 @@ ODK Reference Implementation:
 3. **Demonstration Paper Templates:**
    Printable paper templates (``.docx``) are provided for demonstration, training, and visual reference of the questionnaire structure.
 
+Field Quality Assurance & Operational Rules
+-------------------------------------------
+
+All field enumerators and laboratory technicians follow four core operational rules to maintain data integrity across the observatory network:
+
+1. **Mandatory Zero Counts:**
+   Never leave count fields blank or discard zero-catch nights or dry habitats. A catch of zero mosquitoes or an absence of larvae is critical surveillance data and must be entered explicitly as ``0``.
+
+2. **GPS Accuracy Threshold (±5 Meters):**
+   When capturing geolocations, enumerators must wait until mobile devices acquire sufficient satellite signals to achieve an accuracy of ±5 meters or better before confirming coordinates.
+
+3. **Cold Chain Integrity During Sorting:**
+   Adult mosquitoes retrieved from field traps must be kept cool on chilled stages or frozen gel packs during morphological examination to prevent enzymatic degradation of viral and parasite nucleic acids.
+
+4. **Identifier Verification:**
+   Before entering survey data, verify that Household IDs, Trap IDs, and Habitat IDs match the physical weather-resistant placards or tags affixed during baseline registration.
+
 Reference Standards
 -------------------
-- **SOP Quick References:** See :doc:`sops/sop_2_4` for specimen handling and 96-well biobank barcoding standards, and :doc:`sops/sop_3_1` for water quality analysis standards.
-- **Categorical Codebooks:** Consult :doc:`codebooks` for harmonized habitat typologies, predator codes, and larval taxon classifications.
+- **SOP Quick References:**
+  - :doc:`sops/sop_1_1`: Site and household selection, cluster enumeration, and reserve cohort replacement.
+  - :doc:`sops/sop_2_1`: Essential metadata hierarchy, ±5m GPS accuracy, and ambient logger placement.
+  - :doc:`sops/sop_2_2`: CDC light trap, BG-Sentinel 24h, DN-Mini sampling, and rain contingency.
+  - :doc:`sops/sop_2_4`: Specimen processing, morphological sorting, and 96-well biobank barcoding.
+  - :doc:`sops/sop_3_1`: Larval dipping, *in situ* water analysis, and specimen voucher preservation.
+- **Categorical Codebooks:** Consult :doc:`codebooks` for adult physiological staging, Detinova parity, Christophers egg stages, habitat typologies, predator codes, and larval classifications.

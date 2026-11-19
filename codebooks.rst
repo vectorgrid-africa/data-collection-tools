@@ -1,10 +1,70 @@
 Surveillance Codebooks
 ======================
 
-Canonical categorical choices and diagnostic parameters shared across VectorGrid surveillance forms.
+Canonical categorical choices, diagnostic parameters, and classification scales shared across VectorGrid surveillance forms.
+
+Adult Physiological & Lab Diagnostic Vocabularies
+-------------------------------------------------
+
+Abdominal Physiological Status (SOP 1.1.1 Table 6 & SOP 2.4)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* **1 (UF):** Unfed (abdomen flat, transparent, no blood visible)
+* **2 (PF):** Partly Fed (blood meal partially digested, red/dark patch in midgut)
+* **3 (FD):** Fully Fed (abdomen distended, bright to dark red blood meal occupying most of abdomen)
+* **4 (GV):** Gravid (abdomen white, eggs visible through abdominal wall, blood completely digested)
+
+Detinova Parity Classification (SOP 2.4 §3.4)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* **1 (Parous):** Ovarian tracheole coils untangled and skeins stretched out (female has laid at least one batch of eggs)
+* **0 (Nulliparous):** Ovarian tracheoles tightly coiled into circular skeins (female has never laid eggs)
+
+Christophers Egg Development Stages (SOP 2.4 §3.4)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* **Stage I:** Small round follicles, transparent, no yolk granules visible
+* **Stage IIe:** Early stage II with fine yolk granules appearing around the oocyte nucleus
+* **Stage II:** Oval follicles, yolk occupies up to half of the follicle volume
+* **Stage III:** Follicle elongated, yolk occupies more than half to three-quarters of follicle
+* **Stage IV:** Follicles elongated, cylindrical, yolk fills almost entire follicle
+* **Stage V:** Mature eggs complete with chorionic floats, ready for oviposition
+
+Midgut Blood Digestion Status (SOP 2.4 §3.4)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* **1 (nb):** No blood visible in midgut
+* **2 (fb):** Fresh red blood present
+* **3 (bb):** Brown or darkened digested blood present
+
+Preservation Media & Cold Chain Standards (SOP 2.4 §4.3)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* **1:** Ethanol (70% to 95% analytical grade)
+* **2:** RNAlater (for RNA preservation and gene expression studies)
+* **3:** Silica Gel (color-indicating desiccant beads in sealed microcentrifuge tubes)
+* **4:** Frozen (-20°C at field base stations, -80°C at central bio-repositories)
+
+Surveillance Trapping Regimes & Methods (SOP 2.2 & SOP 2.3)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* **1 (CDC-LT Indoor):** Standard unbaited CDC miniature light trap installed indoors (1.5 m from floor at foot of occupied bed)
+* **2 (CDC-LT Outdoor):** CDC miniature light trap with CO2 attractant deployed outdoors
+* **3 (BG-Sentinel):** BG-Sentinel trap with BG-Lure and CO2 running 24-hour collection cycle
+* **4 (Prokopack):** Prokopack mechanical aspirator for indoor and outdoor resting collections
+* **5 (DN-Mini):** Double-Net Mini trap for human-mosquito contact surveillance
+* **6 (HLC):** Human Landing Catch (gold standard comparative reference)
+* **7 (Pit Shelter):** Outdoor dug pit trap for outdoor resting vectors
+* **8 (PSC):** Pyrethrum Spray Catch for indoor resting density
+
+Climate Shock Typologies (SOP 2.1 Table 4)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* **1 (Flood):** Extensive surface water accumulation, river inundation, or localized flash flooding
+* **2 (Tropical Cyclone / Severe Storm):** High-velocity winds exceeding 17 m/s accompanied by torrential rains
+* **3 (Prolonged Drought):** Unusually prolonged dry period causing desiccation of permanent water bodies
+* **4 (Heatwave):** Daily maximum temperatures exceeding local 95th percentile for three or more consecutive days
+* **5 (Cold Snap):** Sustained unseasonal temperature drop impeding vector development
+* **99 (Other):** Other extreme meteorological disturbances (landslides, tidal surges)
+
+Aquatic & Larval Diagnostic Vocabularies
+----------------------------------------
 
 Habitat Typologies (HABITAT_TYPE)
----------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :widths: 15 35 15 35
@@ -60,45 +120,53 @@ Habitat Typologies (HABITAT_TYPE)
      - Other (specify)
 
 Algae Categories (ALGAE)
-------------------------
-- **0:** None
-- **1:** Filamentous
-- **2:** Green
-- **3:** Blue-green
-- **4:** Brown
-- **5:** Other (specify)
-- **6:** Unidentifiable
+~~~~~~~~~~~~~~~~~~~~~~~~
+* **0:** None
+* **1:** Filamentous
+* **2:** Green
+* **3:** Blue-green
+* **4:** Brown
+* **5:** Other (specify)
+* **6:** Unidentifiable
 
 Surrounding Environment (ENVIRONMENT)
---------------------------------------
-- **1:** Shrub / Bush
-- **2:** Grassland
-- **3:** Swamp
-- **4:** Cultivated field
-- **5:** Residential
-- **6:** Cattle grazing
-- **7:** Forest
-- **8:** Urban
-- **9:** Other (specify)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* **1:** Shrub / Bush
+* **2:** Grassland
+* **3:** Swamp
+* **4:** Cultivated field
+* **5:** Residential
+* **6:** Cattle grazing
+* **7:** Forest
+* **8:** Urban
+* **9:** Other (specify)
 
 Sampling Techniques (METHOD)
-----------------------------
-- **1:** Standard Dipper (350 mL)
-- **2:** Bucket (10 L)
-- **3:** Baster / Pipette
-- **4:** Whole accessible volume
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* **1:** Standard Dipper (350 mL capacity)
+* **2:** Bucket (10 L volume)
+* **3:** Baster / Pipette (for small artificial containers or tree holes)
+* **4:** Whole accessible volume
 
 Larval Taxon Codes
-------------------
-- **1:** *Anopheles gambiae complex*
-- **2:** *Anopheles funestus group*
-- **3:** Other Anopheline
-- **4:** *Culex*
-- **5:** *Aedes*
-- **6:** *Mansonia*
-- **7:** Other (specify)
+~~~~~~~~~~~~~~~~~~
+* **1:** *Anopheles gambiae complex*
+* **2:** *Anopheles funestus group*
+* **3:** Other Anopheline
+* **4:** *Culex*
+* **5:** *Aedes*
+* **6:** *Mansonia*
+* **7:** Other (specify)
 
 Aquatic Predator Codes
-----------------------
-1. Dragonfly (DF) | 2. Damselfly (DS) | 3. Diving beetle (DB) | 4. Backswimmer (BS) | 5. Water boatman (WB)
-6. Water scorpion (WS) | 7. Giant water bug (GB) | 8. Tadpole (TP) | 9. Copepod (CP) | 10. Other (OT)
+~~~~~~~~~~~~~~~~~~~~~~
+* **DF:** Dragonfly nymph
+* **DS:** Damselfly nymph
+* **DB:** Diving beetle (Dytiscidae)
+* **BS:** Backswimmer (Notonectidae)
+* **WB:** Water boatman (Corixidae)
+* **WS:** Water scorpion (Nepidae)
+* **GB:** Giant water bug (Belostomatidae)
+* **TP:** Tadpole (Anuran larvae)
+* **CP:** Copepod
+* **OT:** Other aquatic predator

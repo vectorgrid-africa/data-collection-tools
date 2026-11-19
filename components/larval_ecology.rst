@@ -21,4 +21,4 @@ Associated Forms
 
 Relevant SOPs
 -------------
-- **SOP 3.1:** Larval Survey and Aquatic Habitat Assessment (Water analysis Table 6, preservation Table 13).
+- :doc:`../sops/sop_3_1`: Larval Survey and Aquatic Habitat Assessment (Water analysis Table 6, preservation Table 13).

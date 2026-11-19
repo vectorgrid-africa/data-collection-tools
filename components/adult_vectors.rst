@@ -25,6 +25,6 @@ Associated Forms
 
 Relevant SOPs
 -------------
-- **SOP 2.1:** Essential Metadata and Environmental Variables (Weather, loggers, extreme events).
-- **SOP 2.2:** Adult Mosquito Sampling and Trap Placement (CDC light traps, BG-Sentinel, Prokopack).
-- **SOP 2.4:** Field Mosquito Processing and Handling Workflow (Cold chain, sorting, storage barcoding).
+- :doc:`../sops/sop_2_1`: Essential Metadata and Environmental Variables (Weather, loggers, extreme events).
+- :doc:`../sops/sop_2_2`: Adult Mosquito Trapping & Sampling Regimes (CDC light traps, BG-Sentinel, Prokopack).
+- :doc:`../sops/sop_2_4`: Mosquito Processing & Biobank Barcoding (Cold chain, sorting, storage barcoding).
