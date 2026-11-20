@@ -30,3 +30,21 @@
     font-weight: bold;
     border-left: 3px solid #2980b9;
 }
+
+/* Allow text wrapping in tables so they fit naturally without unnecessary horizontal scrollbars */
+.wy-table-responsive table td,
+.wy-table-responsive table th,
+.rst-content table.docutils thead th,
+.rst-content table.docutils td,
+.wy-table thead th,
+.wy-table td {
+    white-space: normal !important;
+}
+
+.rst-content table.docutils code {
+    white-space: nowrap;
+}
+
+.rst-content table.docutils {
+    width: 100% !important;
+}
