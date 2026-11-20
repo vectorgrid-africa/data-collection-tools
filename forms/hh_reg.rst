@@ -26,15 +26,15 @@ Section 1: Administrative Geography & Event
      - Country of surveillance
    * - ``province``
      - Text
-     - No
+     - Yes
      - Province or Region
    * - ``district``
      - Text
-     - No
+     - Yes
      - District
    * - ``locality``
      - Text
-     - No
+     - Yes
      - Ward or Locality
    * - ``village_name``
      - Text
@@ -169,3 +169,13 @@ Repeat group recorded for each sleeping room in the house:
 * ``room_id`` (for example, R01, R02)
 * ``is_trap_room`` (1=Yes, 0=No)
 * Demographics: Males under 5, 5 to 15, over 15; Females under 5, 5 to 15, over 15.
+
+Household Status Update
+-----------------------
+
+For subsequent surveillance rounds, enrolled households are tracked using the update form rather than repeated baseline registration:
+
+.. toctree::
+   :maxdepth: 2
+
+   hh_upd

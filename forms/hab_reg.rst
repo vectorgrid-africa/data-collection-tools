@@ -24,6 +24,18 @@ Section 1: Node & Habitat Metadata
      - Text
      - Yes
      - Country of surveillance
+   * - ``province``
+     - Text
+     - Yes
+     - Province or Region
+   * - ``district``
+     - Text
+     - Yes
+     - District
+   * - ``locality``
+     - Text
+     - Yes
+     - Ward or Locality
    * - ``village_name``
      - Text
      - Yes
@@ -78,3 +90,13 @@ Section 3: Vegetation, Algae & Environment
 * **Q18:** Environment around habitat (Shrub, Grassland, Swamp, Field, Residential, Forest, Urban, etc.).
 * **Q19:** Linear distance from habitat to nearest homes in meters.
 * **Q20:** Aquatic Predators present (1/0) and Mosquito Larvae or Pupae present (1/0).
+
+Habitat Status Update
+---------------------
+
+For subsequent surveillance rounds, aquatic habitat hydrological transitions (desiccation, drainage, destruction) are logged using the update form:
+
+.. toctree::
+   :maxdepth: 2
+
+   hab_upd

@@ -26,15 +26,15 @@ Section 1: Node & Location Metadata
      - Country of surveillance
    * - ``province``
      - Text
-     - No
+     - Yes
      - Province or Region
    * - ``district``
      - Text
-     - No
+     - Yes
      - District
    * - ``locality``
      - Text
-     - No
+     - Yes
      - Locality
    * - ``village_name``
      - Text
@@ -107,3 +107,13 @@ Repeat group recorded for each registered trap deployment:
      - Text
      - Descriptive text
      - Vegetation or shade notes
+
+Trap Status Update
+------------------
+
+For subsequent operational rounds, trap status updates (maintenance, malfunctions, battery failures, and retirements) are logged using the update form:
+
+.. toctree::
+   :maxdepth: 2
+
+   trap_upd

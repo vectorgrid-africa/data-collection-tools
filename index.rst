@@ -22,16 +22,13 @@ Welcome to the **VectorGrid Data Collection Tools** documentation. This site pro
    :caption: Form Reference Specifications
 
    forms/hh_reg
-   forms/hh_upd
    forms/hh_beh
    forms/trap_reg
-   forms/trap_upd
    forms/spec_srt
    forms/spec_dis
    forms/env_obs
    forms/env_ext
    forms/hab_reg
-   forms/hab_upd
    forms/hab_srv
 
 .. toctree::
