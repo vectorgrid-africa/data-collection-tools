@@ -1,0 +1,14 @@
+# Sphinx build outputs
+_build/
+_templates/
+.doctrees/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# OS & Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
