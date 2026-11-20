@@ -1,0 +1,32 @@
+/* VectorGrid Documentation Custom Styles */
+
+/* Keep search box and project title sticky at top of sidebar */
+.wy-side-nav-search {
+    position: sticky;
+    top: 0;
+    z-index: 200;
+    background-color: #2980b9;
+}
+
+/* Ensure smooth scrolling inside sidebar */
+.wy-side-scroll {
+    scroll-behavior: smooth;
+    scroll-padding-top: 10px;
+}
+
+/* Clean spacing for navigation captions */
+.wy-menu-vertical p.caption {
+    margin-top: 18px;
+    margin-bottom: 6px;
+    color: #e0e0e0;
+    font-size: 85%;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Highlight current active item cleanly */
+.wy-menu-vertical li.current > a {
+    font-weight: bold;
+    border-left: 3px solid #2980b9;
+}
