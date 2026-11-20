@@ -71,39 +71,64 @@ Section 3: Morphological Identification & Physiological Matrix
 --------------------------------------------------------------
 
 .. list-table::
-   :widths: 30 15 15 15 15 15
+   :widths: 22 8 8 8 9 8 9 9 9 10 10
    :header-rows: 1
 
    * - Taxon
-     - Unfed (UF)
-     - Partly Fed (PF)
-     - Fully Fed (FD)
-     - Gravid (GV)
-     - Total
+     - UF
+     - PF
+     - FD
+     - Semi-gravid
+     - GV
+     - Total Females
+     - Total Males
+     - Total Caught
+     - Tubes Packed
+     - Discarded
    * - *Anopheles gambiae s.l.*
      - Count
      - Count
      - Count
      - Count
+     - Count
      - Calc.
+     - Count
+     - Calc.
+     - Count
+     - Count
    * - *Anopheles funestus group*
      - Count
      - Count
      - Count
      - Count
+     - Count
      - Calc.
+     - Count
+     - Calc.
+     - Count
+     - Count
    * - *Other Anopheline*
      - Count
      - Count
      - Count
      - Count
+     - Count
      - Calc.
+     - Count
+     - Calc.
+     - Count
+     - Count
    * - *Culicines*
      - Count
      - Count
      - Count
      - Count
+     - Count
      - Calc.
+     - Count
+     - Calc.
+     - Count
+     - Count
 
 Section 4: Packaging, Dissection & Storage (SOP 2.4)
 ----------------------------------------------------
