@@ -1,23 +1,23 @@
 Larval & Aquatic Habitat Ecology
 ================================
 
-Larval & Aquatic Habitat Ecology monitors natural and artificial aquatic breeding habitats, physicochemical water quality parameters, dipping effort, aquatic predator communities, and live larval rearing vouchers across observatory localities.
+Larval & Aquatic Habitat Ecology monitors natural and artificial aquatic breeding habitats, physicochemical water quality parameters, dipping effort, aquatic predator communities, and larval specimen preservation across observatory localities.
 
 Scope & Objectives
 ------------------
-- Georeference and classify breeding site typology (swamps, puddles, burrow pits, artificial containers).
-- Track hydrological status transitions (seasonal desiccation, inundation, drainage, destruction) between dipping rounds.
+- Georeference and classify breeding site types (swamps, puddles, burrow pits, artificial containers).
+- Track habitat condition changes (seasonal drying, flooding, drainage, destruction) between dipping rounds.
 - Quantify water surface dimensions, perimeter, depth, shade, and vegetation or algal cover.
 - Measure *in situ* physicochemical parameters (temperature, pH, conductivity, dissolved oxygen, TDS).
 - Standardize dipping effort (10 standard 350 mL dipper scoops across habitat perimeters).
-- Enumerate instars (L1-L2, L3, L4) and pupae, alongside aquatic predator guilds (dragonflies, diving beetles).
-- Assign voucher tube IDs linking reared adults to the original aquatic collection site.
+- Enumerate instars (L1-L2, L3, L4) and pupae, alongside aquatic predators (dragonflies, diving beetles).
+- Assign sample vial IDs linking reared adults to the original aquatic collection site.
 
 Associated Forms
 ----------------
-- :doc:`../forms/hab_reg`: Baseline aquatic habitat registration and environmental typology.
-- :doc:`../forms/hab_upd`: Rapid aquatic habitat status update (seasonal desiccation, drainage, destruction).
-- :doc:`../forms/hab_srv`: Water physico-chemistry, dipping effort, predator tally, and specimen preservation.
+- :doc:`../forms/hab_reg`: Baseline aquatic habitat registration and environmental characteristics.
+- :doc:`../forms/hab_upd`: Aquatic habitat status updates (seasonal drying, drainage, destruction).
+- :doc:`../forms/hab_srv`: Water physico-chemistry, dipping effort, aquatic predator counts, and specimen preservation.
 
 Relevant SOPs
 -------------

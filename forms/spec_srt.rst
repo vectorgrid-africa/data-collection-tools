@@ -1,9 +1,9 @@
 Mosquito Collection & Sorting Form
 ===================================
 
-**Form Code:** ``SPEC-SRT`` | **Study Component:** Adult Vector Collection & Lab Sorting | **SOP Links:** SOP 2.2, SOP 2.4
+**Form Code:** ``SPEC-SRT`` | **Study Component:** Adult Vector Surveillance | **SOP Links:** SOP 2.2, SOP 2.4
 
-The Mosquito Collection and Sorting Form records trap retrieval timing, collection validity, morphological sorting counts across female abdominal stages and males, tube packaging, and biobank storage plate barcodes.
+The Mosquito Collection and Sorting Form records trap retrieval timing, collection validity, morphological sorting counts across female abdominal stages and males, tube packaging, and storage plate barcodes.
 
 Section 1: Node & Retrieval Metadata
 ------------------------------------
@@ -67,8 +67,8 @@ Section 2: Collection Timing & Validity
 - **Q06:** Validity (1=Valid collection catch, 0=Invalid with reason).
 - **Q07:** Mosquitoes Caught (1=Yes, 0=Zero catch) and Sorting Date.
 
-Section 3: Morphological Identification & Physiological Matrix
---------------------------------------------------------------
+Section 3: Taxonomy & Physiological Counts
+------------------------------------------
 
 .. list-table::
    :widths: 22 8 8 8 9 8 9 9 9 10 10
@@ -132,7 +132,7 @@ Section 3: Morphological Identification & Physiological Matrix
 
 Section 4: Packaging, Dissection & Storage (SOP 2.4)
 ----------------------------------------------------
-- **Q08:** Non-mosquito bycatch count (moths, beetles discarded).
+- **Q08:** Non-target insect count (moths, beetles discarded).
 - **Q09:** Anopheles fresh dissection (1=Yes transferred for dissection, 0=No).
 - **Q10:** Packing type (1=Pool, 2=Individual).
 - **Q11:** Storage Box / Plate Barcode (for example, ``TZ01 0001``).

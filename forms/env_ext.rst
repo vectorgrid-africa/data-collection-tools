@@ -1,9 +1,9 @@
 Extreme Weather Event Form
 ==========================
 
-**Form Code:** ``ENV-EXT`` | **Study Component:** Adult Vector Collection & Lab Sorting | **SOP Links:** SOP 2.1
+**Form Code:** ``ENV-EXT`` | **Study Component:** Adult Vector Surveillance | **SOP Links:** SOP 2.1
 
-The Extreme Weather Event Form is an event-triggered surveillance tool for documenting climate shocks (such as floods, cyclones, severe droughts, and heatwaves). It systematically records event severity, ecological and habitat alterations, community displacement, and disruptions to entomological surveillance networks.
+The Extreme Weather Event Form is an event-triggered surveillance tool for documenting extreme weather events (such as floods, cyclones, severe droughts, and heatwaves). It systematically records event severity, ecological and habitat alterations, community displacement, and disruptions to entomological surveillance networks.
 
 Section 1: Node & Event Characterization
 ----------------------------------------
@@ -37,8 +37,8 @@ Section 1: Node & Event Characterization
      - Yes
      - Field observer or team identifier
 
-Section 2: Event Typology & Severity
-------------------------------------
+Section 2: Event Type & Severity
+--------------------------------
 
 .. list-table::
    :widths: 25 20 20 35

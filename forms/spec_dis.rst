@@ -1,7 +1,7 @@
 Mosquito Dissection & Parity Form
 ==================================
 
-**Form Code:** ``SPEC-DIS`` | **Study Component:** Adult Vector Collection & Lab Sorting
+**Form Code:** ``SPEC-DIS`` | **Study Component:** Adult Vector Surveillance
 
 The Mosquito Dissection & Parity Form records individual female *Anopheles* dissections for ovarian tracheole coiling (parity), Christophers egg stage, insemination, max dilatations, wing length, and storage well mapping.
 
@@ -49,8 +49,8 @@ Section 1: Dissection Bench & Source Links
      - Yes
      - Dissection start time
 
-Section 2: Specimen Dissection Ledger
--------------------------------------
+Section 2: Specimen Dissections
+-------------------------------
 Repeat group recorded for each dissected female specimen:
 
 .. list-table::
@@ -82,8 +82,8 @@ Section 3: Diagnostic Parameter Codes
 - **Wing Length:** Measured length in millimeters.
 - **Specimen Condition:** 1=Fresh (dissected immediately), 2=Dry (rehydrated).
 
-Section 4: Summary Reconciliation
----------------------------------
+Section 4: Dissection Summary & Totals
+--------------------------------------
 - Total Dissected (count)
 - Total Parous (count)
 - Total Nulliparous (count)

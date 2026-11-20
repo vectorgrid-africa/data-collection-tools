@@ -33,14 +33,14 @@ Midgut Blood Digestion Status (SOP 2.4 §3.4)
 * **2 (fb):** Fresh red blood present
 * **3 (bb):** Brown or darkened digested blood present
 
-Preservation Media & Cold Chain Standards (SOP 2.4 §4.3)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Preservation Media & Storage Standards (SOP 2.4 §4.3)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 * **1:** Ethanol (70% to 95% analytical grade)
 * **2:** RNAlater (for RNA preservation and gene expression studies)
 * **3:** Silica Gel (color-indicating desiccant beads in sealed microcentrifuge tubes)
-* **4:** Frozen (-20°C at field base stations, -80°C at central bio-repositories)
+* **4:** Frozen (-20°C at field base stations, -80°C at central storage facilities)
 
-Surveillance Trapping Regimes & Methods (SOP 2.2 & SOP 2.3)
+Surveillance Trapping Methods (SOP 2.2 & SOP 2.3)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 * **1 (CDC-LT Indoor):** Standard unbaited CDC miniature light trap installed indoors (1.5 m from floor at foot of occupied bed)
 * **2 (CDC-LT Outdoor):** CDC miniature light trap with CO2 attractant deployed outdoors
@@ -51,11 +51,11 @@ Surveillance Trapping Regimes & Methods (SOP 2.2 & SOP 2.3)
 * **7 (Pit Shelter):** Outdoor dug pit trap for outdoor resting vectors
 * **8 (PSC):** Pyrethrum Spray Catch for indoor resting density
 
-Climate Shock Typologies (SOP 2.1 Table 4)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-* **1 (Flood):** Extensive surface water accumulation, river inundation, or localized flash flooding
+Extreme Weather Event Categories (SOP 2.1 Table 4)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* **1 (Flood):** Extensive surface water accumulation, river overflow, or localized flash flooding
 * **2 (Tropical Cyclone / Severe Storm):** High-velocity winds exceeding 17 m/s accompanied by torrential rains
-* **3 (Prolonged Drought):** Unusually prolonged dry period causing desiccation of permanent water bodies
+* **3 (Prolonged Drought):** Unusually prolonged dry period causing permanent water bodies to dry up
 * **4 (Heatwave):** Daily maximum temperatures exceeding local 95th percentile for three or more consecutive days
 * **5 (Cold Snap):** Sustained unseasonal temperature drop impeding vector development
 * **99 (Other):** Other extreme meteorological disturbances (landslides, tidal surges)
@@ -63,17 +63,17 @@ Climate Shock Typologies (SOP 2.1 Table 4)
 Aquatic & Larval Diagnostic Vocabularies
 ----------------------------------------
 
-Habitat Typologies (HABITAT_TYPE)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Habitat Types (HABITAT_TYPE)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :widths: 15 35 15 35
    :header-rows: 1
 
    * - Code
-     - Typology Name
+     - Habitat Type
      - Code
-     - Typology Name
+     - Habitat Type
    * - 1
      - Swamp / Marsh
      - 12

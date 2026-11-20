@@ -5,7 +5,7 @@ This quick reference summarizes the spatial precision standards, administrative 
 
 Administrative Geography Standard (Table 4 Lines 1 to 10)
 ---------------------------------------------------------
-All digital and paper surveillance instruments must record the standardized six-level geographic hierarchy:
+All digital surveillance forms must record the standardized six-level geographic hierarchy:
 
 1. **Country:** 2-letter ISO country code (e.g. TZ, KE, MZ, ZA, MG).
 2. **Province / Region:** First-level administrative boundary.

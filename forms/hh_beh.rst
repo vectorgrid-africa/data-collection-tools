@@ -3,7 +3,7 @@ Human Behaviour Observation Form
 
 **Form Code:** ``HH-BEH`` | **Study Component:** Household Surveillance | **SOP Links:** SOP 2.1, SOP 2.2.1
 
-The Human Behaviour Observation Form standardizes direct human-mosquito contact surveillance. It records biannual human sleeping patterns, indoor and outdoor exposure, net utilization across age cohorts, volunteer collection shifts (DN-Mini or HLC), and hourly mosquito biting catches.
+The Human Behaviour Observation Form standardizes direct human-mosquito contact surveillance. It records biannual human sleeping patterns, indoor and outdoor exposure, net utilization across age groups, volunteer collection shifts (DN-Mini or HLC), and hourly mosquito biting catches.
 
 Section 1: Node & Contact Sampling
 ----------------------------------

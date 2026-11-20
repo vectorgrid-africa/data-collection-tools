@@ -1,7 +1,7 @@
 Environmental Observation Form
 ==============================
 
-**Form Code:** ``ENV-OBS`` | **Study Component:** Adult Vector Collection & Lab Sorting | **SOP Links:** SOP 2.1
+**Form Code:** ``ENV-OBS`` | **Study Component:** Adult Vector Surveillance | **SOP Links:** SOP 2.1
 
 The Environmental Observation Form captures meteorological conditions, indoor and outdoor microclimate parameters, and electronic data logger records on adult mosquito trapping nights. It links directly to ``HH-REG`` and ``SPEC-SRT`` using the Household ID and collection date.
 
@@ -76,7 +76,7 @@ Section 2: Weather Observations
 Section 3: Microclimate Measurements
 ------------------------------------
 
-Recorded when using a handheld meter, or as a manual audit if electronic loggers fail:
+Recorded when using a handheld meter, or as a manual backup if electronic loggers fail:
 
 .. list-table::
    :widths: 30 18 18 18 18

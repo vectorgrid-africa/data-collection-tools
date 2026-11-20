@@ -1,9 +1,9 @@
 Trap Status Update Form
 =======================
 
-**Form Code:** ``TRAP-UPD`` | **Study Component:** Adult Vector Collection & Lab Sorting | **SOP Links:** SOP 2.2
+**Form Code:** ``TRAP-UPD`` | **Study Component:** Adult Vector Surveillance | **SOP Links:** SOP 2.2
 
-The Trap Status Update Form provides a streamlined status ledger for registered surveillance traps. Field technicians use this form to record operational transitions (active, malfunctioned, retired) and document maintenance actions without needing to re-record fixed geolocations or trap specifications.
+The Trap Status Update Form records operational status updates for registered surveillance traps. Field technicians use this form to record operational transitions (active, malfunctioned, retired) and document maintenance actions without needing to re-record fixed geolocations or trap specifications.
 
 Section 1: Trap Location & Update Information
 ---------------------------------------------
@@ -33,8 +33,8 @@ Section 1: Trap Location & Update Information
      - Yes
      - Field technician or team identifier
 
-Section 2: Trap Status Updates Ledger
--------------------------------------
+Section 2: Trap Status Updates
+------------------------------
 
 A dynamic repeating group recording status updates for one or more traps:
 

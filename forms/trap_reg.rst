@@ -1,7 +1,7 @@
 Trap Registration Form
 ======================
 
-**Form Code:** ``TRAP-REG`` | **Study Component:** Adult Vector Collection & Lab Sorting
+**Form Code:** ``TRAP-REG`` | **Study Component:** Adult Vector Surveillance
 
 The Trap Registration Form registers fixed and mobile trap deployments, recording trapping methods, bait types, and microhabitat placement references.
 
@@ -53,8 +53,8 @@ Section 1: Node & Location Metadata
      - Yes
      - Registrar or Team ID
 
-Section 2: Trap Deployment Ledger
----------------------------------
+Section 2: Trap Deployments
+---------------------------
 
 Repeat group recorded for each registered trap deployment:
 

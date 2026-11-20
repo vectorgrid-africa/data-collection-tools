@@ -1,7 +1,7 @@
 SOP 1.1: Site & Household Selection
 ===================================
 
-This quick reference summarizes the site selection criteria, household enumeration protocol, and cohort replacement rules from **VectorGrid SOP 1.1**.
+This quick reference summarizes the site selection criteria, household enumeration protocol, and replacement rules from **VectorGrid SOP 1.1**.
 
 Sentinel Site Selection Criteria (Table 5)
 ------------------------------------------
@@ -19,7 +19,7 @@ Household Selection & Enumeration Protocol (Table 6)
    All residential dwellings in the sentinel village are mapped during initial site reconnaissance to establish the total enumeration roster.
 
 2. **Random Walk Selection:**
-   Starting from a central community landmark (school, clinic, or village office), enumerators cast a random spin to establish direction, sampling every *k*-th house along the transect until the target cohort size is achieved.
+   Starting from a central community landmark (school, clinic, or village office), enumerators cast a random spin to establish direction, sampling every *k*-th house along the transect until the target sample size is achieved.
 
 3. **Spatial Distribution:**
    Selected households must be spaced at least 30 to 50 meters apart to ensure independent mosquito trapping ranges and avoid competition between traps.

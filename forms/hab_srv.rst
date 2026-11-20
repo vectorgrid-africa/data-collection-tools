@@ -3,7 +3,7 @@ Habitat Survey & Dipping Form
 
 **Form Code:** ``HAB-SRV`` | **Study Component:** Larval & Aquatic Habitat Ecology | **SOP Links:** SOP 3.1
 
-The Habitat Survey & Dipping Form documents periodic aquatic habitat visits, recording physicochemical water quality, dipping sampling effort (10 dips), taxon-specific instar and pupae counts, predator guild tallies, and voucher tube preservation.
+The Habitat Survey & Dipping Form documents periodic aquatic habitat visits, recording physicochemical water quality, dipping sampling effort (10 dips), taxon-specific instar and pupae counts, aquatic predator presence and counts, and specimen preservation.
 
 Section 1: Node & Survey Visit Metadata
 ---------------------------------------
@@ -91,8 +91,8 @@ Repeat group recorded for each completed dip, bucket, or container examination:
 * Immature Counts: L1-L2, L3, L4, Pupae, Total Larvae (calculated)
 * Aquatic Predators: Predator Code (1 to 10) and count per sample
 
-Section 6: Aquatic Predator Reconciliation Totals
--------------------------------------------------
+Section 6: Aquatic Predator Totals
+----------------------------------
 Sum of all predators observed across completed dips:
 
 1. Dragonfly (DF) | 2. Damselfly (DS) | 3. Diving Beetle (DB) | 4. Backswimmer (BS) | 5. Water Boatman (WB)
@@ -102,5 +102,5 @@ Section 7: Specimen Preservation & Field Archiving (SOP 3.1 Table 13)
 ---------------------------------------------------------------------
 * **Q25:** Sample collected for lab analysis (1=Yes, 0=No with reason).
 * **Q26:** Preservation method applied (1=Live transport for rearing, 2=>70% Ethanol).
-* **Q27:** Sample Tube / Voucher Vial ID (Format: ``Country-Node-Larv-ID``; links reared adults to collection form).
+* **Q27:** Sample Tube / Vial ID (Format: ``Country-Node-Larv-ID``; links reared adults to collection form).
 * **Q28:** Habitat photograph taken (1=Yes, 0=No) and file name (``HabitatID_YYYYMMDD``).

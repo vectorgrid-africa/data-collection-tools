@@ -3,7 +3,7 @@ Household Registration Form
 
 **Form Code:** ``HH-REG`` | **Study Component:** Household Surveillance
 
-The Household Registration Form captures administrative geography, GPS geolocation, household cohort demographics, house construction characteristics, vector control interventions, domestic animal proximity, and a room-by-room census.
+The Household Registration Form captures administrative geography, GPS geolocation, household occupant demographics, housing characteristics, vector control interventions, livestock proximity, and a room-by-room occupant roster.
 
 Section 1: Administrative Geography & Event
 -------------------------------------------
@@ -51,7 +51,7 @@ Section 1: Administrative Geography & Event
    * - ``registration_date``
      - Date
      - Yes
-     - Date of baseline census
+     - Date of baseline registration
    * - ``household_type``
      - Select One
      - Yes
@@ -76,8 +76,8 @@ Summary table of occupants aggregated across all sleeping rooms:
 * **Males:** under 5 years, 5 to 15 years, over 15 years
 * **Females:** under 5 years, 5 to 15 years, over 15 years
 
-Section 3: House Structure & Architecture
------------------------------------------
+Section 3: Housing Characteristics
+----------------------------------
 
 .. list-table::
    :widths: 10 25 35 30
@@ -159,11 +159,11 @@ Section 5: Sanitation & Livestock Proximity
 
 Section 6: Breeding Sites & Land Use
 ------------------------------------
-* **Q27 to Q29:** Mosquito aquatic habitat ≤100 m, Habitat Typology (1 to 22), and Distance in meters.
+* **Q27 to Q29:** Mosquito aquatic habitat ≤100 m, Habitat Type (1 to 22), and Distance in meters.
 * **Q30:** Land use activity around house (1=Agriculture, 2=Mining, 3=Construction, 4=Other).
 
-Section 7: Room-by-Room Census
-------------------------------
+Section 7: Room-by-Room Occupant Roster
+---------------------------------------
 Repeat group recorded for each sleeping room in the house:
 
 * ``room_id`` (for example, R01, R02)

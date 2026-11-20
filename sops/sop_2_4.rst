@@ -1,16 +1,16 @@
-SOP 2.4: Mosquito Processing & Biobank Barcoding
+SOP 2.4: Mosquito Processing & Storage Barcoding
 ================================================
 
-This quick reference summarizes specimen reception, cold-chain sorting, dissection triage, microplate allocation, and biobank storage protocols from **VectorGrid SOP Task 2.4**.
+This quick reference summarizes specimen reception, morphological sorting, dissection triage, microplate allocation, and storage barcoding protocols from **VectorGrid SOP Task 2.4**.
 
 1. Specimen Reception & Intake Verification
 -------------------------------------------
 * **Intake Match:** Field retrieval bags are cross-checked against the Deployment ID and Trap ID from ``SPEC-SRT``.
-* **Cold-Chain Intake:** Mosquito bags must be transferred immediately to chilled sorting stages (0°C to 4°C) or placed over frozen ice packs to stop enzymatic degradation of viral and plasmodial nucleic acids.
+* **Specimen Reception:** Field retrieval bags are transferred promptly for morphological sorting under a stereomicroscope.
 
 2. Morphological Sorting & Triage Workflow
 ------------------------------------------
-* **Microscopic Inspection:** Sort specimens under a stereomicroscope on a chilled surface.
+* **Microscopic Inspection:** Sort specimens under a stereomicroscope to separate target vector species.
 * **Taxonomic Separation:**
   * Target Vectors: Separate *Anopheles gambiae s.l.* and *Anopheles funestus group*.
   * Secondary / Non-target: Separate other anophelines and culicines (*Culex*, *Aedes*, *Mansonia*).
@@ -19,7 +19,7 @@ This quick reference summarizes specimen reception, cold-chain sorting, dissecti
   * Classify abdominal appearance into Unfed (UF), Partly Fed (PF), Fully Fed (FD), Semi-gravid, or Gravid (GV).
 * **Fresh Dissection Allocation:**
   * Immediately transfer live, fresh fed or semi-gravid females designated for ovarian tracheole inspection to the dissection bench with ``SPEC-DIS``.
-* **Non-Mosquito Bycatch:** Count and discard non-target insects (moths, beetles, flies).
+* **Non-Target Insects:** Count and discard non-target insects (moths, beetles, flies).
 
 3. Barcode Convention
 ---------------------
@@ -53,7 +53,7 @@ Generic Examples:
 5. Temperature & Preservation Standards
 ---------------------------------------
 * **Desiccant Management:** Microtubes and plates must contain color-indicating silica gel beads. Monitor indicator beads and replace saturated desiccant when beads shift color.
-* **Storage Temperature Regimes:**
+* **Storage Temperature Specifications:**
   * **Field Base Station:** Maintain specimens at -20°C in dedicated freezers.
-  * **Central Biorepository:** Long-term preservation in -80°C ultra-low temperature freezers or vapor-phase liquid nitrogen.
+  * **Central Storage:** Long-term preservation in dedicated freezers.
 * **Freeze-Thaw Prevention:** Prevent unnecessary temperature fluctuations; organize plates in labeled cryo-boxes before transfer.

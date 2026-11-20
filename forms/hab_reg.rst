@@ -69,7 +69,7 @@ Section 2: Classification & Physical Dimensions
 -----------------------------------------------
 * **Q01:** Natural or Artificial (1=Natural, 2=Artificial).
 * **Q02:** Habitat Permanence (1=Temporary, 2=Semi-permanent, 3=Permanent).
-* **Q03:** Habitat Typology (Codes 1 to 22: Swamp, puddle, pool, tire, burrow pit, etc.).
+* **Q03:** Habitat Type (Codes 1 to 22: Swamp, puddle, pool, tire, burrow pit, etc.).
 * **Q04:** Surface Length and Width in meters.
 * **Q05:** Habitat Perimeter in meters.
 * **Q06:** Surface Area (m² = Length × Width approximation).
@@ -94,7 +94,7 @@ Section 3: Vegetation, Algae & Environment
 Habitat Status Update
 ---------------------
 
-For subsequent surveillance rounds, aquatic habitat hydrological transitions (desiccation, drainage, destruction) are logged using the update form:
+For subsequent surveillance rounds, aquatic habitat status changes (seasonal drying, drainage, destruction) are logged using the update form:
 
 .. toctree::
    :maxdepth: 2

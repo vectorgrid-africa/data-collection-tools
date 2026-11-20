@@ -1,7 +1,7 @@
 SOP 3.1: Larval Survey & Water Analysis
 =======================================
 
-This quick reference summarizes standardized dipping effort, water physicochemical analysis, predator scoring, and voucher archiving protocols from **VectorGrid SOP Task 3.1**.
+This quick reference summarizes standardized dipping effort, water physicochemical analysis, predator scoring, and specimen preservation protocols from **VectorGrid SOP Task 3.1**.
 
 1. Standardized Dipping Effort & Technique (Tables 4 to 5)
 ----------------------------------------------------------
@@ -72,4 +72,4 @@ Enumerators examine dipping trays for co-occurring macroinvertebrate predators u
      - ``Country-Node-Larv-ID`` (linked to ``SPEC-SRT``)
    * - **Molecular / PCR**
      - >70% Analytical ethanol or Carnoy fixative
-     - ``Country-Node-Larv-ID`` (DNA biobank)
+     - ``Country-Node-Larv-ID`` (DNA archive)
