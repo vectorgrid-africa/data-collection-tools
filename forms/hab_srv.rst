@@ -3,7 +3,7 @@ Habitat Survey & Dipping Form
 
 **Form Code:** ``HAB-SRV`` | **Study Component:** Larval & Aquatic Habitat Ecology | **SOP Links:** SOP 3.1
 
-The Habitat Survey & Dipping Form documents periodic aquatic habitat visits, recording physicochemical water quality, dipping sampling effort (10 dips), taxon-specific instar and pupae counts, aquatic predator presence and counts, and specimen preservation.
+The Habitat Survey & Dipping Form documents periodic aquatic habitat visits, recording water quality parameters, dipping sampling effort scaled to habitat size, taxon-specific instar and pupae counts, aquatic predator presence and counts, and specimen preservation.
 
 Section 1: Node & Survey Visit Metadata
 ---------------------------------------
@@ -57,7 +57,7 @@ Section 1: Node & Survey Visit Metadata
      - Optional
      - For domestic containers: Compound or House ID
 
-Section 2: Water Physico-Chemical Parameters (SOP 3.1 Table 6)
+Section 2: Water Quality Parameters (SOP 3.1)
 --------------------------------------------------------------
 * **Q01:** Water Temperature (°C).
 * **Q02:** pH Level (0.0 to 14.0).
@@ -66,7 +66,7 @@ Section 2: Water Physico-Chemical Parameters (SOP 3.1 Table 6)
 * **Q05:** Total Dissolved Solids (TDS mg/L).
 * **Q06:** Dissolved Oxygen (DO mg/L).
 * **Q07:** Water Movement (1=Stagnant, 2=Slow, 3=Fast).
-* **Q08:** Water Colour (1=Clear, 2=Turbid, 3=Polluted, 4=Other).
+* **Q08:** Water Colour (1=Clear, 2=Turbid (cloudy), 3=Polluted, 4=Other).
 * **Q09:** Water Source Origin (1=Rainwater, 2=Ground, spring, or stream, 3=Human supply or tap).
 
 Section 3: Habitat Morphometry & Vegetation
@@ -79,12 +79,12 @@ Section 4: Sampling Effort & Completed Dips
 -------------------------------------------
 * **Q21 and Q22:** Immatures observed (Larvae 1/0, Pupae 1/0) and Predators observed (1/0).
 * **Q23:** Technique (1=Dipper 350mL, 2=Bucket 10L, 3=Pipette, 4=Whole volume).
-* **Q24:** Actual completed dips (standard = 10) and habitat sections sampled.
-* **Q24a:** Reason if fewer than 10 dips were completed.
+* **Q24:** Actual completed dips and habitat sections sampled (effort determined by habitat size and perimeter).
+* **Q24a:** Reason if planned dipping effort could not be completed.
 
 Section 5: Completed Samples & Taxon Counts
 -------------------------------------------
-Repeat group recorded for each completed dip, bucket, or container examination:
+Record for each completed dip, bucket, or container examination:
 
 * Sample Number (sequential counter)
 * Taxon Code (1=*An. gambiae complex*, 2=*An. funestus*, 3=*Other Anopheline*, 4=*Culex*, 5=*Aedes*, 6=*Mansonia*, 7=*Other*)
@@ -98,7 +98,7 @@ Sum of all predators observed across completed dips:
 1. Dragonfly (DF) | 2. Damselfly (DS) | 3. Diving Beetle (DB) | 4. Backswimmer (BS) | 5. Water Boatman (WB)
 6. Water Scorpion (WS) | 7. Giant Water Bug (GB) | 8. Tadpole (TP) | 9. Copepod (CP) | 10. Other Predators (OT)
 
-Section 7: Specimen Preservation & Field Archiving (SOP 3.1 Table 13)
+Section 7: Specimen Preservation & Field Archiving (SOP 3.1)
 ---------------------------------------------------------------------
 * **Q25:** Sample collected for lab analysis (1=Yes, 0=No with reason).
 * **Q26:** Preservation method applied (1=Live transport for rearing, 2=>70% Ethanol).

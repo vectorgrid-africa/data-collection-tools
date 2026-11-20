@@ -51,7 +51,7 @@ Section 1: Dissection Bench & Source Links
 
 Section 2: Specimen Dissections
 -------------------------------
-Repeat group recorded for each dissected female specimen:
+Record for each dissected female specimen:
 
 .. list-table::
    :widths: 20 15 15 15 15 20

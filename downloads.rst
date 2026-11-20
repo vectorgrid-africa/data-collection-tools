@@ -1,7 +1,7 @@
 Form Downloads
 ==============
 
-Standardized surveillance form packages for ODK Central alongside reference form layouts for training and review.
+Standardised surveillance form packages for ODK Central alongside reference form layouts for training and review.
 
 Surveillance Forms & Reference Layouts
 --------------------------------------
@@ -12,7 +12,7 @@ Surveillance Forms & Reference Layouts
 
    * - Form Code
      - Title
-     - ODK XLSForm (.xlsx)
+     - ODK XLSForm (.xlsx form file)
      - Reference Layout (.docx)
    * - ``HH-REG``
      - Household Registration

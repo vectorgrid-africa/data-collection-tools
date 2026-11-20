@@ -1,30 +1,31 @@
 SOP 2.1: Essential Metadata & Environmental Variables
 =====================================================
 
-This quick reference summarizes the spatial precision standards, administrative hierarchy, and meteorological logging protocols from **VectorGrid SOP 2.1**.
+This quick reference summarises the geographic hierarchy, GPS accuracy standards, and meteorological logging protocols from the **VectorGrid SOP 2.1 variable table**.
 
-Administrative Geography Standard (Table 4 Lines 1 to 10)
----------------------------------------------------------
-All digital surveillance forms must record the standardized six-level geographic hierarchy:
+Administrative Geography Standard
+---------------------------------
+All digital surveillance forms record the standardised six-level geographic hierarchy:
 
-1. **Country:** 2-letter ISO country code (e.g. TZ, KE, MZ, ZA, MG).
+1. **Country:** Country name or code.
 2. **Province / Region:** First-level administrative boundary.
 3. **District:** District council or municipality.
 4. **Locality / Ward:** Sub-district administrative unit.
-5. **Sentinel Village:** Unique village name and gazetteer identifier.
+5. **Sentinel Village:** Unique village name and identifier.
 6. **Study Node Code:** 2 to 4-letter unique observatory node identifier.
 
-GPS Georeferencing & Accuracy Standard
---------------------------------------
-* **Coordinate Format:** WGS84 datum, decimal degrees (DD.DDDDDD) with minimum 6 decimal places.
-* **Accuracy Threshold (Mandatory):** Enumerators must allow GPS receivers to acquire sufficient satellites until horizontal accuracy reads **±5 meters or better** before saving the coordinate.
-* **Elevational Metric:** Altitude recorded in meters above sea level.
-* **Interference Avoidance:** Record GPS readings outside dwellings in open sky, holding the device at chest height away from dense metal roofing.
+GPS Location & Accuracy Standard
+--------------------------------
+* **Coordinate Format:** Latitude and longitude coordinates in decimal degrees.
+* **Accuracy Threshold (Mandatory):** Field teams must allow GPS receivers to acquire sufficient satellites until horizontal accuracy reads **±5 metres or better** before saving the coordinate.
+* **Altitude:** Altitude recorded in metres above sea level.
 
-Microclimate & Data Logger Protocols (Table 4 Lines 34 to 46)
--------------------------------------------------------------
-* **Logger Positioning:**
-  * **Indoor Logger:** Mounted on an interior bedroom wall at 1.5 meters height, away from cooking hearths, windows, and direct sunlight.
-  * **Outdoor Logger:** Placed under peridomestic eaves or in a radiation shield at 1.5 meters height to measure peridomestic ambient temperature and relative humidity.
-* **Sampling Interval:** Electronic loggers record temperature (°C) and relative humidity (%) continuously at 30-minute intervals.
-* **Precipitation Metrics:** Cumulative 24-hour rainfall (mm) recorded at 07:00 morning inspection using a standard manual rain gauge.
+Temperature, Humidity & Data Logger Protocols
+---------------------------------------------
+* **Data Logger Positioning:**
+
+  * **Indoor Logger:** Position the data logger at the same height as the trap (~1.5 metres) near to the bed. Ensure loggers are included in house structures of different types.
+  * **Outdoor Logger:** Hang the data logger 1.5 metres above the ground nearby the trap (or 1 metre for BG-Sentinel traps). If using dry ice as a CO2 source, keep the logger at least 1 metre away to prevent cold bias.
+
+* **Environmental Variables:** Electronic loggers record temperature (°C) and relative humidity (%).
+* **Rainfall:** Rainfall recorded in mm (last 24 hours / last week).

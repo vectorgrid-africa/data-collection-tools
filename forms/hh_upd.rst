@@ -39,7 +39,7 @@ Section 1: Node & Household Identification
    * - ``collector_id``
      - Text
      - Yes
-     - Field enumerator or team identifier
+     - Collector / team ID
 
 Section 2: Household Operational Status
 ---------------------------------------
@@ -163,7 +163,7 @@ Section 4: Demographics, Bed Nets & Vector Control Updates
    * - ``new_breeding_sites_nearby``
      - Select One
      - Yes
-     - New water bodies observed within 100 meters (1=Yes, 0=None observed)
+     - New water bodies observed within 100 metres (1=Yes, 0=None observed)
 
 Field Logic & Relevance (ODK)
 -----------------------------

@@ -1,7 +1,7 @@
 Surveillance Codebooks
 ======================
 
-Canonical categorical choices, diagnostic parameters, and classification scales shared across VectorGrid surveillance forms.
+Standard answer options, diagnostic parameters, and classification scales shared across VectorGrid surveillance forms.
 
 Adult Physiological & Lab Diagnostic Vocabularies
 -------------------------------------------------
@@ -37,7 +37,7 @@ Preservation Media & Storage Standards (SOP 2.4 §4.3)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 * **1:** Ethanol (70% to 95% analytical grade)
 * **2:** RNAlater (for RNA preservation and gene expression studies)
-* **3:** Silica Gel (color-indicating desiccant beads in sealed microcentrifuge tubes)
+* **3:** Silica Gel (colour-indicating desiccant beads in sealed microcentrifuge tubes)
 * **4:** Frozen (-20°C at field base stations, -80°C at central storage facilities)
 
 Surveillance Trapping Methods (SOP 2.2 & SOP 2.3)
@@ -53,7 +53,7 @@ Surveillance Trapping Methods (SOP 2.2 & SOP 2.3)
 
 Extreme Weather Event Categories (SOP 2.1 Table 4)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-* **1 (Flood):** Extensive surface water accumulation, river overflow, or localized flash flooding
+* **1 (Flood):** Extensive surface water accumulation, river overflow, or localised flash flooding
 * **2 (Tropical Cyclone / Severe Storm):** High-velocity winds exceeding 17 m/s accompanied by torrential rains
 * **3 (Prolonged Drought):** Unusually prolonged dry period causing permanent water bodies to dry up
 * **4 (Heatwave):** Daily maximum temperatures exceeding local 95th percentile for three or more consecutive days
@@ -77,7 +77,7 @@ Habitat Types (HABITAT_TYPE)
    * - 1
      - Swamp / Marsh
      - 12
-     - Old tire
+     - Old tyre
    * - 2
      - Cultivated swamp
      - 13

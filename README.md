@@ -10,8 +10,8 @@ Technical documentation, standard operating procedures (SOPs), form reference sp
 
 This repository contains the complete Sphinx documentation source for the VectorGrid data collection framework across three core study components:
 
-1. **Household Surveillance:** Baseline household enrollment, dwelling characteristics, demographic rosters, and human behaviour observations.
-2. **Adult Vector Surveillance:** Standardized trapping methods (CDC light traps, Prokopack, window exit traps, pyrethrum spray catches), morphotaxonomic identification, physiological scoring, and specimen preservation.
+1. **Household Surveillance:** Baseline household enrolment, dwelling characteristics, demographic rosters, and human behaviour observations.
+2. **Adult Vector Surveillance:** Standardised trapping methods (CDC light traps, Prokopack, window exit traps, pyrethrum spray catches), morphotaxonomic identification, physiological scoring, and specimen preservation.
 3. **Larval & Aquatic Habitat Ecology:** Aquatic breeding site registration, dipping surveys, water quality measurement, and aquatic predator presence and counts.
 
 ---

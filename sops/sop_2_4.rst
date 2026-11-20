@@ -1,7 +1,7 @@
 SOP 2.4: Mosquito Processing & Storage Barcoding
 ================================================
 
-This quick reference summarizes specimen reception, morphological sorting, dissection triage, microplate allocation, and storage barcoding protocols from **VectorGrid SOP Task 2.4**.
+This quick reference summarises specimen reception, morphological sorting, dissection triage, microplate allocation, and storage barcoding protocols from **VectorGrid SOP Task 2.4**.
 
 1. Specimen Reception & Intake Verification
 -------------------------------------------
@@ -12,48 +12,52 @@ This quick reference summarizes specimen reception, morphological sorting, disse
 ------------------------------------------
 * **Microscopic Inspection:** Sort specimens under a stereomicroscope to separate target vector species.
 * **Taxonomic Separation:**
+
   * Target Vectors: Separate *Anopheles gambiae s.l.* and *Anopheles funestus group*.
   * Secondary / Non-target: Separate other anophelines and culicines (*Culex*, *Aedes*, *Mansonia*).
   * Sex Determination: Separate males and females based on antennal plumosity.
+
 * **Female Physiological Staging:**
+
   * Classify abdominal appearance into Unfed (UF), Partly Fed (PF), Fully Fed (FD), Semi-gravid, or Gravid (GV).
+
 * **Fresh Dissection Allocation:**
+
   * Immediately transfer live, fresh fed or semi-gravid females designated for ovarian tracheole inspection to the dissection bench with ``SPEC-DIS``.
+
 * **Non-Target Insects:** Count and discard non-target insects (moths, beetles, flies).
 
 3. Barcode Convention
 ---------------------
-Every storage box, 96-well microplate, and vial rack must carry a machine-readable barcode adhering to the standard observatory syntax:
+Every storage box, 96-well microplate, and vial rack carries a barcode label in this format:
 
 .. code-block:: text
 
-   [Country Code][Node Code] [Box Number]
+   [Country Code][Node Code] [Plate / Box Number]
 
 Format specification:
 
 * **Country Code:** 2-letter ISO country code representing the partner country (such as ``TZ``, ``KE``, ``MZ``, ``ZA``, or ``MG``).
-* **Node Code:** 2 to 4-letter unique observatory node identifier assigned to the field station (for example, ``01``, ``02``, or local node code).
-* **Box Number:** 4-digit sequential box or rack number, zero-padded (such as ``0001``, ``0002``).
+* **Node Code:** 2-letter node abbreviation assigned to the field station (for example, ``DS`` for Dar es Salaam).
+* **Plate / Box Number:** 4-digit sequential plate or box number, zero-padded (such as ``0001``, ``0002``).
 
-Generic Examples:
+Example:
 
-* ``TZ01 0001``: Participating observatory node in Tanzania, Box 0001
-* ``KE01 0001``: Participating observatory node in Kenya, Box 0001
-* ``MZ01 0002``: Participating observatory node in Mozambique, Box 0002
+* ``TZDS 0001``: Country: Tanzania, Node: Dar es Salaam, Plate / Box: 0001.
 
 4. Plate Allocation & Well Mapping
 ----------------------------------
 * **96-Well Microplate Layout:** Standard 8 × 12 grid (Rows A to H, Columns 1 to 12).
-* **Progression Order:** Fill microplates column-by-column (A1 to H1, then A2 to H2) to maintain alignment with automated laboratory liquid handlers.
-* **Specimen Storage Modes:**
-  * **Individual Storage (1 specimen per well / tube):** Used for individual genotyping, target-site mutation assays, and whole-genome sequencing.
-  * **Pool Storage (Up to 10 specimens per tube):** Mosquitoes of identical taxon, sex, collection event, and physiological status pooled for high-throughput pathogen screening.
-* **Position Register:** Record starting and ending well coordinates (From: well to To: well) on ``SPEC-SRT`` Q12.
+* **Position Register:** Record well coordinates (From: well to To: well) on ``SPEC-SRT``. Each well has a unique identifier recorded on the laboratory tracking sheet.
+* **Preservation Reagents:** Aliquot 100 µL of 95%–100% ethanol into wells in advance using a multichannel pipette.
 
 5. Temperature & Preservation Standards
 ---------------------------------------
-* **Desiccant Management:** Microtubes and plates must contain color-indicating silica gel beads. Monitor indicator beads and replace saturated desiccant when beads shift color.
-* **Storage Temperature Specifications:**
-  * **Field Base Station:** Maintain specimens at -20°C in dedicated freezers.
-  * **Central Storage:** Long-term preservation in dedicated freezers.
-* **Freeze-Thaw Prevention:** Prevent unnecessary temperature fluctuations; organize plates in labeled cryo-boxes before transfer.
+* **Desiccant Management:** Microtubes and plates stored dry must contain colour-indicating silica gel beads. Monitor indicator beads and replace saturated desiccant when beads shift colour.
+* **Storage & Cold Chain Protocol:**
+
+  * Store plates in a freezer at the field base station.
+  * If RNA preservation reagents are not available, maintain a cold chain using dry ice in a cooler box or a dry shipper to preserve viral RNA for arbovirus screening.
+  * Specimens stored in RNAlater, DNA-RNA Shield, or Trizol-LS can travel at ambient temperature for weeks without immediate freezing.
+
+* **Temperature Stability:** Prevent unnecessary temperature fluctuations; organise plates in labelled cryo-boxes before transfer.

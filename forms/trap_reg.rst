@@ -3,7 +3,7 @@ Trap Registration Form
 
 **Form Code:** ``TRAP-REG`` | **Study Component:** Adult Vector Surveillance
 
-The Trap Registration Form registers fixed and mobile trap deployments, recording trapping methods, bait types, and microhabitat placement references.
+The Trap Registration Form registers fixed and mobile trap deployments, recording trapping methods, bait types, and exact placement references.
 
 Section 1: Node & Location Metadata
 -----------------------------------
@@ -56,7 +56,7 @@ Section 1: Node & Location Metadata
 Section 2: Trap Deployments
 ---------------------------
 
-Repeat group recorded for each registered trap deployment:
+Record for each registered trap deployment:
 
 .. list-table::
    :widths: 20 20 20 20 20
@@ -71,7 +71,7 @@ Repeat group recorded for each registered trap deployment:
      - Trap Identifier
      - Text
      - ``Node-Village-T01``
-     - Primary key for trap
+     - Unique ID for trap
    * - ``trap_method``
      - Trapping Method
      - Select One
@@ -103,7 +103,7 @@ Repeat group recorded for each registered trap deployment:
      - Device serial
      - Hardware tracking
    * - ``placement_notes``
-     - Microhabitat Notes
+     - Placement Notes
      - Text
      - Descriptive text
      - Vegetation or shade notes

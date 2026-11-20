@@ -3,7 +3,7 @@ Trap Status Update Form
 
 **Form Code:** ``TRAP-UPD`` | **Study Component:** Adult Vector Surveillance | **SOP Links:** SOP 2.2
 
-The Trap Status Update Form records operational status updates for registered surveillance traps. Field technicians use this form to record operational transitions (active, malfunctioned, retired) and document maintenance actions without needing to re-record fixed geolocations or trap specifications.
+The Trap Status Update Form records operational status updates for registered surveillance traps. Field technicians use this form to record operational changes (active, malfunctioned, retired) and document maintenance actions without needing to re-record fixed GPS locations or trap specifications.
 
 Section 1: Trap Location & Update Information
 ---------------------------------------------
@@ -57,7 +57,7 @@ A dynamic repeating group recording status updates for one or more traps:
    * - ``status_change_reason``
      - Text
      - Yes
-     - Reason for status transition (battery failure, fan motor burnt, torn collection net, stolen, retired)
+     - Reason for status change (battery failure, fan motor burnt, torn collection net, stolen, retired)
    * - ``additional_notes``
      - Text
      - No

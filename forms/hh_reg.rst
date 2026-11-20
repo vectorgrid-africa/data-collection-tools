@@ -3,7 +3,7 @@ Household Registration Form
 
 **Form Code:** ``HH-REG`` | **Study Component:** Household Surveillance
 
-The Household Registration Form captures administrative geography, GPS geolocation, household occupant demographics, housing characteristics, vector control interventions, livestock proximity, and a room-by-room occupant roster.
+The Household Registration Form captures administrative geography, GPS location, household occupant demographics, housing characteristics, vector control interventions, livestock proximity, and a room-by-room occupant roster.
 
 Section 1: Administrative Geography & Event
 -------------------------------------------
@@ -59,7 +59,7 @@ Section 1: Administrative Geography & Event
    * - ``collector_id``
      - Text
      - Yes
-     - Enumerator or Team ID
+     - Collector / team ID
    * - ``household_id``
      - Text
      - Yes
@@ -152,19 +152,19 @@ Section 4: Bed Nets & Interventions
 
 Section 5: Sanitation & Livestock Proximity
 -------------------------------------------
-* **Q21 and Q22:** Latrine inside house (1=Yes, 0=No) and linear distance in meters.
-* **Q23 and Q24:** Animal shed present (1=Yes, 0=No) and linear distance in meters.
+* **Q21 and Q22:** Latrine inside house (1=Yes, 0=No) and linear distance in metres.
+* **Q23 and Q24:** Animal shed present (1=Yes, 0=No) and linear distance in metres.
 * **Q25:** Chickens kept inside house at night (1=Yes, 0=No).
 * **Q26 and Q26a:** Livestock near house (Cattle, Goats, Chickens, Pigs, Other).
 
 Section 6: Breeding Sites & Land Use
 ------------------------------------
-* **Q27 to Q29:** Mosquito aquatic habitat ≤100 m, Habitat Type (1 to 22), and Distance in meters.
+* **Q27 to Q29:** Mosquito aquatic habitat ≤100 m, Habitat Type (1 to 22), and Distance in metres.
 * **Q30:** Land use activity around house (1=Agriculture, 2=Mining, 3=Construction, 4=Other).
 
 Section 7: Room-by-Room Occupant Roster
 ---------------------------------------
-Repeat group recorded for each sleeping room in the house:
+Record for each sleeping room in the house:
 
 * ``room_id`` (for example, R01, R02)
 * ``is_trap_room`` (1=Yes, 0=No)

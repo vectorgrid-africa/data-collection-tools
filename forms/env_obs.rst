@@ -3,7 +3,7 @@ Environmental Observation Form
 
 **Form Code:** ``ENV-OBS`` | **Study Component:** Adult Vector Surveillance | **SOP Links:** SOP 2.1
 
-The Environmental Observation Form captures meteorological conditions, indoor and outdoor microclimate parameters, and electronic data logger records on adult mosquito trapping nights. It links directly to ``HH-REG`` and ``SPEC-SRT`` using the Household ID and collection date.
+The Environmental Observation Form captures meteorological conditions, indoor and outdoor temperature and humidity parameters, and electronic data logger records on adult mosquito trapping nights. It links directly to ``HH-REG`` and ``SPEC-SRT`` using the Household ID and collection date.
 
 Section 1: Node & Sampling Event
 --------------------------------
@@ -71,10 +71,10 @@ Section 2: Weather Observations
    * - ``wind_speed``
      - Decimal
      - No
-     - Measured wind velocity in meters per second (m/s)
+     - Measured wind velocity in metres per second (m/s)
 
-Section 3: Microclimate Measurements
-------------------------------------
+Section 3: Temperature & Humidity Measurements
+----------------------------------------------
 
 Recorded when using a handheld meter, or as a manual backup if electronic loggers fail:
 
@@ -114,4 +114,4 @@ Section 4: Automated Data Loggers
 - **Indoor Logger Serial Number:** Serial or barcode of indoor temperature and RH sensor.
 - **Outdoor Logger Serial Number:** Serial or barcode of peridomestic sensor.
 - **Data Offload Status:** 1=Downloaded successfully, 2=Logger missing or damaged, 3=Battery dead.
-- **Observer Notes:** Narrative comments on microclimate anomalies or sensor placement.
+- **Observer Notes:** Narrative comments on temperature and humidity anomalies or sensor placement.

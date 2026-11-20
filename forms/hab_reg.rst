@@ -3,7 +3,7 @@ Aquatic Habitat Registration Form
 
 **Form Code:** ``HAB-REG`` | **Study Component:** Larval & Aquatic Habitat Ecology | **SOP Links:** SOP 3.1
 
-The Aquatic Habitat Registration Form establishes the permanent geolocation, hydrological classification, physical dimensions, vegetation cover, and predator observations for an aquatic breeding site.
+The Aquatic Habitat Registration Form establishes the permanent GPS location, permanence, physical dimensions, vegetation cover, and predator observations for an aquatic breeding site.
 
 Section 1: Node & Habitat Metadata
 ----------------------------------
@@ -69,13 +69,13 @@ Section 2: Classification & Physical Dimensions
 -----------------------------------------------
 * **Q01:** Natural or Artificial (1=Natural, 2=Artificial).
 * **Q02:** Habitat Permanence (1=Temporary, 2=Semi-permanent, 3=Permanent).
-* **Q03:** Habitat Type (Codes 1 to 22: Swamp, puddle, pool, tire, burrow pit, etc.).
-* **Q04:** Surface Length and Width in meters.
-* **Q05:** Habitat Perimeter in meters.
+* **Q03:** Habitat Type (Codes 1 to 22: Swamp, puddle, pool, tyre, burrow pit, etc.).
+* **Q04:** Surface Length and Width in metres.
+* **Q05:** Habitat Perimeter in metres.
 * **Q06:** Surface Area (m² = Length × Width approximation).
 * **Q07:** Average Water Column Depth in centimeters.
 * **Q08:** Water Movement (1=Stagnant, 2=Slow, 3=Fast).
-* **Q09:** Water Colour (1=Clear, 2=Turbid or Coloured, 3=Polluted, 4=Other).
+* **Q09:** Water Colour (1=Clear, 2=Turbid (cloudy) or Coloured, 3=Polluted, 4=Other).
 
 Section 3: Vegetation, Algae & Environment
 ------------------------------------------
@@ -88,7 +88,7 @@ Section 3: Vegetation, Algae & Environment
 * **Q16:** Surface biofilm or sheen present (1=Yes, 0=No).
 * **Q17:** Estimated separate cover percentages for Algae, Canopy, and Biofilm.
 * **Q18:** Environment around habitat (Shrub, Grassland, Swamp, Field, Residential, Forest, Urban, etc.).
-* **Q19:** Linear distance from habitat to nearest homes in meters.
+* **Q19:** Linear distance from habitat to nearest homes in metres.
 * **Q20:** Aquatic Predators present (1/0) and Mosquito Larvae or Pupae present (1/0).
 
 Habitat Status Update

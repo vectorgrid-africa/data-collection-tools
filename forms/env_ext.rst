@@ -5,7 +5,7 @@ Extreme Weather Event Form
 
 The Extreme Weather Event Form is an event-triggered surveillance tool for documenting extreme weather events (such as floods, cyclones, severe droughts, and heatwaves). It systematically records event severity, ecological and habitat alterations, community displacement, and disruptions to entomological surveillance networks.
 
-Section 1: Node & Event Characterization
+Section 1: Node & Event Characterisation
 ----------------------------------------
 
 .. list-table::

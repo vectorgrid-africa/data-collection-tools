@@ -3,7 +3,7 @@ Habitat Status Update Form
 
 **Form Code:** ``HAB-UPD`` | **Study Component:** Larval & Aquatic Habitat Ecology | **SOP Links:** SOP 3.1
 
-The Habitat Status Update Form provides a streamlined update for registered aquatic habitats. Larval survey teams use this form between comprehensive dipping rounds to log habitat condition changes (such as seasonal drying, flooding, or removal) without repeating full physicochemical or dipping measurements.
+The Habitat Status Update Form provides a streamlined update for registered aquatic habitats. Larval survey teams use this form between comprehensive dipping rounds to log habitat condition changes (such as seasonal drying, flooding, or removal) without repeating full water quality or dipping measurements.
 
 Section 1: Habitat & Update Information
 ---------------------------------------
@@ -74,4 +74,4 @@ Section 3: Verification
 Field Logic & Relevance (ODK)
 -----------------------------
 * **Reason for Change:** Prompted only when ``habitat_status`` is not 1 (Inactive, Destroyed, Seasonal dry, or Flooded).
-* **Previous Status Verification:** Automatically compared against prior recorded state on ``HAB-REG`` to validate ecological or anthropogenic status transitions.
+* **Previous Status Verification:** Automatically compared against prior recorded state on ``HAB-REG`` to validate environmental or human-caused status changes.

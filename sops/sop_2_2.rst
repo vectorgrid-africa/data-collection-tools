@@ -1,42 +1,46 @@
 SOP 2.2: Adult Mosquito Trapping & Sampling Methods
 ===================================================
 
-This quick reference summarizes trap placement, attractants, operating schedules, and weather contingency procedures from **VectorGrid SOP 2.2, SOP 2.2.1, and SOP 2.3**.
+This quick reference summarises trap placement, attractants, operating schedules, and weather contingency procedures from **VectorGrid SOP 2.2, SOP 2.2.1, and SOP 2.3**.
 
-Standard Trapping Deployments (SOP 2.2 Section 8.0)
----------------------------------------------------
+Standard Trapping Deployments (SOP 2.2)
+---------------------------------------
 
 CDC Miniature Light Trap (Indoor)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-* **Position:** Hung indoors at 1.5 meters above the floor at the foot end of an occupied bed.
-* **Occupancy Standard:** The bed must be occupied by at least one person sleeping under an intact, untreated or LLIN bed net.
-* **Operating Hours:** 18:00 (switch on) to 06:00 (switch off and collection bag retrieval).
-* **Power Source:** 6V rechargeable sealed lead-acid or lithium battery. Check voltage prior to deployment.
+* **Position:** Hung indoors at 1.5 metres above the floor at the foot end of an occupied bed.
+* **Occupancy Standard:** The bed must be occupied by at least one person sleeping under an untreated mosquito net (provided by the research team if not available in the household).
+* **Operating Hours:** Connect battery and switch on at sunset; at sunrise, switch off the trap and carefully retrieve the collection bag (sunset and sunrise times defined locally by season and site).
+* **Power Source:** 6 V rechargeable battery or power bank. Check charge prior to deployment.
 
 CDC Miniature Light Trap (Outdoor / CO2-baited)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-* **Position:** Hung outdoors at 1.5 meters height, 5 to 10 meters from the sentinel dwelling.
-* **Attractant:** Dry ice container (1 to 2 kg insulated thermos with perforated release tube) or standardized yeast-sugar fermentation bottle discharging CO2 at 200 to 500 mL/min.
-* **Operating Hours:** 18:00 to 06:00.
+* **Position:** Hung outdoors at 1.5 metres height, within 10 metres of the house walls.
+* **Attractant:** Dry ice in polystyrene boxes, yeast and molasses fermentation mixture, or CO2 canisters.
+* **Operating Hours:** Switch on at sunset; switch off at sunrise.
 
 BG-Sentinel Trap (24-Hour Surveillance)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-* **Position:** Placed outdoors in a sheltered peridomestic location protected from direct rain and solar radiation.
-* **Attractant:** BG-Lure chemical cartridge combined with CO2 source.
-* **Operating Schedule:** 24-hour cycle (divided into Day 06:00 to 18:00 and Night 18:00 to 06:00 collection portions to monitor *Aedes* and culicine diurnal dynamics).
+* **Position:** Placed outdoors in a sheltered peridomestic location protected from direct rain and solar radiation, within 10 metres of the house.
+* **Power Source:** 12 V battery.
+* **Attractant:** BG-Lure chemical cartridge combined with CO2 source (dry ice or yeast-molasses mixture kept at least 1 metre from data logger).
+* **Operating Schedule:** Switch on at sunset. Replace collection bag in the morning after ~12 hours for the night portion; continue running until the next sunset (~24 hours total) to monitor *Aedes* and culicine diurnal dynamics.
 
 Human-Mosquito Contact Surveillance (SOP 2.2.1 DN-Mini)
 -------------------------------------------------------
-* **Apparatus:** Double-Net Mini (DN-Mini) trap enclosing an adult human volunteer. Outer net raised 30 cm off ground; inner protective net fully sealed.
+* **Apparatus:** Double-Net Mini (DN-Mini) trap enclosing an adult human volunteer, with the inner protective net fully sealed.
 * **Hourly Collection Routine:**
-  * Aspirate mosquitoes resting between outer and inner nets during the final 10 minutes of each hour.
-  * Transfer catches into pre-labeled hourly collection cups.
-* **Rain Contingency Protocol (Section 8.4):**
-  * If rain begins during an outdoor shift, move the apparatus under a porch or sheltered eave.
-  * If rain makes sampling impossible, pause the shift, log the exit time, return time, and weather reason on ``HH-BEH``.
 
-Resting Mosquito Collections (SOP 2.3 Prokopack)
-------------------------------------------------
-* **Aspiration Schedule:** Morning collections conducted between 06:30 and 09:00.
-* **Indoor Resting:** Standardized 10 to 15-minute systematic sweep of walls, ceilings, hangings, under beds, and dark storage corners using a Prokopack aspirator.
-* **Outdoor Resting:** Sweeps of outdoor pit shelters, clay pots, tree buttresses, thatch eaves, and livestock corrals.
+  * Every hour, volunteer uses a mouth aspirator to collect mosquitoes from the outer net.
+  * Transfer catches into pre-labelled hourly collection cups.
+
+* **Rain Contingency Protocol (Section 8.4):**
+
+  * If light or moderate rain occurs during an outdoor shift, cover the DN-Mini with plastic canvas.
+  * If heavy rain occurs, the volunteer may exit; record the exit time, return time, and weather conditions on ``HH-BEH``.
+
+Resting Mosquito Collections (SOP 2.3 Prokopack & Resting Shelters)
+-------------------------------------------------------------------
+* **Aspiration Schedule:** Conduct morning collections between 06:00 and 09:00 as agreed with house owners.
+* **Indoor Resting:** Systematic aspiration of walls, ceilings, hangings, under beds, and dark storage corners using a Prokopack aspirator.
+* **Outdoor Resting:** Sweeps of outdoor resting boxes, resting buckets (within 10 metres of the house), vegetation, riverbanks, and animal shelters.
