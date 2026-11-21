@@ -19,7 +19,7 @@ Section 1: Node & Event Characterisation
    * - ``node_code``
      - Text
      - Yes
-     - Study Node Code
+     - Observatory Node Code
    * - ``village_id``
      - Text
      - Yes
@@ -35,7 +35,7 @@ Section 1: Node & Event Characterisation
    * - ``collector_id``
      - Text
      - Yes
-     - Field observer or team identifier
+     - Collector / Team ID
 
 Section 2: Event Type & Severity
 --------------------------------
@@ -107,7 +107,7 @@ Section 4: Human Behaviour & Household Displacement
    * - ``population_displacement``
      - Select One
      - Yes
-     - Residents displaced from dwellings (1=Yes, 0=None)
+     - Residents displaced from houses (1=Yes, 0=None)
    * - ``displaced_persons_count``
      - Integer
      - No

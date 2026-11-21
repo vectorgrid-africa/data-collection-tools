@@ -19,7 +19,7 @@ Section 1: Node & Sampling Event
    * - ``node_code``
      - Text
      - Yes
-     - Study Node Code
+     - Observatory Node Code
    * - ``village_id``
      - Text
      - Yes
@@ -35,7 +35,7 @@ Section 1: Node & Sampling Event
    * - ``collector_id``
      - Text
      - Yes
-     - Field technician or team identifier
+     - Collector / Team ID
    * - ``measurement_method``
      - Select One
      - Yes

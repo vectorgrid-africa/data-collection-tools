@@ -19,7 +19,7 @@ Section 1: Node & Survey Visit Metadata
    * - ``node_code``
      - Text
      - Yes
-     - Study Node Code
+     - Observatory Node Code
    * - ``village_id``
      - Text
      - Yes
@@ -47,7 +47,7 @@ Section 1: Node & Survey Visit Metadata
    * - ``collector_id``
      - Text
      - Yes
-     - Surveyor or Team ID
+     - Collector / Team ID
    * - ``season``
      - Select One
      - Yes
@@ -69,8 +69,8 @@ Section 2: Water Quality Parameters (SOP 3.1)
 * **Q08:** Water Colour (1=Clear, 2=Turbid (cloudy), 3=Polluted, 4=Other).
 * **Q09:** Water Source Origin (1=Rainwater, 2=Ground, spring, or stream, 3=Human supply or tap).
 
-Section 3: Habitat Morphometry & Vegetation
--------------------------------------------
+Section 3: Habitat Dimensions & Vegetation
+------------------------------------------
 * **Q10 to Q13:** Length, Width, Perimeter, Surface Area, and Column Depth this visit.
 * **Q14 to Q18:** Shade level, Vegetation type and quantity, Algae type and quantity.
 * **Q19 and Q20:** Percent cover (Vegetation, Algae, Canopy, Biofilm) and Environment type.

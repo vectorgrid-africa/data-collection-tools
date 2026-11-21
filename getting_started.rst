@@ -1,7 +1,7 @@
 Getting Started
 ===============
 
-**VectorGrid-Africa** is an interconnected network of permanent vector observatories operating across multiple African partner countries (including Tanzania, Kenya, Mozambique, South Africa, and Madagascar). The network implements a common surveillance methods across all nodes to track mosquito vectors, species dynamics, and disease transmission risks.
+**VectorGrid-Africa** is an interconnected network of permanent vector observatories operating across multiple African partner countries (including Tanzania, Kenya, Mozambique, South Africa, and Madagascar). The network implements common surveillance methods across all nodes to track mosquito vectors, species dynamics, and disease transmission risks.
 
 Study Components
 ----------------

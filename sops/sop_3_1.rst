@@ -1,5 +1,5 @@
-SOP 3.1: Larval Survey & Water Quality Assessment
-=================================================
+SOP 3.1: Larval Survey and Aquatic Habitat Assessment
+=====================================================
 
 This quick reference summarises standardised dipping effort, water quality parameters, predator presence, and specimen preservation protocols from **VectorGrid SOP Task 3.1**.
 
@@ -37,10 +37,13 @@ This quick reference summarises standardised dipping effort, water quality param
    * - **Conductivity**
      - μS/cm
      - ``conductivity``
-   * - **Dissolved Oxygen**
+   * - **Salinity**
+     - ppt / PSU (meter unit)
+     - ``salinity``
+   * - **Dissolved Oxygen (extended)**
      - mg/L
      - ``dissolved_oxygen``
-   * - **Total Dissolved Solids**
+   * - **Total Dissolved Solids (extended)**
      - mg/L
      - ``tds``
 

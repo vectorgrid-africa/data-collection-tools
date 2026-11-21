@@ -1,4 +1,4 @@
-SOP 2.2: Adult Mosquito Trapping & Sampling Methods
+SOP 2.2: Adult Mosquito Sampling and Trap Placement
 ===================================================
 
 This quick reference summarises trap placement, attractants, operating schedules, and weather contingency procedures from **VectorGrid SOP 2.2, SOP 2.2.1, and SOP 2.3**.
@@ -43,4 +43,4 @@ Resting Mosquito Collections (SOP 2.3 Prokopack & Resting Shelters)
 -------------------------------------------------------------------
 * **Aspiration Schedule:** Conduct morning collections between 06:00 and 09:00 as agreed with house owners.
 * **Indoor Resting:** Systematic aspiration of walls, ceilings, hangings, under beds, and dark storage corners using a Prokopack aspirator.
-* **Outdoor Resting:** Sweeps of outdoor resting boxes, resting buckets (within 10 metres of the house), vegetation, riverbanks, and animal shelters.
+* **Outdoor Resting:** Sweeps of outdoor resting boxes, resting buckets (two 20 L black buckets per focal house, spaced at least 20 metres apart), Muirhead-Thomson Pit Traps (MTPT), vegetation, riverbanks, and animal shelters.

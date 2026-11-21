@@ -19,7 +19,7 @@ Section 1: Node & Contact Sampling
    * - ``node_code``
      - Text
      - Yes
-     - Study Node Code
+     - Observatory Node Code
    * - ``village_id``
      - Text
      - Yes
@@ -39,7 +39,7 @@ Section 1: Node & Contact Sampling
    * - ``collector_id``
      - Text
      - Yes
-     - Field observer or team identifier
+     - Collector / Team ID
    * - ``sampling_method``
      - Select One
      - Yes

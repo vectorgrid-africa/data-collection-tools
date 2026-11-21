@@ -19,7 +19,7 @@ Section 1: Trap Location & Update Information
    * - ``node_code``
      - Text
      - Yes
-     - Study Node Code
+     - Observatory Node Code
    * - ``village_id``
      - Text
      - Yes
@@ -31,7 +31,7 @@ Section 1: Trap Location & Update Information
    * - ``collector_id``
      - Text
      - Yes
-     - Field technician or team identifier
+     - Collector / Team ID
 
 Section 2: Trap Status Updates
 ------------------------------

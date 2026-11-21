@@ -3,7 +3,7 @@ Household Status Update Form
 
 **Form Code:** ``HH-UPD`` | **Study Component:** Household Surveillance | **SOP Links:** SOP 1.1, SOP 2.1
 
-The Household Status Update Form records longitudinal changes to enrolled households across surveillance rounds. It tracks household operational status, structural dwelling modifications, occupant roster changes, net acquisitions, vector control interventions, and livestock alterations without re-recording fixed baseline geography.
+The Household Status Update Form records longitudinal changes to enrolled households across surveillance rounds. It tracks household operational status, structural house modifications, occupant roster changes, bed net updates, vector control interventions, and livestock alterations without re-recording fixed baseline geography.
 
 Section 1: Node & Household Identification
 ------------------------------------------
@@ -19,7 +19,7 @@ Section 1: Node & Household Identification
    * - ``node_code``
      - Text
      - Yes
-     - Study Node Code
+     - Observatory Node Code
    * - ``village_id``
      - Text
      - Yes
@@ -39,7 +39,7 @@ Section 1: Node & Household Identification
    * - ``collector_id``
      - Text
      - Yes
-     - Collector / team ID
+     - Collector / Team ID
 
 Section 2: Household Operational Status
 ---------------------------------------
@@ -63,7 +63,7 @@ Section 2: Household Operational Status
    * - ``structural_changes``
      - Select One
      - Yes
-     - Structural changes made to dwelling (1=Yes, 0=No changes)
+     - Structural changes made to house (1=Yes, 0=No changes)
 
 Section 3: House Modifications Since Last Visit
 -----------------------------------------------
@@ -127,7 +127,7 @@ Section 4: Demographics, Bed Nets & Vector Control Updates
    * - ``total_occupants_night``
      - Integer
      - Yes
-     - Total occupants sleeping in the dwelling last night
+     - Total occupants sleeping in the house last night
    * - ``males_occupants_night``
      - Integer
      - No

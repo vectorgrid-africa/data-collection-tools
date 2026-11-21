@@ -19,7 +19,7 @@ Section 1: Node & Location Metadata
    * - ``node_code``
      - Text
      - Yes
-     - Study Node Code
+     - Observatory Node Code
    * - ``country``
      - Text
      - Yes
@@ -51,7 +51,7 @@ Section 1: Node & Location Metadata
    * - ``collector_id``
      - Text
      - Yes
-     - Registrar or Team ID
+     - Collector / Team ID
 
 Section 2: Trap Deployments
 ---------------------------

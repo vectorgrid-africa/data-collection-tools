@@ -19,7 +19,7 @@ Section 1: Dissection Bench & Source Links
    * - ``node_code``
      - Text
      - Yes
-     - Study Node Code
+     - Observatory Node Code
    * - ``village_id``
      - Text
      - Yes

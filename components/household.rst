@@ -5,17 +5,17 @@ Household Surveillance establishes household occupant demographics, housing char
 
 Scope & Objectives
 ------------------
-- Record household occupants by age group (<5 years, 5 to 15 years, >15 years) and gender.
+- Record household occupants by age group (<5 years, 5 to 15 years, >15 years) and sex.
 - Characterise house construction materials (roof, walls, floor, open eaves, screening).
 - Record insecticide-treated net (ITN/LLIN) ownership, net condition, and hanging status.
-- Track structural dwelling modifications, bed net replacements, and resident mobility over time.
+- Track structural house modifications, bed net replacements, and resident mobility over time.
 - Record human nocturnal activity, evening outdoor gathering, and age-specific net use.
 - Assess proximity to animal sheds, latrines, and nearby aquatic breeding sites.
 
 Associated Forms
 ----------------
 - :doc:`../forms/hh_reg`: Baseline household registration, housing characteristics, and room-by-room occupant roster.
-- :doc:`../forms/hh_upd`: Periodic household status update for dwelling modifications, occupant mobility, and net acquisitions.
+- :doc:`../forms/hh_upd`: Periodic household status update for house modifications, occupant mobility, and bed net updates.
 - :doc:`../forms/hh_beh`: Human behaviour observation of direct contact, outdoor vs. indoor sleeping patterns, and net usage.
 
 One Health & Host Environment Context

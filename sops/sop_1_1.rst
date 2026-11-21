@@ -25,13 +25,13 @@ Household Selection Protocol (Table 3)
    If random selection is impractical, field teams may select households haphazardly while maintaining geographical distribution.
 
 3. **Spatial Distribution:**
-   Selected households must be at least 100 metres distance from one another to ensure independent mosquito trapping ranges and avoid competition between traps.
+   Selected households must be at least 100 metres apart to ensure independent mosquito trapping ranges and avoid competition between traps.
 
 4. **Informed Consent & Logistics:**
-   Field teams obtain written or witnessed verbal consent from the head of household and verify that selected dwellings remain accessible in wet and dry seasons.
+   Field teams obtain written or witnessed verbal consent from the head of household and verify that selected households remain accessible in wet and dry seasons.
 
 Reserve Household Replacement Rules
 -----------------------------------
-* **Withdrawal or Relocation:** If an enrolled household relocates, dismantles the dwelling, or withdraws consent, field teams record the change on ``HH-UPD`` (Household Status Update).
-* **Pre-Enrolled Reserve List:** Dwellings are replaced strictly from the pre-selected reserve household roster in the same village cluster.
-* **ID Continuity:** The new household receives a distinct unique Household ID; never reassign a retired Household ID to a new dwelling.
+* **Withdrawal or Relocation:** If an enrolled household relocates, dismantles the house, or withdraws consent, field teams record the change on ``HH-UPD`` (Household Status Update).
+* **Pre-Enrolled Reserve List:** Households are replaced strictly from the pre-selected reserve household roster in the same village cluster.
+* **ID Continuity:** The new household receives a distinct unique Household ID; never reassign a retired Household ID to a new household.

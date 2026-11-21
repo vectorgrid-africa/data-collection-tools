@@ -19,7 +19,7 @@ Section 1: Administrative Geography & Event
    * - ``node_code``
      - Text
      - Yes
-     - Study Node Code
+     - Observatory Node Code
    * - ``country``
      - Text
      - Yes
@@ -59,7 +59,7 @@ Section 1: Administrative Geography & Event
    * - ``collector_id``
      - Text
      - Yes
-     - Collector / team ID
+     - Collector / Team ID
    * - ``household_id``
      - Text
      - Yes

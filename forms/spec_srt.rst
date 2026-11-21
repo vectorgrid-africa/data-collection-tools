@@ -19,7 +19,7 @@ Section 1: Node & Retrieval Metadata
    * - ``node_code``
      - Text
      - Yes
-     - Study Node Code
+     - Observatory Node Code
    * - ``village_id``
      - Text
      - Yes
@@ -133,7 +133,7 @@ Section 3: Taxonomy & Physiological Counts
 Section 4: Packaging, Dissection & Storage (SOP 2.4)
 ----------------------------------------------------
 - **Q08:** Non-target insect count (moths, beetles discarded).
-- **Q09:** Anopheles fresh dissection (1=Yes transferred for dissection, 0=No).
+- **Q09:** *Anopheles* fresh dissection (1=Yes transferred for dissection, 0=No).
 - **Q10:** Packing type (1=Pool, 2=Individual).
 - **Q11:** Storage Box / Plate Barcode (for example, ``TZ01 0001``).
 - **Q12:** Well / position allocation (From: well to To: well).

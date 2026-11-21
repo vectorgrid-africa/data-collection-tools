@@ -6,19 +6,20 @@ Standard answer options, diagnostic parameters, and classification scales shared
 Adult Physiological & Lab Diagnostic Vocabularies
 -------------------------------------------------
 
-Abdominal Physiological Status (SOP 1.1.1 Table 6 & SOP 2.4)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Abdominal Physiological Status (SOP 1.1.1)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 * **1 (UF):** Unfed (abdomen flat, transparent, no blood visible)
 * **2 (PF):** Partly Fed (blood meal partially digested, red/dark patch in midgut)
 * **3 (FD):** Fully Fed (abdomen distended, bright to dark red blood meal occupying most of abdomen)
-* **4 (GV):** Gravid (abdomen white, eggs visible through abdominal wall, blood completely digested)
+* **4 (SG):** Semi-gravid (abdomen partly white with developing eggs and remaining digested blood)
+* **5 (GV):** Gravid (abdomen white, eggs visible through abdominal wall, blood completely digested)
 
-Detinova Parity Classification (SOP 2.4 §3.4)
+Detinova Parity Classification (WHO Standard)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 * **1 (Parous):** Ovarian tracheole coils untangled and skeins stretched out (female has laid at least one batch of eggs)
 * **0 (Nulliparous):** Ovarian tracheoles tightly coiled into circular skeins (female has never laid eggs)
 
-Christophers Egg Development Stages (SOP 2.4 §3.4)
+Christophers Egg Development Stages (WHO Standard)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 * **Stage I:** Small round follicles, transparent, no yolk granules visible
 * **Stage IIe:** Early stage II with fine yolk granules appearing around the oocyte nucleus
@@ -27,7 +28,7 @@ Christophers Egg Development Stages (SOP 2.4 §3.4)
 * **Stage IV:** Follicles elongated, cylindrical, yolk fills almost entire follicle
 * **Stage V:** Mature eggs complete with chorionic floats, ready for oviposition
 
-Midgut Blood Digestion Status (SOP 2.4 §3.4)
+Midgut Blood Digestion Status (WHO Standard)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 * **1 (nb):** No blood visible in midgut
 * **2 (fb):** Fresh red blood present
@@ -48,7 +49,7 @@ Surveillance Trapping Methods (SOP 2.2 & SOP 2.3)
 * **4 (Prokopack):** Prokopack mechanical aspirator for indoor and outdoor resting collections
 * **5 (DN-Mini):** Double-Net Mini trap for human-mosquito contact surveillance
 * **6 (HLC):** Human Landing Catch (gold standard comparative reference)
-* **7 (Pit Shelter):** Outdoor dug pit trap for outdoor resting vectors
+* **7 (MTPT / Pit Shelter):** Outdoor dug Muirhead-Thomson Pit Trap (MTPT) for outdoor resting vectors
 * **8 (PSC):** Pyrethrum Spray Catch for indoor resting density
 
 Extreme Weather Event Categories (SOP 2.1 Table 4)

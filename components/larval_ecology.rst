@@ -5,7 +5,7 @@ Larval & Aquatic Habitat Ecology monitors natural and artificial aquatic breedin
 
 Scope & Objectives
 ------------------
-- Record GPS locations and classify breeding site types (swamps, puddles, burrow pits, artificial containers).
+- Record GPS locations and classify breeding site types (swamps, puddles, borrow pits, artificial containers).
 - Track habitat condition changes (seasonal drying, flooding, drainage, destruction) between dipping rounds.
 - Measure water surface dimensions, perimeter, depth, shade, and vegetation or algal cover.
 - Measure *in situ* water quality parameters (temperature, pH, conductivity, dissolved oxygen, TDS).

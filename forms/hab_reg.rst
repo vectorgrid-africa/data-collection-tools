@@ -19,7 +19,7 @@ Section 1: Node & Habitat Metadata
    * - ``node_code``
      - Text
      - Yes
-     - Study Node Code
+     - Observatory Node Code
    * - ``country``
      - Text
      - Yes
@@ -59,7 +59,7 @@ Section 1: Node & Habitat Metadata
    * - ``collector_id``
      - Text
      - Yes
-     - Surveyor or Team ID
+     - Collector / Team ID
    * - ``habitat_id``
      - Text
      - Yes
@@ -69,7 +69,7 @@ Section 2: Classification & Physical Dimensions
 -----------------------------------------------
 * **Q01:** Natural or Artificial (1=Natural, 2=Artificial).
 * **Q02:** Habitat Permanence (1=Temporary, 2=Semi-permanent, 3=Permanent).
-* **Q03:** Habitat Type (Codes 1 to 22: Swamp, puddle, pool, tyre, burrow pit, etc.).
+* **Q03:** Habitat Type (Codes 1 to 22: Swamp, puddle, pool, tyre, borrow pit, etc.).
 * **Q04:** Surface Length and Width in metres.
 * **Q05:** Habitat Perimeter in metres.
 * **Q06:** Surface Area (m² = Length × Width approximation).
