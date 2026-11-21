@@ -1,54 +1,61 @@
-/* VectorGrid Documentation Custom Styles */
+/* VectorGrid Documentation Custom Styles (Furo) */
 
-/* Keep search box and project title sticky at top of sidebar */
-.wy-side-nav-search {
-    position: sticky;
-    top: 0;
-    z-index: 200;
-    background-color: #2980b9;
+/* Soften heading weights and tighten tracking for crisp technical readability */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    letter-spacing: -0.015em;
 }
 
-/* Ensure smooth scrolling inside sidebar */
-.wy-side-scroll {
-    scroll-behavior: smooth;
-    scroll-padding-top: 10px;
+/* Gently widen desktop content column for 4-column form specification tables */
+@media (min-width: 67em) {
+    .content {
+        width: 52em;
+        max-width: 100%;
+    }
 }
 
-/* Clean spacing for navigation captions */
-.wy-menu-vertical p.caption {
-    margin-top: 18px;
-    margin-bottom: 6px;
-    color: #e0e0e0;
-    font-size: 85%;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+/* Full-width, clean specification-style tables */
+table.docutils {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid var(--color-table-border);
+    border-radius: 6px;
+    box-shadow: none;
+    overflow: hidden;
 }
 
-/* Highlight current active item cleanly */
-.wy-menu-vertical li.current > a {
-    font-weight: bold;
-    border-left: 3px solid #2980b9;
+table.docutils thead th {
+    background: var(--color-table-header-background);
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-align: left;
+    border-bottom: 1px solid var(--color-table-border);
 }
 
-/* Allow text wrapping in tables so they fit naturally without unnecessary horizontal scrollbars */
-.wy-table-responsive table td,
-.wy-table-responsive table th,
-.rst-content table.docutils thead th,
-.rst-content table.docutils td,
-.wy-table thead th,
-.wy-table td,
-.bd-content table td,
-.bd-content table th {
-    white-space: normal !important;
+table.docutils th,
+table.docutils td {
+    padding: 0.55rem 0.75rem;
+    vertical-align: top;
+    white-space: normal;
 }
 
-.rst-content table.docutils code,
-.bd-content table code {
+table.docutils td p,
+table.docutils th p {
+    margin: 0;
+}
+
+table.docutils tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Style field identifiers and form codes using the brand link colour */
+code.literal,
+p code.literal {
+    color: var(--color-brand-content);
+    font-weight: 500;
+}
+
+table.docutils code.literal {
     white-space: nowrap;
-}
-
-.rst-content table.docutils,
-.bd-content table {
-    width: 100% !important;
 }

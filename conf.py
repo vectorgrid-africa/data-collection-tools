@@ -11,10 +11,11 @@ extensions = []
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
-html_theme = 'sphinx_book_theme'
+html_theme = 'furo'
 html_static_path = ['_static']
 
 html_css_files = [
+    'https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap',
     'custom.css',
 ]
 
@@ -22,15 +23,21 @@ html_js_files = [
     'custom.js',
 ]
 
-html_context = {
-    'default_mode': 'light',
-}
-
 html_theme_options = {
-    'use_repository_button': False,
-    'use_download_button': False,
-    'use_fullscreen_button': True,
-    'home_page_in_toc': False,
-    'show_navbar_depth': 1,
-    'max_navbar_depth': 3,
+    'top_of_page_buttons': [],
+    'light_css_variables': {
+        'font-stack': '"IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif',
+        'font-stack--headings': '"IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif',
+        'font-stack--monospace': '"IBM Plex Mono", Consolas, Monaco, monospace',
+        'font-size--normal': '95%',
+        'color-brand-primary': '#1d4e89',
+        'color-brand-content': '#1d4e89',
+        'color-table-header-background': '#f8fafc',
+        'sidebar-item-font-size': '0.875rem',
+        'sidebar-item-spacing-vertical': '0.35rem',
+    },
+    'dark_css_variables': {
+        'color-brand-primary': '#60a5fa',
+        'color-brand-content': '#60a5fa',
+    },
 }

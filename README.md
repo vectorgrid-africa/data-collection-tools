@@ -23,7 +23,7 @@ This repository contains the complete Sphinx documentation source for the Vector
 Install Python 3.10+ and the required Sphinx packages:
 
 ```bash
-pip install sphinx sphinx-rtd-theme
+pip install sphinx furo
 ```
 
 ### Build HTML Documentation
