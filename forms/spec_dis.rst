@@ -72,14 +72,14 @@ Record for each dissected female specimen:
 
 Section 3: Diagnostic Parameter Codes
 -------------------------------------
-- **Species:** 1=*An. gambiae s.l.*, 2=*An. funestus group*, 3=*Other Anopheline*.
+- **Species:** 1 = *An. gambiae s.l.*, 2 = *An. funestus* group, 3 = Other Anopheline.
 - **Midgut Blood Content:** 1=No blood (unfed), 2=Fresh blood, 3=Brown / digested blood.
 - **Spermatheca Insemination:** 1=Positive (sperm present), 0=Negative (empty).
 - **Ovarian Parity Status:** 1=Parous (uncoiled tracheoles), 2=Nulliparous (tightly coiled skeins).
 - **Egg Stage:** Stages I, IIe, II, III, IV, V (Christophers staging).
 - **Sac Stage:** Stages 0 to 7.
 - **Max Dilatations:** Count (0 to 5).
-- **Wing Length:** Measured length in millimeters.
+- **Wing Length:** Measured length in millimetres.
 - **Specimen Condition:** 1=Fresh (dissected immediately), 2=Dry (rehydrated).
 
 Section 4: Dissection Summary & Totals

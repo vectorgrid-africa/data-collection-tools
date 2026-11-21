@@ -1,7 +1,7 @@
 Getting Started
 ===============
 
-**VectorGrid-Africa** is an interconnected network of permanent vector observatories operating across multiple African partner countries (including Tanzania, Kenya, Mozambique, South Africa, and Madagascar). The network implements common surveillance methods across all nodes to track mosquito vectors, species dynamics, and disease transmission risks.
+**VectorGrid-Africa** is an interconnected network of permanent vector observatories operating across multiple African partner countries (including Tanzania, Kenya, Mozambique, South Africa, and Madagascar). The network implements common surveillance methods across all nodes to monitor mosquito vectors, species dynamics, and disease transmission risks.
 
 Study Components
 ----------------
@@ -15,7 +15,7 @@ All participating nodes and observatory sites implement three core study compone
    Standardises indoor and outdoor trapping methods (CDC light traps, BG-Sentinel, resting buckets, Prokopack), morphological species identification, physiological staging, and ovarian tracheole dissections.
 
 3. :doc:`components/larval_ecology`
-   Tracks natural and artificial aquatic breeding habitats, *in situ* water quality parameters, dipping sampling effort (scaled to habitat size), aquatic predator presence and counts, and specimen preservation.
+   Characterises and samples natural and artificial aquatic breeding habitats, recording *in situ* water quality parameters, dipping effort (scaled to habitat size), aquatic predator presence and counts, and specimen preservation.
 
 Digital Data Collection Workflow
 --------------------------------
@@ -35,20 +35,6 @@ ODK Reference Implementation:
 
 3. **Reference Form Layouts:**
    Printable layout documents (``.docx``) are provided for training, visual review, and questionnaire reference alongside the ODK digital tools.
-
-Field Quality Assurance & Operational Rules
--------------------------------------------
-
-All field teams and laboratory technicians follow three core operational rules to maintain data integrity across the observatory network:
-
-1. **Mandatory Zero Counts:**
-   Never leave count fields blank or discard zero-catch nights or dry habitats. A catch of zero mosquitoes or an absence of larvae is critical surveillance data and must be entered explicitly as ``0``.
-
-2. **GPS Accuracy Threshold (±5 Metres):**
-   When recording GPS locations, field teams must wait until mobile devices acquire sufficient satellite signals to achieve an accuracy of ±5 metres or better before confirming coordinates.
-
-3. **Identifier Verification:**
-   Before entering survey data, verify that Household IDs, Trap IDs, and Habitat IDs match the physical weather-resistant placards or tags affixed during baseline registration.
 
 Reference Standards
 -------------------

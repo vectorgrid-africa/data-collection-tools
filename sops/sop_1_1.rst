@@ -1,7 +1,7 @@
 SOP 1.1: Site & Household Selection
 ===================================
 
-This quick reference summarises the site selection criteria, household selection protocol, and replacement rules from **VectorGrid SOP 1.1**.
+This quick reference summarises the site selection criteria, household selection protocol, and replacement procedures from **VectorGrid SOP 1.1**.
 
 Node Structure & Sentinel Site Criteria (Tables 1 and 2)
 --------------------------------------------------------
@@ -30,8 +30,8 @@ Household Selection Protocol (Table 3)
 4. **Informed Consent & Logistics:**
    Field teams obtain written or witnessed verbal consent from the head of household and verify that selected households remain accessible in wet and dry seasons.
 
-Reserve Household Replacement Rules
------------------------------------
+Reserve Household Replacement
+-----------------------------
 * **Withdrawal or Relocation:** If an enrolled household relocates, dismantles the house, or withdraws consent, field teams record the change on ``HH-UPD`` (Household Status Update).
 * **Pre-Enrolled Reserve List:** Households are replaced strictly from the pre-selected reserve household roster in the same village cluster.
 * **ID Continuity:** The new household receives a distinct unique Household ID; never reassign a retired Household ID to a new household.

@@ -173,7 +173,7 @@ Record for each sleeping room in the house:
 Household Status Update
 -----------------------
 
-For subsequent surveillance rounds, enrolled households are tracked using the update form rather than repeated baseline registration:
+For subsequent surveillance rounds, enrolled households are updated using the status update form rather than repeated baseline registration:
 
 .. toctree::
    :maxdepth: 2

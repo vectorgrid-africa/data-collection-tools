@@ -87,7 +87,7 @@ Section 5: Completed Samples & Taxon Counts
 Record for each completed dip, bucket, or container examination:
 
 * Sample Number (sequential counter)
-* Taxon Code (1=*An. gambiae complex*, 2=*An. funestus*, 3=*Other Anopheline*, 4=*Culex*, 5=*Aedes*, 6=*Mansonia*, 7=*Other*)
+* Taxon Code (1 = *An. gambiae* complex, 2 = *An. funestus*, 3 = Other Anopheline, 4 = *Culex*, 5 = *Aedes*, 6 = *Mansonia*, 7 = Other)
 * Immature Counts: L1-L2, L3, L4, Pupae, Total Larvae (calculated)
 * Aquatic Predators: Predator Code (1 to 10) and count per sample
 

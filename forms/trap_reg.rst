@@ -101,7 +101,7 @@ Record for each registered trap deployment:
      - Serial / Barcode
      - Text
      - Device serial
-     - Hardware tracking
+     - Equipment identification
    * - ``placement_notes``
      - Placement Notes
      - Text

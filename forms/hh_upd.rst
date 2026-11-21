@@ -3,7 +3,7 @@ Household Status Update Form
 
 **Form Code:** ``HH-UPD`` | **Study Component:** Household Surveillance | **SOP Links:** SOP 1.1, SOP 2.1
 
-The Household Status Update Form records longitudinal changes to enrolled households across surveillance rounds. It tracks household operational status, structural house modifications, occupant roster changes, bed net updates, vector control interventions, and livestock alterations without re-recording fixed baseline geography.
+The Household Status Update Form records longitudinal changes to enrolled households across surveillance rounds. It captures household operational status, structural house modifications, occupant roster changes, bed net updates, vector control interventions, and livestock alterations without re-recording fixed baseline geography.
 
 Section 1: Node & Household Identification
 ------------------------------------------
