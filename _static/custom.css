@@ -37,14 +37,18 @@
 .rst-content table.docutils thead th,
 .rst-content table.docutils td,
 .wy-table thead th,
-.wy-table td {
+.wy-table td,
+.bd-content table td,
+.bd-content table th {
     white-space: normal !important;
 }
 
-.rst-content table.docutils code {
+.rst-content table.docutils code,
+.bd-content table code {
     white-space: nowrap;
 }
 
-.rst-content table.docutils {
+.rst-content table.docutils,
+.bd-content table {
     width: 100% !important;
 }
