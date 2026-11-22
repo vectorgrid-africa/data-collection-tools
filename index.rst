@@ -1,17 +1,19 @@
 VectorGrid Data Collection Tools
 ================================
 
-Welcome to the **VectorGrid Data Collection Tools** documentation. This site provides a simple, unified reference for all field data collection forms, standard operating procedures (SOPs), and categorical codebooks across the multi-country vector observatory network.
+Welcome to the **VectorGrid Data Collection Tools** documentation. This site is the reference for the VectorGrid-Africa data collection forms: what each form records, which SOP it follows, and the categorical codebooks it uses. It also provides short summaries of the SOPs, and the ODK forms and paper layouts for download.
 
 .. toctree::
    :maxdepth: 2
+   :titlesonly:
    :caption: Getting Started
 
    getting_started
 
 .. toctree::
    :maxdepth: 2
-   :caption: Study Components
+   :titlesonly:
+   :caption: Sampling Activities
 
    components/household
    components/adult_vectors
@@ -19,13 +21,15 @@ Welcome to the **VectorGrid Data Collection Tools** documentation. This site pro
 
 .. toctree::
    :maxdepth: 2
+   :titlesonly:
    :caption: Form Reference Specifications
 
    forms/hh_reg
-   forms/hh_beh
    forms/trap_reg
    forms/spec_srt
    forms/spec_dis
+   forms/spec_hnd
+   forms/hh_beh
    forms/env_obs
    forms/env_ext
    forms/hab_reg
@@ -33,12 +37,19 @@ Welcome to the **VectorGrid Data Collection Tools** documentation. This site pro
 
 .. toctree::
    :maxdepth: 2
-   :caption: Reference Guides & Downloads
+   :titlesonly:
+   :caption: SOP Summaries
 
-   codebooks
    sops/sop_1_1
    sops/sop_2_1
    sops/sop_2_2
    sops/sop_2_4
    sops/sop_3_1
+
+.. toctree::
+   :maxdepth: 2
+   :titlesonly:
+   :caption: Codebooks & Downloads
+
+   codebooks
    downloads

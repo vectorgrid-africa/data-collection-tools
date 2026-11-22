@@ -1,6 +1,6 @@
 # VectorGrid Data Collection Tools Documentation
 
-Technical documentation, standard operating procedures (SOPs), form reference specifications, and categorical codebooks for the multi-country **VectorGrid** vector observatory network.
+Technical documentation, standard operating procedures (SOPs), form reference specifications, and categorical codebooks for the **VectorGrid-Africa** observatory.
 
 🌐 **Live Documentation:** [https://vectorgrid-africa.github.io/data-collection-tools/](https://vectorgrid-africa.github.io/data-collection-tools/)
 
@@ -8,11 +8,11 @@ Technical documentation, standard operating procedures (SOPs), form reference sp
 
 ## Overview
 
-This repository contains the complete Sphinx documentation source for the VectorGrid data collection framework across three core study components:
+This repository contains the complete Sphinx documentation source for the VectorGrid data collection framework across three sampling activities:
 
-1. **Household Surveillance:** Baseline household enrolment, dwelling characteristics, demographic rosters, and human behaviour observations.
-2. **Adult Vector Surveillance:** Standardised trapping methods (CDC light traps, Prokopack, window exit traps, pyrethrum spray catches), morphotaxonomic identification, physiological scoring, and specimen preservation.
-3. **Larval & Aquatic Habitat Ecology:** Aquatic breeding site registration, dipping surveys, water quality measurement, and aquatic predator presence and counts.
+1. **Site & Household Selection:** Registration of the selected households, house structure, the people sleeping in each room, bed nets and livestock.
+2. **Adult Mosquito Sampling:** Standardised trapping methods (CDC light traps, BG-Sentinel, DN-Mini, resting buckets, Prokopack aspiration, pit traps and optional pyrethrum spray catches), human-mosquito contact and human behaviour observations, morphological identification, physiological status, dissection, specimen preservation, and sample chain of custody.
+3. **Larval Sampling:** Aquatic breeding site registration, dipping surveys, water quality measurement, and aquatic predator presence and counts.
 
 ---
 

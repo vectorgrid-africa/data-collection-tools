@@ -1,117 +1,355 @@
 Environmental Observation Form
 ==============================
 
-**Form Code:** ``ENV-OBS`` | **Study Component:** Adult Vector Surveillance | **SOP Links:** SOP 2.1
+**Form Code:** ``ENV-OBS`` | **Form ID:** ``vg_env_obs`` | **Version:** ``2026112201`` | **Sampling Activity:** Adult Mosquito Sampling | **SOP Links:** :doc:`SOP 2.1 <../sops/sop_2_1>`, :doc:`SOP 2.2 <../sops/sop_2_2>`
 
-The Environmental Observation Form captures meteorological conditions, indoor and outdoor temperature and humidity parameters, and electronic data logger records on adult mosquito trapping nights. It links directly to ``HH-REG`` and ``SPEC-SRT`` using the Household ID and collection date.
+The Environmental Observation Form records the weather and microclimate on an adult trapping night at a registered household: weather at trap start and end, rainfall, wind speed, the temperature and humidity data loggers used, and manual readings when a handheld meter is used or a logger fails.
 
-Section 1: Node & Sampling Event
---------------------------------
+How This Form Works
+-------------------
+
+* Select the district, then an active household from the ``households`` entity list. The record links to SPEC-SRT by Household ID and collection date.
+* With automated loggers (``method`` = 1) there is one entry per logger (default 2). The manual temperature and humidity section is shown for a manual meter, or when any logger download fails.
+* Place indoor loggers at trap height (about 1.5 m) near the bed, and outdoor loggers 1.5 m above the ground (1 m for BG-Sentinel), at least 1 m from dry ice.
+
+Section 1: Household Selection
+------------------------------
 
 .. list-table::
-   :widths: 25 20 20 35
+   :widths: 24 13 9 54
    :header-rows: 1
 
    * - Field Name
      - Type
      - Required
-     - Description / Choice List
+     - Question, Choices & Logic
+   * - ``district``
+     - Select one
+     - Yes
+     - Select district
+
+       District list (set for each node)
+
+       *Hint:* Filter households by district
+   * - ``household``
+     - Select record
+     - Yes
+     - Select household
+
+       Pick a record from the ``households`` entity list (filtered by district, active records only)
    * - ``node_code``
-     - Text
-     - Yes
-     - Observatory Node Code
-   * - ``village_id``
-     - Text
-     - Yes
-     - Sentinel Village Identifier
+     - Calculated
+     - Auto
+     - Taken from the selected ``households`` record (property ``node_code``)
    * - ``household_id``
-     - Text
-     - Yes
-     - Household ID (links to ``HH-REG``)
+     - Calculated
+     - Auto
+     - Taken from the selected ``households`` record (property ``household_id``)
+   * - ``hh_village``
+     - Calculated
+     - Auto
+     - Taken from the selected ``households`` record (property ``village``)
+   * - ``hh_ward``
+     - Calculated
+     - Auto
+     - Taken from the selected ``households`` record (property ``ward``)
+
+Section 2: Meteorological Sampling Event
+----------------------------------------
+
+.. list-table::
+   :widths: 24 13 9 54
+   :header-rows: 1
+
+   * - Field Name
+     - Type
+     - Required
+     - Question, Choices & Logic
    * - ``collection_date``
      - Date
      - Yes
-     - Night of mosquito collection
+     - Collection Date
+
+       *Check:* ``value <= today()``
+
+       *Default:* today
+
+       *Hint:* Same date as the SPEC-SRT record
    * - ``collector_id``
      - Text
      - Yes
-     - Collector / Team ID
-   * - ``measurement_method``
-     - Select One
+     - Collector / team ID
+   * - ``method``
+     - Select one
      - Yes
-     - 1=Automated Data Logger, 2=Manual Handheld Meter
+     - Measurement Method
 
-Section 2: Weather Observations
+       ``1`` = Automated logger; ``2`` = Manual meter
+
+Section 3: Weather Observations
 -------------------------------
 
 .. list-table::
-   :widths: 25 20 20 35
+   :widths: 24 13 9 54
    :header-rows: 1
 
    * - Field Name
      - Type
      - Required
-     - Description / Choice List
+     - Question, Choices & Logic
    * - ``weather_start``
-     - Select Multiple
+     - Select multiple
      - Yes
-     - Weather at trap start: Rainy, Windy, Cold, Warm, Calm and dry, Other
+     - Weather at trap start
+
+       ``rainy`` = Rainy; ``windy`` = Windy; ``cold`` = Cold; ``warm`` = Warm; ``none`` = None of these (calm, dry); ``other`` = Other
+
+       *Check:* ``none cannot be combined with other options``
+
+       *Hint:* Tick all that apply
+   * - ``weather_start_other``
+     - Text
+     - Yes
+     - Specify other weather
+
+       *Shown if* ``weather_start includes other``
    * - ``weather_end``
-     - Select Multiple
+     - Select multiple
      - Yes
-     - Weather at trap end: Rainy, Windy, Cold, Warm, Calm and dry, Other
+     - Weather at trap end
+
+       ``rainy`` = Rainy; ``windy`` = Windy; ``cold`` = Cold; ``warm`` = Warm; ``none`` = None of these (calm, dry); ``other`` = Other
+
+       *Check:* ``none cannot be combined with other options``
+
+       *Hint:* Tick all that apply
+   * - ``weather_end_other``
+     - Text
+     - Yes
+     - Specify other weather
+
+       *Shown if* ``weather_end includes other``
    * - ``rainfall_24h``
      - Decimal
-     - No
-     - Measured rainfall in preceding 24 hours (mm)
+     - Yes
+     - Rainfall - last 24 hours (mm)
+
+       *Check:* ``range 0 to 500``
    * - ``rainfall_week``
      - Decimal
-     - No
-     - Cumulative rainfall over past week (mm)
+     - Yes
+     - Rainfall - last week (mm)
+
+       *Check:* ``range rainfall_24h to 2000``
    * - ``wind_speed``
      - Decimal
      - No
-     - Measured wind velocity in metres per second (m/s)
+     - Wind speed (optional, m/s)
 
-Section 3: Temperature & Humidity Measurements
-----------------------------------------------
+       *Check:* ``range 0 to 60``
 
-Recorded when using a handheld meter, or as a manual backup if electronic loggers fail:
+       *Hint:* Instantaneous measured wind velocity in metres per second
+
+Section 4: Data Loggers
+-----------------------
 
 .. list-table::
-   :widths: 30 18 18 18 18
+   :widths: 24 13 9 54
    :header-rows: 1
 
-   * - Parameter
-     - At Trap Start
-     - Overnight Min
-     - Overnight Max
-     - At Trap End
-   * - Outdoor Temperature (°C)
-     - ``temp_out_start``
-     - ``temp_out_min``
-     - ``temp_out_max``
-     - ``temp_out_end``
-   * - Indoor Temperature (°C)
-     - ``temp_in_start``
-     - ``temp_in_min``
-     - ``temp_in_max``
-     - ``temp_in_end``
-   * - Outdoor Relative Humidity (%)
-     - ``rh_out_start``
-     - ``rh_out_min``
-     - ``rh_out_max``
-     - ``rh_out_end``
-   * - Indoor Relative Humidity (%)
-     - ``rh_in_start``
-     - ``rh_in_min``
-     - ``rh_in_max``
-     - ``rh_in_end``
+   * - Field Name
+     - Type
+     - Required
+     - Question, Choices & Logic
+   * - ``num_loggers``
+     - Integer
+     - Yes
+     - Number of data loggers
 
-Section 4: Automated Data Loggers
----------------------------------
+       *Shown if* ``method = 1``
 
-- **Indoor Logger Serial Number:** Serial or barcode of indoor temperature and RH sensor.
-- **Outdoor Logger Serial Number:** Serial or barcode of peridomestic sensor.
-- **Data Offload Status:** 1=Downloaded successfully, 2=Logger missing or damaged, 3=Battery dead.
-- **Observer Notes:** Narrative comments on temperature and humidity anomalies or sensor placement.
+       *Check:* ``range 1 to 4``
+
+Section 5: Temperature & Humidity Data Loggers
+----------------------------------------------
+
+Repeat group: one entry per data logger, repeated ``num_loggers`` times.
+
+This section is shown only if ``method = 1``.
+
+.. list-table::
+   :widths: 24 13 9 54
+   :header-rows: 1
+
+   * - Field Name
+     - Type
+     - Required
+     - Question, Choices & Logic
+   * - ``logger_serial``
+     - Text
+     - Yes
+     - Barcode / serial no.
+   * - ``logger_placement``
+     - Select one
+     - Yes
+     - Placement
+
+       ``1`` = Indoor; ``2`` = Outdoor
+   * - ``logger_height``
+     - Decimal
+     - Yes
+     - Height (m)
+
+       *Check:* ``range 0 to 10``
+   * - ``logger_start``
+     - Time
+     - Yes
+     - Start time
+   * - ``logger_stop``
+     - Time
+     - Yes
+     - Stop time
+   * - ``logger_download``
+     - Select one
+     - Yes
+     - Download status
+
+       ``1`` = Pass; ``0`` = Fail
+
+Section 6: Microclimate Temperature & Humidity
+----------------------------------------------
+
+This section is shown only if ``method = 2 or loggers_failed > 0``.
+
+.. list-table::
+   :widths: 24 13 9 54
+   :header-rows: 1
+
+   * - Field Name
+     - Type
+     - Required
+     - Question, Choices & Logic
+   * - ``loggers_failed``
+     - Calculated
+     - Auto
+     - Number of loggers with download status Fail
+   * - ``t_out_start``
+     - Decimal
+     - Yes
+     - At trap start
+
+       *Check:* ``range -10 to 60``
+   * - ``t_out_min``
+     - Decimal
+     - Yes
+     - Overnight min (low)
+
+       *Check:* ``range -10 to 60``
+   * - ``t_out_max``
+     - Decimal
+     - Yes
+     - Overnight max (high)
+
+       *Check:* ``value >= -10 and value <= 60 and value >= t_out_min``
+   * - ``t_out_end``
+     - Decimal
+     - Yes
+     - At trap end
+
+       *Check:* ``range -10 to 60``
+   * - ``t_in_start``
+     - Decimal
+     - Yes
+     - At trap start
+
+       *Check:* ``range -10 to 60``
+   * - ``t_in_min``
+     - Decimal
+     - Yes
+     - Overnight min (low)
+
+       *Check:* ``range -10 to 60``
+   * - ``t_in_max``
+     - Decimal
+     - Yes
+     - Overnight max (high)
+
+       *Check:* ``value >= -10 and value <= 60 and value >= t_in_min``
+   * - ``t_in_end``
+     - Decimal
+     - Yes
+     - At trap end
+
+       *Check:* ``range -10 to 60``
+   * - ``rh_out_start``
+     - Decimal
+     - Yes
+     - At trap start
+
+       *Check:* ``range 0 to 100``
+   * - ``rh_out_min``
+     - Decimal
+     - Yes
+     - Overnight min (low)
+
+       *Check:* ``range 0 to 100``
+   * - ``rh_out_max``
+     - Decimal
+     - Yes
+     - Overnight max (high)
+
+       *Check:* ``value >= 0 and value <= 100 and value >= rh_out_min``
+   * - ``rh_out_end``
+     - Decimal
+     - Yes
+     - At trap end
+
+       *Check:* ``range 0 to 100``
+   * - ``rh_in_start``
+     - Decimal
+     - Yes
+     - At trap start
+
+       *Check:* ``range 0 to 100``
+   * - ``rh_in_min``
+     - Decimal
+     - Yes
+     - Overnight min (low)
+
+       *Check:* ``range 0 to 100``
+   * - ``rh_in_max``
+     - Decimal
+     - Yes
+     - Overnight max (high)
+
+       *Check:* ``value >= 0 and value <= 100 and value >= rh_in_min``
+   * - ``rh_in_end``
+     - Decimal
+     - Yes
+     - At trap end
+
+       *Check:* ``range 0 to 100``
+
+Section 7: Signature
+--------------------
+
+.. list-table::
+   :widths: 24 13 9 54
+   :header-rows: 1
+
+   * - Field Name
+     - Type
+     - Required
+     - Question, Choices & Logic
+   * - ``notes``
+     - Text
+     - No
+     - Additional environmental notes
+
+       *Hint:* Field observations regarding local microclimate shock, spraying, or smoke
+   * - ``full_name_signature``
+     - Text
+     - Yes
+     - Full name (as signature)
+
+       *Hint:* Type your full name

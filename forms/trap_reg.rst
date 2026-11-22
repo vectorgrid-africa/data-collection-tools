@@ -1,117 +1,239 @@
 Trap Registration Form
 ======================
 
-**Form Code:** ``TRAP-REG`` | **Study Component:** Adult Vector Surveillance
+**Form Code:** ``TRAP-REG`` | **Form ID:** ``vg_trap_reg`` | **Version:** ``2026112201`` | **Sampling Activity:** Adult Mosquito Sampling | **SOP Links:** :doc:`SOP 2.2 <../sops/sop_2_2>`, :doc:`SOP 2.3 <../sops/sop_2_2>`
 
-The Trap Registration Form registers fixed and mobile trap deployments, recording trapping methods, bait types, and exact placement references.
+The Trap Registration Form registers one trap per submission: the collection method, CO\ :sub:`2` bait (CDC light traps only), indoor or outdoor placement, and the household or outdoor site where the trap is placed.
 
-Section 1: Node & Location Metadata
------------------------------------
+How This Form Works
+-------------------
+
+* **Entity:** Creates a new record in the ``traps`` entity list. Properties written: ``registration_date``, ``node_code``, ``district``, ``method``, ``co2_bait``, ``indoor_outdoor``, ``outdoor_context``, ``household_id``, ``site_id``, ``geometry``, ``trap_id``, ``status``.
+* Indoor traps, and outdoor traps within 10 m of a house, are linked to a household picked from the ``households`` entity list. Traps at another outdoor site get a typed Site ID and a GPS point.
+* Trap ID is made automatically: household ID (or site ID) - method - ``IN`` / ``OUT``, for example ``HH001-CDC-IN``.
+* Method codes: ``DN`` Double Net, ``CDC`` CDC Light Trap, ``RB`` Resting Bucket, ``PKP`` Prokopack Aspirator, ``BGS`` BG Sentinel, ``other``.
+* The household link saved on the trap (``household_id``) is the household record's entity ID, not the typed Household ID.
+
+Section 1: Basic Information
+----------------------------
 
 .. list-table::
-   :widths: 25 20 20 35
+   :widths: 24 13 9 54
    :header-rows: 1
 
    * - Field Name
      - Type
      - Required
-     - Description / Choice List
-   * - ``node_code``
-     - Text
-     - Yes
-     - Observatory Node Code
-   * - ``country``
-     - Text
-     - Yes
-     - Country of surveillance
-   * - ``province``
-     - Text
-     - Yes
-     - Province or Region
-   * - ``district``
-     - Text
-     - Yes
-     - District
-   * - ``locality``
-     - Text
-     - Yes
-     - Locality
-   * - ``village_name``
-     - Text
-     - Yes
-     - Village Name
-   * - ``village_id``
-     - Text
-     - Yes
-     - Standard Village ID
+     - Question, Choices & Logic
    * - ``registration_date``
      - Date
      - Yes
-     - Registration Date
+     - Registration date
+
+       *Check:* ``value <= today()``
+
+       *Default:* today
+
+       *Saved to entity property* ``registration_date``
    * - ``collector_id``
      - Text
      - Yes
-     - Collector / Team ID
+     - Registered by
+   * - ``node_code``
+     - Text
+     - Yes
+     - Node Code
 
-Section 2: Trap Deployments
----------------------------
+       *Saved to entity property* ``node_code``
+   * - ``district``
+     - Select one
+     - Yes
+     - Select district
 
-Record for each registered trap deployment:
+       District list (set for each node)
+
+       *Hint:* Filter households by district
+
+       *Saved to entity property* ``district``
+
+Section 2: Trap Details
+-----------------------
 
 .. list-table::
-   :widths: 20 20 20 20 20
+   :widths: 24 13 9 54
    :header-rows: 1
 
-   * - Field
-     - Label
+   * - Field Name
      - Type
-     - Valid Codes
-     - Notes
-   * - ``trap_id``
-     - Trap Identifier
+     - Required
+     - Question, Choices & Logic
+   * - ``method``
+     - Select one
+     - Yes
+     - Collection method
+
+       ``DN`` = Double Net; ``CDC`` = CDC Light Trap; ``RB`` = Resting Bucket; ``PKP`` = Prokopack Aspirator; ``BGS`` = BG Sentinel; ``other`` = Other
+
+       *Saved to entity property* ``method``
+   * - ``method_other``
      - Text
-     - ``Node-Village-T01``
-     - Unique ID for trap
-   * - ``trap_method``
-     - Trapping Method
-     - Select One
-     - 1 to 6
-     - 1=DN, 2=CDC, 3=RB, 4=PKP, 5=BGS, 6=Other
+     - Yes
+     - Specify other method
+
+       *Shown if* ``method = other``
    * - ``co2_bait``
-     - CO₂ Bait Used
-     - Select One
-     - 1=Yes, 0=No
-     - For CDC light traps
-   * - ``trap_location``
-     - Placement
-     - Select One
-     - 1=Indoor, 2=Outdoor
-     - Broad location category
+     - Select one
+     - Yes
+     - CO2 bait used?
+
+       ``1`` = Yes; ``0`` = No
+
+       *Shown if* ``method = CDC``
+
+       *Hint:* CDC light trap only
+
+       *Saved to entity property* ``co2_bait``
+   * - ``indoor_outdoor``
+     - Select one
+     - Yes
+     - Indoor or Outdoor?
+
+       ``IN`` = Indoor; ``OUT`` = Outdoor
+
+       *Saved to entity property* ``indoor_outdoor``
    * - ``outdoor_context``
-     - Outdoor Context
-     - Select One
-     - 1=Within 10m, 2=Other
-     - Required if outdoor
-   * - ``placement_ref``
-     - Household / Site Ref
+     - Select one
+     - Yes
+     - Outdoor placement
+
+       ``1`` = Within 10 m of the house (peridomestic); ``2`` = Other outdoor site
+
+       *Shown if* ``indoor_outdoor = OUT``
+
+       *Saved to entity property* ``outdoor_context``
+
+Section 3: Household Selection
+------------------------------
+
+This section is shown only if ``indoor_outdoor = IN or outdoor_context = 1``.
+
+.. list-table::
+   :widths: 24 13 9 54
+   :header-rows: 1
+
+   * - Field Name
+     - Type
+     - Required
+     - Question, Choices & Logic
+   * - ``household``
+     - Select record
+     - Yes
+     - Select household
+
+       Pick a record from the ``households`` entity list (filtered by district)
+
+       *Hint:* The household where the trap is placed
+
+       *Saved to entity property* ``household_id``
+
+Section 4: Collection Site
+--------------------------
+
+This section is shown only if ``indoor_outdoor = OUT and outdoor_context = 2``.
+
+.. list-table::
+   :widths: 24 13 9 54
+   :header-rows: 1
+
+   * - Field Name
+     - Type
+     - Required
+     - Question, Choices & Logic
+   * - ``site_id``
      - Text
-     - Household ID or GPS
-     - Links trap to house
+     - Yes
+     - Site ID
+
+       *Saved to entity property* ``site_id``
+   * - ``site_gps``
+     - GPS point
+     - Yes
+     - GPS Location
+
+       *Hint:* Capture site coordinates (within 5 m)
+
+       *Saved to entity property* ``geometry``
+
+Section 5: Placement
+--------------------
+
+.. list-table::
+   :widths: 24 13 9 54
+   :header-rows: 1
+
+   * - Field Name
+     - Type
+     - Required
+     - Question, Choices & Logic
    * - ``hardware_serial``
-     - Serial / Barcode
      - Text
-     - Device serial
-     - Equipment identification
+     - No
+     - Hardware serial / barcode
    * - ``placement_notes``
-     - Placement Notes
      - Text
-     - Descriptive text
-     - Vegetation or shade notes
+     - No
+     - Placement notes / microhabitat
+
+Section 6: Trap ID
+------------------
+
+.. list-table::
+   :widths: 24 13 9 54
+   :header-rows: 1
+
+   * - Field Name
+     - Type
+     - Required
+     - Question, Choices & Logic
+   * - ``trap_id``
+     - Calculated
+     - Auto
+     - Automatic Trap ID: household ID (or site ID) - method - ``IN``/``OUT``, e.g. ``HH001-CDC-IN``
+
+       *Saved to entity property* ``trap_id``
+   * - ``status``
+     - Calculated
+     - Auto
+     - Fixed value: ``active``
+
+       *Saved to entity property* ``status``
+
+Section 7: Signature
+--------------------
+
+.. list-table::
+   :widths: 24 13 9 54
+   :header-rows: 1
+
+   * - Field Name
+     - Type
+     - Required
+     - Question, Choices & Logic
+   * - ``full_name_signature``
+     - Text
+     - Yes
+     - Full name (as signature)
+
+       *Hint:* Type your full name
+   * - ``notes``
+     - Text
+     - No
+     - Additional notes
 
 Trap Status Update
 ------------------
 
-For subsequent operational rounds, trap status updates (maintenance, malfunctions, battery failures, and retirements) are logged using the update form:
+For later operational rounds, trap status changes (maintenance, malfunction, retirement) are recorded with the update form:
 
 .. toctree::
    :maxdepth: 2

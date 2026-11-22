@@ -1,33 +1,31 @@
-Household Surveillance
-======================
+Site & Household Selection
+==========================
 
-Household Surveillance establishes household occupant demographics, housing characteristics, bed net coverage, livestock proximity, human sleeping patterns, and baseline environmental exposure around homes.
+In each sampling site, ten households are selected for indoor and peridomestic mosquito collections. The household forms register each selected household and record the household information needed around these collections: house structure, the people sleeping in each room and in the trap room, bed nets, livestock and nearby aquatic habitats.
 
 Scope & Objectives
 ------------------
-- Record household occupants by age group (<5 years, 5 to 15 years, >15 years) and sex.
-- Characterise house construction materials (roof, walls, floor, open eaves, screening).
-- Record insecticide-treated net (ITN/LLIN) ownership, net condition, and hanging status.
-- Track structural house modifications, bed net replacements, and resident mobility over time.
-- Record human nocturnal activity, evening outdoor gathering, and age-specific net use.
-- Assess proximity to animal sheds, latrines, and nearby aquatic breeding sites.
+- Register each selected household (monthly sentinel or biannual supplementary) with its location and GPS point.
+- Record the people sleeping in the house by age group (under 5 years, 5 to 15 years, over 15 years) and sex, overall and room by room, including the room with the trap.
+- Characterise house construction (house type, roof, walls, interior wall surface, floor, eaves, ceiling, windows and doors).
+- Count bed nets used in the house: treated (ITN/LLIN), untreated and unidentified.
+- Track household status (active, withdrawn, refused, relocated, temporarily inactive) and changes to the house, the people living there and bed nets over time.
+- Assess proximity to animal sheds, latrines, livestock and nearby aquatic habitats.
 
 Associated Forms
 ----------------
-- :doc:`../forms/hh_reg`: Baseline household registration, housing characteristics, and room-by-room occupant roster.
-- :doc:`../forms/hh_upd`: Periodic household status update for house modifications, occupant mobility, and bed net updates.
-- :doc:`../forms/hh_beh`: Human behaviour observation of direct contact, outdoor vs. indoor sleeping patterns, and net usage.
+- :doc:`../forms/hh_reg`: Baseline household registration, housing characteristics and the people sleeping in each room. Creates the ``households`` entity record.
+- :doc:`../forms/hh_upd`: Household status update, people sleeping in the house last night, and the selected sections of the registration that changed.
 
 One Health & Host Environment Context
 -------------------------------------
-Household surveillance forms (``HH-REG`` and ``HH-UPD``) capture animal shelters, distance to livestock corrals, and livestock presence (cattle, goats, pigs, chickens). These parameters provide essential context for:
+The household forms (``HH-REG`` and ``HH-UPD``) record animal sheds and their distance from the house, chickens kept inside at night, and livestock near the house (cattle, goats, chickens, pigs, other). These provide context for:
 
-* **Host Selection & Foraging Behaviour:** Providing host counts to determine human blood index (HBI) and forage ratios from blood-fed vectors.
-* **Zoonotic Arbovirus Risk:** Evaluating proximity to potential amplifying hosts (pigs, goats, and cattle for zoonotic arboviruses such as Rift Valley fever).
-* **Peridomestic Vector Densities:** Assessing whether animal sheds divert vectors away from human sleeping rooms (zooprophylaxis) or attract elevated mosquito numbers to the compound.
+* **Host Selection & Foraging Behaviour:** Host availability for interpreting the human blood index (HBI) from blood-fed vectors.
+* **Zoonotic Arbovirus Risk:** Proximity to potential amplifying hosts (for example pigs, goats and cattle for Rift Valley fever).
+* **Peridomestic Vector Densities:** Whether animal sheds divert vectors away from human sleeping rooms or attract more mosquitoes to the compound.
 
 Relevant SOPs
 -------------
-- :doc:`../sops/sop_1_1`: Site and Household Selection (Cluster sampling, household selection, enrolment).
-- :doc:`../sops/sop_2_1`: Essential Metadata and Environmental Variables (GPS precision, geography standards).
-- :doc:`../sops/sop_2_2`: Adult Mosquito Trapping & Sampling Methods (DN-Mini and HLC observation protocols).
+- :doc:`../sops/sop_1_1`: Site and Household Selection (site rotation, household selection, replacement).
+- :doc:`../sops/sop_2_1`: Essential Metadata and Environmental Variables (site, household and environmental metadata).

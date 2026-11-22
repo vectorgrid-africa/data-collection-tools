@@ -1,150 +1,279 @@
 Extreme Weather Event Form
 ==========================
 
-**Form Code:** ``ENV-EXT`` | **Study Component:** Adult Vector Surveillance | **SOP Links:** SOP 2.1
+**Form Code:** ``ENV-EXT`` | **Form ID:** ``vg_env_ext`` | **Version:** ``2026112201`` | **Sampling Activity:** Adult Mosquito Sampling | **SOP Links:** :doc:`SOP 2.1 <../sops/sop_2_1>`
 
-The Extreme Weather Event Form is an event-triggered surveillance tool for documenting extreme weather events (such as floods, cyclones, severe droughts, and heatwaves). It systematically records event severity, ecological and habitat alterations, community displacement, and disruptions to entomological surveillance networks.
+The Extreme Weather Event Form is completed when an extreme weather event affects a node. It records where and when the event happened, its type and severity, its impact on the environment and on people, and its effect on trapping.
 
-Section 1: Node & Event Characterisation
-----------------------------------------
+How This Form Works
+-------------------
+
+* The event location is asked in full, with a GPS point. Country is preset in the form.
+* Event code = ``EVT`` - node - event start date - event type. It is the same for every assessment of one event, so repeat assessments can be linked.
+* Event types: Earthquake, Extreme temperature, Flood, Storm / Cyclones, Wildfire, Drought, Other. Severity: Low, Moderate, Severe, Extreme.
+
+Section 1: Location
+-------------------
 
 .. list-table::
-   :widths: 25 20 20 35
+   :widths: 24 13 9 54
    :header-rows: 1
 
    * - Field Name
      - Type
      - Required
-     - Description / Choice List
+     - Question, Choices & Logic
    * - ``node_code``
      - Text
      - Yes
-     - Observatory Node Code
-   * - ``village_id``
-     - Text
+     - Node Code
+   * - ``country``
+     - Calculated
+     - Auto
+     - Preset in the form to the node's country
+   * - ``district``
+     - Select one
      - Yes
-     - Sentinel Village Identifier
-   * - ``event_id``
-     - Text
+     - District
+
+       District list (set for each node)
+   * - ``ward``
+     - Select one
      - Yes
-     - Unique Extreme Event Identifier
-   * - ``event_date``
+     - Ward
+
+       Ward list (set for each node)
+   * - ``event_village``
+     - Select one
+     - Yes
+     - Event Village
+
+       Village list (set for each node)
+   * - ``event_gps``
+     - GPS point
+     - Yes
+     - GPS coordinates
+
+Section 2: Extreme Event Context & Recorder
+-------------------------------------------
+
+.. list-table::
+   :widths: 24 13 9 54
+   :header-rows: 1
+
+   * - Field Name
+     - Type
+     - Required
+     - Question, Choices & Logic
+   * - ``assessment_date``
      - Date
      - Yes
-     - Date of event onset or recording
+     - Date of Event Assessment
+
+       *Check:* ``value <= today()``
+
+       *Default:* today
    * - ``collector_id``
      - Text
      - Yes
-     - Collector / Team ID
+     - Field observer / team ID
+   * - ``assessment_timing``
+     - Select one
+     - Yes
+     - Assessment Timing
 
-Section 2: Event Type & Severity
+       ``1`` = Immediate (within 48 hours); ``2`` = Post-Event
+
+Section 3: Event Type & Severity
 --------------------------------
 
 .. list-table::
-   :widths: 25 20 20 35
+   :widths: 24 13 9 54
    :header-rows: 1
 
    * - Field Name
      - Type
      - Required
-     - Description / Choice List
-   * - ``event_type``
-     - Select One
+     - Question, Choices & Logic
+   * - ``event_name``
+     - Text
      - Yes
-     - 1=Flood, 2=Tropical Cyclone or Severe Storm, 3=Prolonged Drought, 4=Heatwave, 5=Cold Snap, 99=Other
-   * - ``event_severity``
-     - Select One
-     - Yes
-     - 1=Minor, 2=Moderate, 3=Severe, 4=Catastrophic
-   * - ``event_duration_days``
-     - Integer
-     - Yes
-     - Duration of extreme conditions in days
-   * - ``warning_system_active``
-     - Select One
-     - Yes
-     - Community early warning alert received (1=Yes, 0=No)
+     - Extreme event official name
 
-Section 3: Environmental & Aquatic Habitat Impacts
---------------------------------------------------
+       *Hint:* Common or administrative name of the extreme weather event
+   * - ``event_start_date``
+     - Date
+     - Yes
+     - Event start date
+
+       *Check:* ``value <= assessment_date``
+
+       *Hint:* Enter the date the event began.
+   * - ``event_type``
+     - Select one
+     - Yes
+     - Extreme event type
+
+       ``1`` = Earthquake; ``2`` = Extreme temperature; ``3`` = Flood; ``4`` = Storm / Cyclones; ``5`` = Wildfire; ``6`` = Drought; ``7`` = Other (specify)
+   * - ``event_type_other``
+     - Text
+     - Yes
+     - Specify other event type
+
+       *Shown if* ``event_type = 7``
+   * - ``event_severity``
+     - Select one
+     - Yes
+     - Event severity scale
+
+       ``1`` = Low; ``2`` = Moderate; ``3`` = Severe; ``4`` = Extreme
+   * - ``event_code``
+     - Calculated
+     - Auto
+     - Automatic event code: ``EVT`` - node - event start date (``YYYYMMDD``) - event type, e.g. ``EVT-<node>-20261120-Flood``. The same for every assessment of one event
+
+Section 4: Impact on the Natural & Aquatic Environment
+------------------------------------------------------
 
 .. list-table::
-   :widths: 25 20 20 35
+   :widths: 24 13 9 54
    :header-rows: 1
 
    * - Field Name
      - Type
      - Required
-     - Description / Choice List
+     - Question, Choices & Logic
    * - ``vegetation_loss``
-     - Select One
+     - Select one
      - Yes
-     - Canopy or vegetation destroyed (1=Yes, 0=None)
-   * - ``wetland_expansion``
-     - Select One
-     - Yes
-     - Extensive new floodplains or standing water created (1=Yes, 0=None)
-   * - ``soil_moisture_change``
-     - Select One
-     - Yes
-     - 1=Extreme saturation or mud, 2=Extreme drought or cracked soil, 0=Normal
-   * - ``other_environmental_disruption``
-     - Text
-     - No
-     - Description of other ecological disturbances
+     - Vegetation loss / canopy damage
 
-Section 4: Human Behaviour & Household Displacement
+       ``1`` = Yes (significant forest / shrub / crop canopy destroyed); ``0`` = None
+   * - ``wetland_expansion``
+     - Select one
+     - Yes
+     - Wetland expansion / flooding
+
+       ``1`` = Yes (extensive floodplains, ponds, or standing pools created); ``0`` = None
+   * - ``soil_moisture``
+     - Select one
+     - Yes
+     - Soil moisture change / drying
+
+       ``1`` = Extreme saturation / mud; ``2`` = Extreme drought / cracked soil; ``0`` = Normal
+   * - ``other_env_impact``
+     - Select one
+     - Yes
+     - Other environmental disruption
+
+       ``1`` = Yes; ``0`` = None
+   * - ``other_env_impact_desc``
+     - Text
+     - Yes
+     - Describe the impact
+
+       *Shown if* ``other_env_impact = 1``
+
+Section 5: Impact on Human Behaviour & Displacement
 ---------------------------------------------------
 
 .. list-table::
-   :widths: 25 20 20 35
+   :widths: 24 13 9 54
    :header-rows: 1
 
    * - Field Name
      - Type
      - Required
-     - Description / Choice List
-   * - ``population_displacement``
-     - Select One
+     - Question, Choices & Logic
+   * - ``displacement``
+     - Select one
      - Yes
-     - Residents displaced from houses (1=Yes, 0=None)
-   * - ``displaced_persons_count``
-     - Integer
-     - No
-     - Estimated count of displaced individuals
-   * - ``temporary_shelter``
-     - Select One
-     - Yes
-     - Communal camps or emergency shelters in use (1=Yes, 0=None)
-   * - ``people_sleeping_outdoors``
-     - Select One
-     - Yes
-     - Increased outdoor sleeping due to heat or house collapse (1=Yes, 0=None)
-   * - ``livelihood_disrupted``
-     - Select One
-     - Yes
-     - Farming, market, or schooling routines disrupted (1=Yes, 0=None)
+     - Population displacement
 
-Section 5: Surveillance Continuity & Trap Impact
-------------------------------------------------
+       ``1`` = Yes (residents displaced / evacuated from homes); ``0`` = None displaced
+   * - ``displaced_count``
+     - Integer
+     - Yes
+     - Number of people displaced
+
+       *Shown if* ``displacement = 1``
+
+       *Check:* ``value >= 1``
+   * - ``temporary_shelter``
+     - Select one
+     - Yes
+     - Temporary shelter utilization
+
+       ``1`` = Yes (displaced camps, school halls, or communal tents occupied); ``0`` = None
+   * - ``sleeping_outdoors``
+     - Select one
+     - Yes
+     - People sleeping outdoors
+
+       ``1`` = Yes (increased outdoor sleeping due to heat / structural collapse); ``0`` = None
+   * - ``livelihood_disrupted``
+     - Select one
+     - Yes
+     - Livelihood & daily activities disrupted
+
+       ``1`` = Yes (farming, school, markets, or cooking disrupted); ``0`` = Normal routines
+   * - ``other_human_impact``
+     - Select one
+     - Yes
+     - Other human behaviour impacts
+
+       ``1`` = Yes; ``0`` = None
+   * - ``other_human_impact_desc``
+     - Text
+     - Yes
+     - Describe the impact
+
+       *Shown if* ``other_human_impact = 1``
+
+Section 6: Surveillance Continuity & Incident Log
+-------------------------------------------------
 
 .. list-table::
-   :widths: 25 20 20 35
+   :widths: 24 13 9 54
    :header-rows: 1
 
    * - Field Name
      - Type
      - Required
-     - Description / Choice List
+     - Question, Choices & Logic
    * - ``trapping_continuity``
-     - Select One
+     - Select one
      - Yes
-     - 1=Trapping continuing normally, 2=Partial operation, 3=Full surveillance pause
-   * - ``traps_affected_count``
+     - Entomological trapping continuity
+
+       ``1`` = Trapping continuing normally; ``2`` = Partial operation; ``3`` = Full pause
+   * - ``traps_affected``
      - Integer
      - Yes
-     - Count of sentinel trap stations submerged, damaged, or unreachable
-   * - ``continuity_remarks``
+     - Sentinel trap stations affected
+
+       *Check:* ``value >= 0``
+
+       *Hint:* Number of sentinel trap stations submerged, damaged, or inaccessible.
+
+Section 7: Signature
+--------------------
+
+.. list-table::
+   :widths: 24 13 9 54
+   :header-rows: 1
+
+   * - Field Name
+     - Type
+     - Required
+     - Question, Choices & Logic
+   * - ``notes``
      - Text
      - No
-     - Corrective measures and observatory recovery timeline
+     - Observer incident remarks
+   * - ``full_name_signature``
+     - Text
+     - Yes
+     - Full name (as signature)
+
+       *Hint:* Type your full name
