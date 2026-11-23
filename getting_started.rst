@@ -3,10 +3,10 @@ Getting Started
 
 **VectorGrid-Africa** is a coordinated network of mosquito-monitoring sites in East and Southern Africa, with nodes in Tanzania, Kenya, Mozambique, South Africa and Madagascar. All nodes follow the same harmonised field and laboratory protocols (the VectorGrid SOPs), so that data on mosquito vectors, vector-borne pathogens and their environmental drivers can be compared across countries, surveillance types and time.
 
-Sampling Activities
--------------------
+Components
+----------
 
-The forms cover three sampling activities:
+The forms are structured into three components:
 
 1. :doc:`components/household`
    Captures the selected households' housing characteristics (roof, wall, floor, and open eaves), the people sleeping in each room, bed nets in use (treated, untreated and unidentified), and livestock proximity.
@@ -22,7 +22,7 @@ Digital Data Collection Workflow
 
 VectorGrid defines harmonised variables and categorical codebooks across all nodes.
 
-To facilitate field deployment, **ODK (Open Data Kit)** is provided as the primary reference implementation. Participating partner institutions and observatory nodes are free to adapt these standardised forms into other data capture tools (such as REDCap or institutional data systems) provided that core variable names, data types, and validation logic are preserved.
+To facilitate field deployment, **ODK (Open Data Kit)** is provided as the primary reference implementation. Participating partner institutions and observatory nodes are free to adapt these standardised forms into other data capture tools (such as REDCap or institutional data systems) provided that core variable names and validation logic are preserved.
 
 ODK Reference Implementation:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

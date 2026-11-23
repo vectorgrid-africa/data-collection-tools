@@ -13,7 +13,7 @@ Welcome to the **VectorGrid Data Collection Tools** documentation. This site is 
 .. toctree::
    :maxdepth: 2
    :titlesonly:
-   :caption: Sampling Activities
+   :caption: Components
 
    components/household
    components/adult_vectors

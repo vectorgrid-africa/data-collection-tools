@@ -1,7 +1,7 @@
 Mosquito Dissection & Parity Form
 =================================
 
-**Form Code:** ``SPEC-DIS`` | **Form ID:** ``vg_spec_dis`` | **Version:** ``2026112201`` | **Sampling Activity:** Adult Mosquito Sampling | **SOP Links:** SOP 1.1.1, :doc:`SOP 2.4 <../sops/sop_2_4>`
+**Form Code:** ``SPEC-DIS`` | **Form ID:** ``vg_spec_dis`` | **Version:** ``2026112201`` | **Component:** Adult Mosquito Sampling | **SOP Links:** SOP 1.1.1, :doc:`SOP 2.4 <../sops/sop_2_4>`
 
 The Mosquito Dissection and Parity Form records fresh dissections of female *Anopheles* from one collection. For each specimen it records midgut content, spermatheca (insemination), parity, Christophers egg stage, sac stage, maximum dilatations, wing length and condition, and it calculates the parity rate.
 

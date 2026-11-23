@@ -1,7 +1,7 @@
 Habitat Survey & Dipping Form
 =============================
 
-**Form Code:** ``HAB-SRV`` | **Form ID:** ``vg_hab_srv`` | **Version:** ``2026112201`` | **Sampling Activity:** Larval Sampling | **SOP Links:** :doc:`SOP 3.1 <../sops/sop_3_1>`
+**Form Code:** ``HAB-SRV`` | **Form ID:** ``vg_hab_srv`` | **Version:** ``2026112201`` | **Component:** Larval Sampling | **SOP Links:** :doc:`SOP 3.1 <../sops/sop_3_1>`
 
 The Habitat Survey and Dipping Form records one visit to a registered habitat or a domestic container: habitat characteristics, size, vegetation, physico-chemical readings, larvae, pupae and predators per dip, and the samples kept for the laboratory. A summary of totals is shown before signing.
 

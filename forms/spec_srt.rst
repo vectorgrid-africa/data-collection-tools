@@ -1,7 +1,7 @@
 Mosquito Collection & Sorting Form
 ==================================
 
-**Form Code:** ``SPEC-SRT`` | **Form ID:** ``vg_spec_srt`` | **Version:** ``2026112201`` | **Sampling Activity:** Adult Mosquito Sampling | **SOP Links:** :doc:`SOP 2.2 <../sops/sop_2_2>`, :doc:`SOP 2.4 <../sops/sop_2_4>`
+**Form Code:** ``SPEC-SRT`` | **Form ID:** ``vg_spec_srt`` | **Version:** ``2026112201`` | **Component:** Adult Mosquito Sampling | **SOP Links:** :doc:`SOP 2.2 <../sops/sop_2_2>`, :doc:`SOP 2.4 <../sops/sop_2_4>`
 
 The Mosquito Collection and Sorting Form records one trap collection (or one batch of adults reared from larvae): collection timing and validity, then counts by species, sex and physiological status, how the mosquitoes were packed into tubes, bycatch, and how many *Anopheles* went to fresh dissection. A review screen summarises the record before it is signed.
 

@@ -1,7 +1,7 @@
 Household Status Update Form
 ============================
 
-**Form Code:** ``HH-UPD`` | **Form ID:** ``vg_hh_upd`` | **Version:** ``2026112201`` | **Sampling Activity:** Site & Household Selection | **SOP Links:** :doc:`SOP 1.1 <../sops/sop_1_1>`, :doc:`SOP 2.1 <../sops/sop_2_1>`
+**Form Code:** ``HH-UPD`` | **Form ID:** ``vg_hh_upd`` | **Version:** ``2026112201`` | **Component:** Site & Household Selection | **SOP Links:** :doc:`SOP 1.1 <../sops/sop_1_1>`, :doc:`SOP 2.1 <../sops/sop_2_1>`
 
 The Household Status Update Form records changes to a registered household at later sampling rounds. Part A records the new status and, for active households, who slept in the house last night. Part B lets the field worker pick only the sections that changed (location, household head, members, house structure, windows and doors, bed nets, other features, nearby aquatic habitat, sleep behaviour, room details). Only the selected sections are shown.
 

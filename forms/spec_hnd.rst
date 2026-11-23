@@ -1,7 +1,7 @@
 Sample Handover & Custody Form
 ==============================
 
-**Form Code:** ``SPEC-HND`` | **Form ID:** ``vg_spec_hnd`` | **Version:** ``2026112201`` | **Sampling Activity:** Adult Mosquito Sampling and Larval Sampling | **SOP Links:** :doc:`SOP 2.4 <../sops/sop_2_4>`
+**Form Code:** ``SPEC-HND`` | **Form ID:** ``vg_spec_hnd`` | **Version:** ``2026112201`` | **Component:** Adult Mosquito Sampling and Larval Sampling | **SOP Links:** :doc:`SOP 2.4 <../sops/sop_2_4>`
 
 The Sample Handover and Custody Form documents one shipping container sent from a field node to a laboratory: routing and dispatch, cold-chain checks, a manifest of the plates, boxes or batches inside, and the three chain-of-custody sign-offs (field team, courier and receiving laboratory).
 

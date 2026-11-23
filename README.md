@@ -8,7 +8,7 @@ Technical documentation, standard operating procedures (SOPs), form reference sp
 
 ## Overview
 
-This repository contains the complete Sphinx documentation source for the VectorGrid data collection framework across three sampling activities:
+This repository contains the complete Sphinx documentation source for the VectorGrid data collection framework across three components:
 
 1. **Site & Household Selection:** Registration of the selected households, house structure, the people sleeping in each room, bed nets and livestock.
 2. **Adult Mosquito Sampling:** Standardised trapping methods (CDC light traps, BG-Sentinel, DN-Mini, resting buckets, Prokopack aspiration, pit traps and optional pyrethrum spray catches), human-mosquito contact and human behaviour observations, morphological identification, physiological status, dissection, specimen preservation, and sample chain of custody.

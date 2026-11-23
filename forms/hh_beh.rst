@@ -1,7 +1,7 @@
 Human Behaviour Observation Form
 ================================
 
-**Form Code:** ``HH-BEH`` | **Form ID:** ``vg_hh_beh`` | **Version:** ``2026112201`` | **Sampling Activity:** Adult Mosquito Sampling | **SOP Links:** :doc:`SOP 2.1 <../sops/sop_2_1>`, :doc:`SOP 2.2.1 <../sops/sop_2_2>`
+**Form Code:** ``HH-BEH`` | **Form ID:** ``vg_hh_beh`` | **Version:** ``2026112201`` | **Component:** Adult Mosquito Sampling | **SOP Links:** :doc:`SOP 2.1 <../sops/sop_2_1>`, :doc:`SOP 2.2.1 <../sops/sop_2_2>`
 
 The Human Behaviour Observation Form records biannual human-mosquito contact sampling at a registered household: the people present and their bed net use indoors and outdoors last night, interventions introduced between rounds, the indoor and outdoor volunteer shifts (DN-Mini or HLC), and an hourly log of collection cups, mosquito counts and interruptions.
 
