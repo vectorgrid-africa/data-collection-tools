@@ -263,7 +263,7 @@ This section is shown only if ``mosquitoes_caught = 1``.
    * - ``an_species``
      - Select one
      - Yes
-     - Anopheles specie
+     - Anopheles species
 
        Species list set for each node (see :doc:`../codebooks`)
    * - ``an_species_other``
