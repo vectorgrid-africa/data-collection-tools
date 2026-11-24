@@ -1,7 +1,7 @@
 Household Registration Form
 ===========================
 
-**Form Code:** ``HH-REG`` | **Form ID:** ``vg_hh_reg`` | **Version:** ``2026112201`` | **Component:** Site & Household Selection | **SOP Links:** :doc:`SOP 1.1 <../sops/sop_1_1>`, :doc:`SOP 2.1 <../sops/sop_2_1>`
+**Form Code:** ``HH-REG`` | **Form ID:** ``vg_hh_reg`` | **Version:** ``2026112401`` | **Component:** Site & Household Selection | **SOP Links:** :doc:`SOP 1.1 <../sops/sop_1_1>`, :doc:`SOP 2.1 <../sops/sop_2_1>`
 
 The Household Registration Form registers a selected household once, at baseline. It records the household's location and GPS point, the people who sleep in the house by age group and sex, house structure, windows and doors, bed nets, other features, nearby aquatic habitats, usual sleep and wake times, and the number of people sleeping in each room.
 
@@ -78,7 +78,9 @@ Section 1: Basic Information
    * - ``collector_id``
      - Text
      - Yes
-     - Field worker
+     - Collector ID (registered staff ID)
+
+       *Hint:* Your registered staff ID, not your name
 
 Section 2: Location
 -------------------

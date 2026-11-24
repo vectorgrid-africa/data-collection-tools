@@ -1,9 +1,9 @@
 Environmental Observation Form
 ==============================
 
-**Form Code:** ``ENV-OBS`` | **Form ID:** ``vg_env_obs`` | **Version:** ``2026112201`` | **Component:** Adult Mosquito Sampling | **SOP Links:** :doc:`SOP 2.1 <../sops/sop_2_1>`, :doc:`SOP 2.2 <../sops/sop_2_2>`
+**Form Code:** ``ENV-OBS`` | **Form ID:** ``vg_env_obs`` | **Version:** ``2026112401`` | **Component:** Adult Mosquito Sampling | **SOP Links:** :doc:`SOP 2.1 <../sops/sop_2_1>`, :doc:`SOP 2.2 <../sops/sop_2_2>`
 
-The Environmental Observation Form records the weather and microclimate on an adult trapping night at a registered household: weather at trap start and end, rainfall, wind speed, the temperature and humidity data loggers used, and manual readings when a handheld meter is used or a logger fails.
+The Environmental Observation Form records the weather, temperature and humidity on an adult trapping night at a registered household: weather at trap start and end, rainfall, wind speed, the temperature and humidity data loggers used, and manual readings when a handheld meter is used or a logger fails.
 
 How This Form Works
 -------------------
@@ -54,8 +54,8 @@ Section 1: Household Selection
      - Auto
      - Taken from the selected ``households`` record (property ``ward``)
 
-Section 2: Meteorological Sampling Event
-----------------------------------------
+Section 2: Sampling Event
+-------------------------
 
 .. list-table::
    :widths: 24 13 9 54
@@ -78,7 +78,9 @@ Section 2: Meteorological Sampling Event
    * - ``collector_id``
      - Text
      - Yes
-     - Collector / team ID
+     - Collector ID (registered staff ID)
+
+       *Hint:* Your registered staff ID, not your name
    * - ``method``
      - Select one
      - Yes
@@ -216,8 +218,8 @@ This section is shown only if ``method = 1``.
 
        ``1`` = Pass; ``0`` = Fail
 
-Section 6: Microclimate Temperature & Humidity
-----------------------------------------------
+Section 6: Indoor & Outdoor Temperature & Humidity
+--------------------------------------------------
 
 This section is shown only if ``method = 2 or loggers_failed > 0``.
 
@@ -346,7 +348,7 @@ Section 7: Signature
      - No
      - Additional environmental notes
 
-       *Hint:* Field observations regarding local microclimate shock, spraying, or smoke
+       *Hint:* Field observations (e.g. sudden weather change, spraying or smoke)
    * - ``full_name_signature``
      - Text
      - Yes

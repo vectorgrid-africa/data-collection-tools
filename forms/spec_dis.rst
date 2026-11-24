@@ -1,7 +1,7 @@
 Mosquito Dissection & Parity Form
 =================================
 
-**Form Code:** ``SPEC-DIS`` | **Form ID:** ``vg_spec_dis`` | **Version:** ``2026112201`` | **Component:** Adult Mosquito Sampling | **SOP Links:** SOP 1.1.1, :doc:`SOP 2.4 <../sops/sop_2_4>`
+**Form Code:** ``SPEC-DIS`` | **Form ID:** ``vg_spec_dis`` | **Version:** ``2026112401`` | **Component:** Adult Mosquito Sampling | **SOP Links:** SOP 1.1.1, :doc:`SOP 2.4 <../sops/sop_2_4>`
 
 The Mosquito Dissection and Parity Form records fresh dissections of female *Anopheles* from one collection. For each specimen it records midgut content, spermatheca (insemination), parity, Christophers egg stage, sac stage, maximum dilatations, wing length and condition, and it calculates the parity rate.
 
@@ -9,7 +9,7 @@ How This Form Works
 -------------------
 
 * Pick the source the same way as SPEC-SRT (district, household, active trap), or type the source vial ID for adults reared from larvae. With the collection date, the form rebuilds the same Collection ID as SPEC-SRT, so the ID is not typed.
-* Specimen ID = Collection ID - species - specimen number. Parity rate = parous / (parous + nulliparous) x 100.
+* Specimen ID = Collection ID - species - specimen number, for example ``HH001-CDC-IN-20261120-gambiae-1``. Parity rate = parous / (parous + nulliparous) x 100.
 * Egg stage, sac stage, dilatations and wing length are required for each dissected specimen.
 
 Section 1: Session Information
@@ -38,7 +38,9 @@ Section 1: Session Information
    * - ``technician``
      - Text
      - Yes
-     - Technician
+     - Dissector ID (registered staff ID)
+
+       *Hint:* Your registered staff ID, not your name
 
 Section 2: Sample Selection
 ---------------------------
@@ -123,10 +125,24 @@ This section is shown only if ``from_trap = 1``.
      - Calculated
      - Auto
      - Taken from the selected ``traps`` record (property ``trap_id``)
+   * - ``trap_method``
+     - Calculated
+     - Auto
+     - Taken from the selected ``traps`` record (property ``method``)
    * - ``node_code``
      - Calculated
      - Auto
      - Taken from the selected ``traps`` record (property ``node_code``)
+   * - ``bg_bag``
+     - Select one
+     - Yes
+     - BG bag
+
+       ``D`` = Day bag (daytime catch); ``N`` = Night bag (night catch)
+
+       *Hint:* The bag this collection came from, as on SPEC-SRT
+
+       *Shown if* ``trap_method = BGS``
 
 Section 5: Specimen Source
 --------------------------
@@ -178,7 +194,7 @@ Section 6: Collection Date & Species
    * - ``collection_record_id``
      - Calculated
      - Auto
-     - Automatic Collection ID: Trap ID (or source vial ID) - collection date. It matches the Collection ID on SPEC-SRT
+     - Automatic Collection ID: Trap ID (or source vial ID) - collection date, plus ``-D`` or ``-N`` for a BG bag. It matches the Collection ID on SPEC-SRT
    * - ``num_species``
      - Integer
      - Yes

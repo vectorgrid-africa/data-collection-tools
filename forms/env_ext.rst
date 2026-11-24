@@ -1,7 +1,7 @@
 Extreme Weather Event Form
 ==========================
 
-**Form Code:** ``ENV-EXT`` | **Form ID:** ``vg_env_ext`` | **Version:** ``2026112201`` | **Component:** Adult Mosquito Sampling | **SOP Links:** :doc:`SOP 2.1 <../sops/sop_2_1>`
+**Form Code:** ``ENV-EXT`` | **Form ID:** ``vg_env_ext`` | **Version:** ``2026112401`` | **Component:** Adult Mosquito Sampling | **SOP Links:** :doc:`SOP 2.1 <../sops/sop_2_1>`
 
 The Extreme Weather Event Form is completed when an extreme weather event affects a node. It records where and when the event happened, its type and severity, its impact on the environment and on people, and its effect on trapping.
 
@@ -76,7 +76,9 @@ Section 2: Extreme Event Context & Recorder
    * - ``collector_id``
      - Text
      - Yes
-     - Field observer / team ID
+     - Observer ID (registered staff ID)
+
+       *Hint:* Your registered staff ID, not your name
    * - ``assessment_timing``
      - Select one
      - Yes
@@ -202,7 +204,7 @@ Section 5: Impact on Human Behaviour & Displacement
    * - ``temporary_shelter``
      - Select one
      - Yes
-     - Temporary shelter utilization
+     - Temporary shelter use
 
        ``1`` = Yes (displaced camps, school halls, or communal tents occupied); ``0`` = None
    * - ``sleeping_outdoors``

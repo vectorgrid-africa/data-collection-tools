@@ -1,7 +1,7 @@
 Mosquito Collection & Sorting Form
 ==================================
 
-**Form Code:** ``SPEC-SRT`` | **Form ID:** ``vg_spec_srt`` | **Version:** ``2026112201`` | **Component:** Adult Mosquito Sampling | **SOP Links:** :doc:`SOP 2.2 <../sops/sop_2_2>`, :doc:`SOP 2.4 <../sops/sop_2_4>`
+**Form Code:** ``SPEC-SRT`` | **Form ID:** ``vg_spec_srt`` | **Version:** ``2026112401`` | **Component:** Adult Mosquito Sampling | **SOP Links:** :doc:`SOP 2.2 <../sops/sop_2_2>`, :doc:`SOP 2.4 <../sops/sop_2_4>`
 
 The Mosquito Collection and Sorting Form records one trap collection (or one batch of adults reared from larvae): collection timing and validity, then counts by species, sex and physiological status, how the mosquitoes were packed into tubes, bycatch, and how many *Anopheles* went to fresh dissection. A review screen summarises the record before it is signed.
 
@@ -9,11 +9,11 @@ How This Form Works
 -------------------
 
 * Part A: for a trap catch, select the district, say whether the trap is at a household, pick the household, then pick the active trap. The trap's method decides which CDC and BG-Sentinel questions are asked. For adults reared from larvae, type the source vial ID from ``HAB-SRV``.
-* Collection ID = Trap ID (or source vial ID) - collection date, for example ``HH001-CDC-IN-20261120``. This identifies the trapping event. SPEC-DIS and SPEC-HND link through this ID, and ENV-OBS links by Household ID and collection date.
+* Collection ID = Trap ID (or source vial ID) - collection date, for example ``HH001-CDC-IN-20261120``. A BG-Sentinel bag adds ``-D`` (day bag) or ``-N`` (night bag), for example ``HH001-BGS-OUT-20261120-N``. This identifies the trapping event. SPEC-DIS and SPEC-HND link through this ID, and ENV-OBS links by Household ID and collection date.
 * Part B is shown only when mosquitoes were caught. *Anopheles* females are counted by physiological status (UF, PF, FD, SG, GV) plus total males. Culicines are counted by sex only.
 * Each tube gets an automatic label: Collection ID - species - sex - abdominal status (females only) - tube number. Storage box and plate barcodes use the country code, node code and plate or box number (for example ``TZDS 0001``). For 96-well plates, record the well coordinate (such as ``A1`` to ``H12``); for boxes, record the slot number.
 * Enter your assigned staff ID in ``collector_id``, and keep general notes free of personal names or phone numbers.
-* For 24-hour BG-Sentinel collections, the morning (night catch) and evening (day catch) bags are entered as separate records using the standard Collection ID pattern and their respective start and end times.
+* For 24-hour BG-Sentinel collections, the morning (night catch) and evening (day catch) bags are entered as separate records, each with its own start and end times. The BG bag question adds ``-D`` or ``-N`` to the Collection ID, so the two bags never share an ID.
 
 Section 1: Form Information
 ---------------------------
@@ -43,7 +43,9 @@ Section 1: Form Information
    * - ``collector_id``
      - Text
      - Yes
-     - Collector name / ID
+     - Collector ID (registered staff ID)
+
+       *Hint:* Your registered staff ID, not your name
    * - ``origin``
      - Select one
      - Yes
@@ -186,6 +188,16 @@ This section is shown only if ``origin = 1``.
        ``1`` = On; ``0`` = Off
 
        *Shown if* ``trap_method = CDC``
+   * - ``bg_bag``
+     - Select one
+     - Yes
+     - BG bag
+
+       ``D`` = Day bag (daytime catch); ``N`` = Night bag (night catch)
+
+       *Hint:* Enter each BG bag as its own record
+
+       *Shown if* ``trap_method = BGS``
 
 Section 5: Collection Outcome
 -----------------------------
@@ -233,7 +245,7 @@ Section 6: Collection ID & Sorting Date
    * - ``collection_id``
      - Calculated
      - Auto
-     - Automatic Collection ID: Trap ID (or source vial ID) - collection date (``YYYYMMDD``), e.g. ``HH001-CDC-IN-20261120``
+     - Automatic Collection ID: Trap ID (or source vial ID) - collection date (``YYYYMMDD``), plus ``-D`` or ``-N`` for a BG bag, e.g. ``HH001-CDC-IN-20261120`` or ``HH001-BGS-OUT-20261120-N``
    * - ``sorting_date``
      - Date
      - Yes
@@ -373,7 +385,7 @@ This section is shown only if ``an_total > 0 and an_num_batches > 0``.
      - Yes
      - Sample type
 
-       ``pool`` = Pool (multiple); ``individual`` = Individual
+       ``individual`` = Individual; ``pool`` = Pool (multiple)
    * - ``an_storage_box``
      - Text
      - Yes
@@ -495,7 +507,7 @@ This section is shown only if ``cul_total > 0 and cul_num_batches > 0``.
      - Yes
      - Sample type
 
-       ``pool`` = Pool (multiple); ``individual`` = Individual
+       ``individual`` = Individual; ``pool`` = Pool (multiple)
    * - ``cul_storage_box``
      - Text
      - Yes

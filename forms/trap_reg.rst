@@ -1,7 +1,7 @@
 Trap Registration Form
 ======================
 
-**Form Code:** ``TRAP-REG`` | **Form ID:** ``vg_trap_reg`` | **Version:** ``2026112201`` | **Component:** Adult Mosquito Sampling | **SOP Links:** :doc:`SOP 2.2 <../sops/sop_2_2>`, :doc:`SOP 2.3 <../sops/sop_2_2>`
+**Form Code:** ``TRAP-REG`` | **Form ID:** ``vg_trap_reg`` | **Version:** ``2026112401`` | **Component:** Adult Mosquito Sampling | **SOP Links:** :doc:`SOP 2.2 <../sops/sop_2_2>`, :doc:`SOP 2.3 <../sops/sop_2_2>`
 
 The Trap Registration Form registers one trap per submission: the collection method, CO\ :sub:`2` bait (CDC light traps only), indoor or outdoor placement, and the household or outdoor site where the trap is placed.
 
@@ -38,7 +38,9 @@ Section 1: Basic Information
    * - ``collector_id``
      - Text
      - Yes
-     - Registered by
+     - Collector ID (registered staff ID)
+
+       *Hint:* Your registered staff ID, not your name
    * - ``node_code``
      - Text
      - Yes
@@ -178,11 +180,11 @@ Section 5: Placement
    * - ``hardware_serial``
      - Text
      - No
-     - Hardware serial / barcode
+     - Serial / barcode
    * - ``placement_notes``
      - Text
      - No
-     - Placement notes / microhabitat
+     - Placement notes
 
 Section 6: Trap ID
 ------------------

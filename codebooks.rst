@@ -380,7 +380,7 @@ List ``tube_sex``, used in ``SPEC-SRT``.
 Tube Sample Type (SPEC-SRT)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-List ``sample_type``, used in ``SPEC-SRT``.
+List ``sample_type``, used in ``SPEC-SRT``. The paper layout codes them ``1`` = Individual, ``2`` = Pool.
 
 .. list-table::
    :widths: 18 82
@@ -388,10 +388,10 @@ List ``sample_type``, used in ``SPEC-SRT``.
 
    * - Code
      - Label
-   * - ``pool``
-     - Pool (multiple)
    * - ``individual``
      - Individual
+   * - ``pool``
+     - Pool (multiple)
 
 Mosquito Species (SPEC-SRT, SPEC-DIS)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

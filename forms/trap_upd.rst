@@ -1,7 +1,7 @@
 Trap Status Update Form
 =======================
 
-**Form Code:** ``TRAP-UPD`` | **Form ID:** ``vg_trap_upd`` | **Version:** ``2026112101`` | **Component:** Adult Mosquito Sampling | **SOP Links:** :doc:`SOP 2.2 <../sops/sop_2_2>`
+**Form Code:** ``TRAP-UPD`` | **Form ID:** ``vg_trap_upd`` | **Version:** ``2026112401`` | **Component:** Adult Mosquito Sampling | **SOP Links:** :doc:`SOP 2.2 <../sops/sop_2_2>`
 
 The Trap Status Update Form changes the status of a registered trap (active, malfunctioned or retired) and records the reason and any corrective action, without re-entering the trap's details.
 
@@ -89,7 +89,7 @@ Section 2: Status Update
 
        *Saved to entity property* ``status_reason``
 
-Section 3: Signature & Notes
+Section 3: Collector & Notes
 ----------------------------
 
 .. list-table::
@@ -100,12 +100,12 @@ Section 3: Signature & Notes
      - Type
      - Required
      - Question, Choices & Logic
-   * - ``full_name_signature``
+   * - ``collector_id``
      - Text
      - Yes
-     - Full name (as signature)
+     - Collector ID (registered staff ID)
 
-       *Hint:* Enter your full name
+       *Hint:* Your registered staff ID, not your name
    * - ``notes``
      - Text
      - No

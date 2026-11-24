@@ -1,7 +1,7 @@
 Sample Handover & Custody Form
 ==============================
 
-**Form Code:** ``SPEC-HND`` | **Form ID:** ``vg_spec_hnd`` | **Version:** ``2026112201`` | **Component:** Adult Mosquito Sampling and Larval Sampling | **SOP Links:** :doc:`SOP 2.4 <../sops/sop_2_4>`
+**Form Code:** ``SPEC-HND`` | **Form ID:** ``vg_spec_hnd`` | **Version:** ``2026112401`` | **Component:** Adult Mosquito Sampling and Larval Sampling | **SOP Links:** :doc:`SOP 2.4 <../sops/sop_2_4>`
 
 The Sample Handover and Custody Form documents one shipping container sent from a field node to a laboratory: routing and dispatch, cold-chain checks, a manifest of the plates, boxes or batches inside, and the three chain-of-custody sign-offs (field team, courier and receiving laboratory).
 
@@ -67,7 +67,9 @@ Section 2: Shipment Batch & Dispatch Event
    * - ``officer_id``
      - Text
      - Yes
-     - Dispatching officer / team ID
+     - Dispatcher ID (registered staff ID)
+
+       *Hint:* Your registered staff ID, not your name
    * - ``container_id``
      - Text
      - Yes
@@ -173,7 +175,7 @@ Repeat group: one entry per manifest row, repeated ``num_rows`` times.
      - Yes
      - Collection record ID (SPEC-SRT) or larval vial ID (HAB-SRV)
 
-       *Hint:* SPEC-SRT: Trap ID-YYYYMMDD, e.g. HH001-CDC-IN-20261120. HAB-SRV: the vial ID.
+       *Hint:* SPEC-SRT: Trap ID-YYYYMMDD (a BG bag adds -D or -N), e.g. HH001-CDC-IN-20261120. HAB-SRV: the vial ID.
    * - ``sampling_method``
      - Select one
      - Yes
@@ -301,7 +303,7 @@ Section 8: Sign-off: Field Team
    * - ``stage1_name``
      - Text
      - Yes
-     - Full name & organization
+     - Full name & organisation
    * - ``stage1_signature``
      - Signature
      - Yes
@@ -325,7 +327,7 @@ Section 9: Sign-off: Courier
    * - ``stage2_name``
      - Text
      - No
-     - Full name & organization
+     - Full name & organisation
    * - ``stage2_signature``
      - Signature
      - No
@@ -349,7 +351,7 @@ Section 10: Sign-off: Receiving Laboratory
    * - ``stage3_name``
      - Text
      - No
-     - Full name & organization
+     - Full name & organisation
    * - ``stage3_signature``
      - Signature
      - No

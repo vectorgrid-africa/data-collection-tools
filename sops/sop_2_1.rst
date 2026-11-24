@@ -24,7 +24,7 @@ Record GPS coordinates of each focal house in **WGS84 decimal degrees** with **Â
 
 Sampling Event, Household & Trap Variables
 ------------------------------------------
-* **Sampling event:** Sampling date, surveillance type (routine monthly or biannual), collection start and end time, collector or team ID.
+* **Sampling event:** Sampling date, surveillance type (routine monthly or biannual), collection start and end time, registered collector ID.
 * **Household structure** (collections in and around households): House type, changes to the house, collection location (indoor or outdoor), construction material, roof type, open eaves, livestock near the house and livestock type.
 * **Monthly trap information:** Trap ID, trap type (CDC-LT, CO\ :sub:`2`-baited CDC-LT, BG-Sentinel), trap start and end time, whether the trap worked the whole night (CDC-LT and BG-Sentinel), and light status at the end time (CDC-LT).
 * **Additional information:** Distance to the nearest breeding site, breeding source type, number of rooms, people sleeping in each room and in the trap room, and interventions introduced before collections (ITN, MDA-Ivermectin, LSM, IRS).
@@ -42,7 +42,7 @@ Weather, Temperature & Humidity
 * **Population setting:** Urban or rural.
 * **Land use near the sentinel house:** Agriculture, mining, construction, other.
 
-Weather and microclimate are recorded on :doc:`../forms/env_obs`; population setting and land use on :doc:`../forms/hh_reg`.
+Weather, temperature and humidity are recorded on :doc:`../forms/env_obs`; population setting and land use on :doc:`../forms/hh_reg`.
 
 Data Logger Placement
 ---------------------

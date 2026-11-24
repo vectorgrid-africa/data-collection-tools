@@ -1,9 +1,9 @@
 Habitat Survey & Dipping Form
 =============================
 
-**Form Code:** ``HAB-SRV`` | **Form ID:** ``vg_hab_srv`` | **Version:** ``2026112201`` | **Component:** Larval Sampling | **SOP Links:** :doc:`SOP 3.1 <../sops/sop_3_1>`
+**Form Code:** ``HAB-SRV`` | **Form ID:** ``vg_hab_srv`` | **Version:** ``2026112401`` | **Component:** Larval Sampling | **SOP Links:** :doc:`SOP 3.1 <../sops/sop_3_1>`
 
-The Habitat Survey and Dipping Form records one visit to a registered habitat or a domestic container: habitat characteristics, size, vegetation, physico-chemical readings, larvae, pupae and predators per dip, and the samples kept for the laboratory. A summary of totals is shown before signing.
+The Habitat Survey and Dipping Form records one visit to a registered habitat or a domestic container: habitat characteristics, size, vegetation, water quality readings, larvae, pupae and predators per dip, and the samples kept for the laboratory. A summary of totals is shown before signing.
 
 How This Form Works
 -------------------
@@ -36,7 +36,9 @@ Section 1: Survey Information
    * - ``collector_id``
      - Text
      - Yes
-     - Field Worker Name
+     - Collector ID (registered staff ID)
+
+       *Hint:* Your registered staff ID, not your name
    * - ``survey_date``
      - Date
      - Yes
@@ -370,8 +372,8 @@ Section 6: Water Type, Season & Surroundings
 
        *Hint:* Any environmental changes observed
 
-Section 7: Physio-Chemical Parameters
--------------------------------------
+Section 7: Water Quality Parameters
+-----------------------------------
 
 .. list-table::
    :widths: 24 13 9 54
