@@ -137,3 +137,5 @@ The registration and update forms share three ODK Central entity lists:
 
 4. Check that each form's ``households.csv``, ``traps.csv`` or ``habitats.csv`` attachment shows as linked to the entity list of the same name.
 5. Test each form as a draft on ODK Collect first. Enketo web preview has limited entity support.
+6. Use ODK Central's submission review workflow so incoming records are checked and approved by a second team member before export.
+7. Schedule regular backups of your ODK Central server to protect your node's primary data.

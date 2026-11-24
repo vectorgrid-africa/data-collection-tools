@@ -50,8 +50,8 @@ Example:
 Plate and well tracking:
 
 * **Plate Edges:** Label one long and one short edge with the observatory node code (for example ``OBS01``), plate number (for example ``P005``), date and barcode where available.
-* **Well Register:** The specimen in each well (rows A to H, columns 1 to 12) is recorded on a data sheet that links it to its collection metadata.
-* **ODK recording:** :doc:`../forms/spec_srt` records each tube's storage box or plate barcode and position, gives each tube an automatic label (Collection ID - species - sex - abdominal status - tube number), and records the specimen register or plate map ID.
+* **Well Register:** The specimen in each well (rows A to H, columns 1 to 12, entered as ``A1`` to ``H12``) is recorded on a data sheet that links its unique Specimen ID to its collection metadata. Pools are recorded with a unique Pool ID and the number of mosquitoes.
+* **ODK recording:** :doc:`../forms/spec_srt` records each tube or well entry with its storage box or plate barcode and position, gives each tube an automatic label (Collection ID - species - sex - abdominal status - tube number), and records the specimen register or plate map ID.
 * **Barcodes:** Where possible, attach a 1D/2D barcode label next to the written ID on each plate, and at trap sites.
 
 6. Packaging, Transfer & Chain of Custody

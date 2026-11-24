@@ -20,9 +20,9 @@ The forms are structured into three components:
 Digital Data Collection Workflow
 --------------------------------
 
-VectorGrid defines harmonised variables and categorical codebooks across all nodes.
+VectorGrid-Africa defines harmonised variables and categorical codebooks across all nodes.
 
-To facilitate field deployment, **ODK (Open Data Kit)** is provided as the primary reference implementation. Participating partner institutions and observatory nodes are free to adapt these standardised forms into other data capture tools (such as REDCap or institutional data systems) provided that core variable names and validation logic are preserved.
+To facilitate field deployment, **ODK (Open Data Kit)** is provided as the primary reference implementation. Partner institutions may adapt these forms into other tools (such as REDCap, a LIMS or institutional databases) provided that core variable names and validation logic are preserved. Data exports must use ISO dates (``YYYY-MM-DD``) and leave missing optional values blank.
 
 ODK Reference Implementation:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

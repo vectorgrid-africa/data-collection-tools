@@ -1,7 +1,7 @@
 # Configuration file for the Sphinx documentation builder.
 
 project = 'VectorGrid Data Collection Tools'
-copyright = '2026, VectorGrid Africa Consortium'
+copyright = '2026, VectorGrid-Africa Consortium'
 author = 'VectorGrid Team'
 release = '1.0.0'
 html_title = 'VectorGrid Data Collection Tools'

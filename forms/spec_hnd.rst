@@ -11,6 +11,7 @@ How This Form Works
 * Dispatch fields are required. Receipt fields (receipt temperature, breach indicator, physical integrity, intake status, courier and laboratory sign-offs) are optional and are completed at the laboratory by editing the submission in ODK Central.
 * Each manifest row links to a SPEC-SRT Collection ID or a HAB-SRV vial ID. Site, trap and collection date come from that record.
 * The manifest's sampling method uses numeric codes (``1`` Double net to ``7`` Larval), not the letter codes used in TRAP-REG.
+* When using approved substitutes like DNA/RNA Shield or Trizol-LS, choose ``99`` (Other) and type the reagent name in ``medium_other``.
 
 Section 1: Shipment Details
 ---------------------------

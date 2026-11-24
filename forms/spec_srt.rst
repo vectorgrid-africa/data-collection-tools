@@ -9,9 +9,10 @@ How This Form Works
 -------------------
 
 * Part A: for a trap catch, select the district, say whether the trap is at a household, pick the household, then pick the active trap. The trap's method decides which CDC and BG-Sentinel questions are asked. For adults reared from larvae, type the source vial ID from ``HAB-SRV``.
-* Collection ID = Trap ID (or source vial ID) - collection date, for example ``HH001-CDC-IN-20261120``. SPEC-DIS and SPEC-HND link to the collection through this ID. ENV-OBS links by Household ID and collection date.
+* Collection ID = Trap ID (or source vial ID) - collection date, for example ``HH001-CDC-IN-20261120``. This identifies the trapping event. SPEC-DIS and SPEC-HND link through this ID, and ENV-OBS links by Household ID and collection date.
 * Part B is shown only when mosquitoes were caught. *Anopheles* females are counted by physiological status (UF, PF, FD, SG, GV) plus total males. Culicines are counted by sex only.
-* Each tube gets an automatic label: Collection ID - species - sex - abdominal status (females only) - tube number. Storage box and plate barcodes use the country code, node code and plate or box number (for example ``TZDS 0001``).
+* Each tube gets an automatic label: Collection ID - species - sex - abdominal status (females only) - tube number. Storage box and plate barcodes use the country code, node code and plate or box number (for example ``TZDS 0001``). For 96-well plates, record the well coordinate (such as ``A1`` to ``H12``); for boxes, record the slot number.
+* Enter your assigned staff ID in ``collector_id``, and keep general notes free of personal names or phone numbers.
 * For 24-hour BG-Sentinel collections, the morning (night catch) and evening (day catch) bags are entered as separate records using the standard Collection ID pattern and their respective start and end times.
 
 Section 1: Form Information
@@ -408,7 +409,7 @@ This section is shown only if ``mosquitoes_caught = 1``.
    * - ``cul_species``
      - Select one
      - Yes
-     - Culicine specie
+     - Culicine species
 
        Species list set for each node (see :doc:`../codebooks`)
    * - ``cul_species_other``

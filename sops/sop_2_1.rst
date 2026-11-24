@@ -16,11 +16,11 @@ Record these site and location variables:
 7. **Sentinel house ID / biannual house ID**
 8. **GPS coordinates of the house:** latitude, longitude and altitude (m)
 
-**In the ODK forms:** the location is recorded once, when a household (``HH-REG``) or habitat (``HAB-REG``) is registered and for an extreme weather event (``ENV-EXT``), from location lists set for each node; the other forms pick the registered record. Country is preset in the form and Node Code is typed.
+**In the ODK forms:** the location is recorded once, when a household (``HH-REG``) or habitat (``HAB-REG``) is registered and for an extreme weather event (``ENV-EXT``), from location lists set for each node; the other forms pick the registered record. Country is preset in the form and Node Code is typed using your assigned code (for example ``TZ-MOR-01``).
 
 GPS Accuracy
 ------------
-Record GPS coordinates of each focal house with **±5 m accuracy** (from the :doc:`adult sampling procedure <sop_2_2>`). The GPS questions in the forms ask for coordinates within 5 m.
+Record GPS coordinates of each focal house in **WGS84 decimal degrees** with **±5 m accuracy** (from the :doc:`adult sampling procedure <sop_2_2>`). The GPS questions in the forms ask for coordinates within 5 m.
 
 Sampling Event, Household & Trap Variables
 ------------------------------------------
