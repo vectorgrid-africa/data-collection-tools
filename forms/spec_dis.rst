@@ -1,7 +1,7 @@
 Mosquito Dissection & Parity Form
 =================================
 
-**Form Code:** ``SPEC-DIS`` | **Form ID:** ``vg_spec_dis`` | **Version:** ``2026112401`` | **Component:** Adult Mosquito Sampling | **SOP Links:** SOP 1.1.1, :doc:`SOP 2.4 <../sops/sop_2_4>`
+**Form Code:** ``SPEC-DIS`` | **Form ID:** ``vg_spec_dis`` | **Version:** ``2026112101`` | **Component:** Adult Mosquito Sampling | **SOP Links:** SOP 1.1.1, :doc:`SOP 2.4 <../sops/sop_2_4>`
 
 The Mosquito Dissection and Parity Form records fresh dissections of female *Anopheles* from one collection. For each specimen it records midgut content, spermatheca (insemination), parity, Christophers egg stage, sac stage, maximum dilatations, wing length and condition, and it calculates the parity rate.
 
@@ -9,7 +9,7 @@ How This Form Works
 -------------------
 
 * Pick the source the same way as SPEC-SRT (district, household, active trap), or type the source vial ID for adults reared from larvae. With the collection date, the form rebuilds the same Collection ID as SPEC-SRT, so the ID is not typed.
-* Specimen ID = Collection ID - species - specimen number, for example ``HH001-CDC-IN-20261120-gambiae-1``. Parity rate = parous / (parous + nulliparous) x 100.
+* Specimen ID = Collection ID - species - specimen number, for example ``HH001-CDC-IN-20261120-an_gambiae-1``. A write-in species is coded ``an_oth`` + its species number on the sheet, e.g. ``an_oth2``, as in SPEC-SRT. Parity rate = parous / (parous + nulliparous) x 100.
 * Egg stage, sac stage, dilatations and wing length are required for each dissected specimen.
 
 Section 1: Session Information
@@ -160,7 +160,7 @@ This section is shown only if ``from_trap = 0``.
    * - ``source_vial``
      - Text
      - Yes
-     - Source vial / habitat ID
+     - Source vial ID (from HAB-SRV)
 
        *Hint:* Larval vial ID, as on SPEC-SRT
    * - ``source_household_site``
@@ -223,6 +223,8 @@ Repeat group: one entry per species dissected, repeated ``num_species`` times.
      - Select species
 
        Species list set for each node (see :doc:`../codebooks`)
+
+       *Check:* each species once per sheet; ``other`` can be entered more than once
    * - ``species_other``
      - Text
      - Yes

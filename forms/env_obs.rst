@@ -1,7 +1,7 @@
 Environmental Observation Form
 ==============================
 
-**Form Code:** ``ENV-OBS`` | **Form ID:** ``vg_env_obs`` | **Version:** ``2026112401`` | **Component:** Adult Mosquito Sampling | **SOP Links:** :doc:`SOP 2.1 <../sops/sop_2_1>`, :doc:`SOP 2.2 <../sops/sop_2_2>`
+**Form Code:** ``ENV-OBS`` | **Form ID:** ``vg_env_obs`` | **Version:** ``2026112101`` | **Component:** Adult Mosquito Sampling | **SOP Links:** :doc:`SOP 2.1 <../sops/sop_2_1>`, :doc:`SOP 2.2 <../sops/sop_2_2>`
 
 The Environmental Observation Form records the weather, temperature and humidity on an adult trapping night at a registered household: weather at trap start and end, rainfall, wind speed, the temperature and humidity data loggers used, and manual readings when a handheld meter is used or a logger fails.
 
@@ -9,7 +9,7 @@ How This Form Works
 -------------------
 
 * Select the district, then an active household from the ``households`` entity list. The record links to SPEC-SRT by Household ID and collection date.
-* With automated loggers (``method`` = 1) there is one entry per logger (default 2). The manual temperature and humidity section is shown for a manual meter, or when any logger download fails.
+* With automated loggers (``method`` = 1) there is one entry per logger (default 2). The manual temperature and humidity section is shown for a manual meter, where it is required, or when any logger download fails, where readings are optional.
 * Place indoor loggers at trap height (about 1.5 m) near the bed, and outdoor loggers 1.5 m above the ground (1 m for BG-Sentinel), at least 1 m from dry ice.
 
 Section 1: Household Selection
@@ -237,100 +237,132 @@ This section is shown only if ``method = 2 or loggers_failed > 0``.
      - Number of loggers with download status Fail
    * - ``t_out_start``
      - Decimal
-     - Yes
+     - Conditional
      - At trap start
 
        *Check:* ``range -10 to 60``
+
+       *Required if* ``method = 2`` (manual meter)
    * - ``t_out_min``
      - Decimal
-     - Yes
+     - Conditional
      - Overnight min (low)
 
        *Check:* ``range -10 to 60``
+
+       *Required if* ``method = 2`` (manual meter)
    * - ``t_out_max``
      - Decimal
-     - Yes
+     - Conditional
      - Overnight max (high)
 
        *Check:* ``value >= -10 and value <= 60 and value >= t_out_min``
+
+       *Required if* ``method = 2`` (manual meter)
    * - ``t_out_end``
      - Decimal
-     - Yes
+     - Conditional
      - At trap end
 
        *Check:* ``range -10 to 60``
+
+       *Required if* ``method = 2`` (manual meter)
    * - ``t_in_start``
      - Decimal
-     - Yes
+     - Conditional
      - At trap start
 
        *Check:* ``range -10 to 60``
+
+       *Required if* ``method = 2`` (manual meter)
    * - ``t_in_min``
      - Decimal
-     - Yes
+     - Conditional
      - Overnight min (low)
 
        *Check:* ``range -10 to 60``
+
+       *Required if* ``method = 2`` (manual meter)
    * - ``t_in_max``
      - Decimal
-     - Yes
+     - Conditional
      - Overnight max (high)
 
        *Check:* ``value >= -10 and value <= 60 and value >= t_in_min``
+
+       *Required if* ``method = 2`` (manual meter)
    * - ``t_in_end``
      - Decimal
-     - Yes
+     - Conditional
      - At trap end
 
        *Check:* ``range -10 to 60``
+
+       *Required if* ``method = 2`` (manual meter)
    * - ``rh_out_start``
      - Decimal
-     - Yes
+     - Conditional
      - At trap start
 
        *Check:* ``range 0 to 100``
+
+       *Required if* ``method = 2`` (manual meter)
    * - ``rh_out_min``
      - Decimal
-     - Yes
+     - Conditional
      - Overnight min (low)
 
        *Check:* ``range 0 to 100``
+
+       *Required if* ``method = 2`` (manual meter)
    * - ``rh_out_max``
      - Decimal
-     - Yes
+     - Conditional
      - Overnight max (high)
 
        *Check:* ``value >= 0 and value <= 100 and value >= rh_out_min``
+
+       *Required if* ``method = 2`` (manual meter)
    * - ``rh_out_end``
      - Decimal
-     - Yes
+     - Conditional
      - At trap end
 
        *Check:* ``range 0 to 100``
+
+       *Required if* ``method = 2`` (manual meter)
    * - ``rh_in_start``
      - Decimal
-     - Yes
+     - Conditional
      - At trap start
 
        *Check:* ``range 0 to 100``
+
+       *Required if* ``method = 2`` (manual meter)
    * - ``rh_in_min``
      - Decimal
-     - Yes
+     - Conditional
      - Overnight min (low)
 
        *Check:* ``range 0 to 100``
+
+       *Required if* ``method = 2`` (manual meter)
    * - ``rh_in_max``
      - Decimal
-     - Yes
+     - Conditional
      - Overnight max (high)
 
        *Check:* ``value >= 0 and value <= 100 and value >= rh_in_min``
+
+       *Required if* ``method = 2`` (manual meter)
    * - ``rh_in_end``
      - Decimal
-     - Yes
+     - Conditional
      - At trap end
 
        *Check:* ``range 0 to 100``
+
+       *Required if* ``method = 2`` (manual meter)
 
 Section 7: Signature
 --------------------

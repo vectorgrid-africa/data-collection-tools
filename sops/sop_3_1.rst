@@ -28,7 +28,7 @@ Larval surveys are a supplementary activity, done during the rainy and dry seaso
 * **Early Instars (L1 and L2):** Small larvae with narrow head capsules; counted together. First instars are hard to see, so use a hand lens if needed.
 * **Late Instars (L3 and L4):** Larger larvae with distinct head, thorax and abdomen. *Anopheles* larvae lie parallel to the surface without a breathing siphon; culicine larvae hang from the surface with a siphon.
 * **Pupae:** Comma-shaped, non-feeding stage; counted separately.
-* **ODK recording:** :doc:`../forms/hab_srv` records L1-L2, L3, L4 and pupae separately for each taxon ticked in each dip, then adds up totals and larvae per dip.
+* **ODK recording:** :doc:`../forms/hab_srv` records L1-L2, L3, L4 and pupae separately for each taxon ticked in each dip, then adds up totals and larvae per sample.
 
 4. Habitat Characteristics
 --------------------------

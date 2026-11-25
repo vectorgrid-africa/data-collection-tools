@@ -1,7 +1,7 @@
 Habitat Survey & Dipping Form
 =============================
 
-**Form Code:** ``HAB-SRV`` | **Form ID:** ``vg_hab_srv`` | **Version:** ``2026112401`` | **Component:** Larval Sampling | **SOP Links:** :doc:`SOP 3.1 <../sops/sop_3_1>`
+**Form Code:** ``HAB-SRV`` | **Form ID:** ``vg_hab_srv`` | **Version:** ``2026112101`` | **Component:** Larval Sampling | **SOP Links:** :doc:`SOP 3.1 <../sops/sop_3_1>`
 
 The Habitat Survey and Dipping Form records one visit to a registered habitat or a domestic container: habitat characteristics, size, vegetation, water quality readings, larvae, pupae and predators per dip, and the samples kept for the laboratory. A summary of totals is shown before signing.
 
@@ -9,9 +9,10 @@ How This Form Works
 -------------------
 
 * Select the district, then either an active registered habitat from the ``habitats`` entity list or a container (typed Container ID, household / compound ID and node).
+* Record the sampling unit status (SOP 3.1). A dry, inaccessible or not-sampled unit skips the habitat and sampling sections and is never recorded as negative; season, comments and the photograph are still recorded.
 * Water quality readings (pH, temperature, conductivity, salinity, TDS, dissolved oxygen) are optional.
 * The standard effort is 10 dips with the dipper. If fewer are completed, the form asks for the reason.
-* Counts are entered per dip for each taxon ticked (L1-L2, L3, L4, pupae) and each predator ticked. The form adds up the totals and larvae per dip.
+* Counts are entered per dip for each taxon ticked (L1-L2, L3, L4, pupae) and each predator ticked. The form adds up the totals and larvae per sample. If larvae, pupae, a taxon or a predator is marked as found but its counts add up to 0, the form stops until the counts are entered or the answers corrected.
 * The vial ID (Country-Node-Larv-ID) links any adults reared from this sample to SPEC-SRT.
 
 Section 1: Survey Information
@@ -99,12 +100,26 @@ Section 2: Habitat Selection
      - Household / compound ID
 
        *Shown if* ``sample_unit = 2``
+   * - ``container_village``
+     - Text
+     - Yes
+     - Village
+
+       *Shown if* ``sample_unit = 2``
    * - ``node_code_typed``
      - Text
      - Yes
      - Node Code
 
        *Shown if* ``sample_unit = 2``
+   * - ``unit_status``
+     - Select one
+     - Yes
+     - Sampling unit status
+
+       ``1`` = Sampled; ``2`` = Dry (no water); ``3`` = Inaccessible; ``4`` = Not sampled
+
+       *Hint:* If not sampled, the habitat and sampling sections are skipped
    * - ``node_code``
      - Calculated
      - Auto
@@ -132,6 +147,8 @@ Section 2: Habitat Selection
 
 Section 3: Habitat Characteristics
 ----------------------------------
+
+This section is shown only if ``unit_status = 1`` (sampled).
 
 .. list-table::
    :widths: 24 13 9 54
@@ -227,6 +244,8 @@ Section 3: Habitat Characteristics
 Section 4: Habitat Size
 -----------------------
 
+This section is shown only if ``unit_status = 1`` (sampled).
+
 .. list-table::
    :widths: 24 13 9 54
    :header-rows: 1
@@ -272,6 +291,8 @@ Section 4: Habitat Size
 
 Section 5: Vegetation
 ---------------------
+
+This section is shown only if ``unit_status = 1`` (sampled).
 
 .. list-table::
    :widths: 24 13 9 54
@@ -333,6 +354,8 @@ Section 6: Water Type, Season & Surroundings
      - Water type
 
        ``1`` = Temporary; ``2`` = Semi-permanent; ``3`` = Permanent
+
+       *Shown if* ``unit_status = 1``
    * - ``season``
      - Select one
      - Yes
@@ -352,6 +375,8 @@ Section 6: Water Type, Season & Surroundings
 
        ``1`` = Shrub/Bush; ``2`` = Grassland; ``3`` = Swamp; ``4`` = Cultivated field; ``5`` = Residential; ``6`` = Cattle grazing; ``7`` = Forest; ``8`` = Urban; ``9`` = Other (specify)
 
+       *Shown if* ``unit_status = 1``
+
        *Hint:* Select all that apply
    * - ``environment_other``
      - Text
@@ -364,6 +389,8 @@ Section 6: Water Type, Season & Surroundings
      - Yes
      - Distance from nearest homes (m)
 
+       *Shown if* ``unit_status = 1``
+
        *Check:* ``value >= 0``
    * - ``notes``
      - Text
@@ -374,6 +401,8 @@ Section 6: Water Type, Season & Surroundings
 
 Section 7: Water Quality Parameters
 -----------------------------------
+
+This section is shown only if ``unit_status = 1`` (sampled).
 
 .. list-table::
    :widths: 24 13 9 54
@@ -431,6 +460,8 @@ Section 7: Water Quality Parameters
 Section 8: Larval & Predator Sampling
 -------------------------------------
 
+This section is shown only if ``unit_status = 1`` (sampled).
+
 .. list-table::
    :widths: 24 13 9 54
    :header-rows: 1
@@ -466,7 +497,7 @@ Section 8: Larval & Predator Sampling
      - Yes
      - Mosquito taxa found
 
-       ``gam`` = An. gambiae; ``fun`` = An. funestus; ``oan`` = Other Anopheline; ``cul`` = Culex; ``aed`` = Aedes; ``man`` = Mansonia; ``oth`` = Other taxon
+       ``gam`` = An. gambiae s.l.; ``fun`` = An. funestus group; ``oan`` = Other Anopheline; ``cul`` = Culex; ``aed`` = Aedes; ``man`` = Mansonia; ``oth`` = Other taxon
 
        *Shown if* ``((larvae_present = 1 or pupae_present = 1))``
 
@@ -494,23 +525,17 @@ Section 8: Larval & Predator Sampling
 
        ``dipper`` = Standard Dipper (350 mL); ``bucket`` = 10L Bucket; ``pipette`` = Baster / pipette; ``whole`` = Whole accessible volume
 
-       *Shown if* ``needs_sampling = 1``
-
        *Hint:* Select the sampling method used
    * - ``num_dips``
      - Integer
      - Yes
      - Number of dips / buckets / samples completed
 
-       *Shown if* ``needs_sampling = 1``
-
        *Check:* ``range 1 to 100``
    * - ``num_sections``
      - Integer
      - Yes
      - Number of habitat sections sampled
-
-       *Shown if* ``needs_sampling = 1``
 
        *Check:* ``value >= 1``
    * - ``fewer_dips_reason``
@@ -533,6 +558,14 @@ Section 8: Larval & Predator Sampling
      - Calculated
      - Auto
      - ``total_larvae`` / ``num_dips``, two decimals
+   * - ``count_check``
+     - Text
+     - Yes
+     - **Counts are 0 for something marked as found** (larvae, pupae, a taxon or a predator). Go back and enter the counts, or correct the answers above.
+
+       *Shown if* ``larvae_present = 1`` with ``total_larvae = 0``, ``pupae_present = 1`` with ``total_pupae = 0``, or a ticked taxon or predator with a total of 0
+
+       *Check:* cannot be answered, so the form cannot be finalised until the counts match
 
 Repeat: Dip Counts
 ~~~~~~~~~~~~~~~~~~
@@ -550,7 +583,7 @@ Counts are asked only for the taxa ticked in ``taxa_found`` and the predators ti
    * - Field Names
      - Meaning
    * - ``<taxon>_l12_input``, ``<taxon>_l3_input``, ``<taxon>_l4_input``, ``<taxon>_pupae_input``
-     - Integer counts of early instars (L1-L2), L3, L4 and pupae in this dip. ``<taxon>`` is ``gam``, ``fun``, ``oan``, ``cul``, ``aed``, ``man`` or ``oth``. Shown only if ``taxa_found`` includes that taxon.
+     - Integer counts of early instars (L1-L2), L3, L4 and pupae in this dip. ``<taxon>`` is ``gam``, ``fun``, ``oan``, ``cul``, ``aed``, ``man`` or ``oth``. Shown only if ``taxa_found`` includes that taxon; L1-L4 only when larvae are present and pupae only when pupae are present.
    * - ``<predator>_dip_input``
      - Integer count of that predator in this dip. ``<predator>`` is ``dragonfly``, ``damselfly``, ``diving_beetle``, ``backswimmer``, ``water_boatman``, ``water_scorpion``, ``giant_water_bug``, ``tadpole``, ``copepod`` or ``other_predator``. Shown only if ``predators_found`` includes that predator.
    * - ``<taxon>_total``, ``<predator>_total``
@@ -573,6 +606,8 @@ Section 9: Specimen Preservation & Field Archiving
      - Sample collected for lab analysis
 
        ``1`` = Yes; ``0`` = No
+
+       *Shown if* ``unit_status = 1``
    * - ``no_sample_reason``
      - Text
      - Yes
@@ -623,6 +658,14 @@ Section 10: Survey Summary
      - Type
      - Required
      - Question, Choices & Logic
+   * - ``unit_result``
+     - Calculated
+     - Auto
+     - Visit result (SOP 3.1): ``positive`` or ``negative`` for a sampled unit (larvae or pupae present or not); otherwise ``dry``, ``inaccessible`` or ``not_sampled``
+   * - ``aedes_positive``
+     - Calculated
+     - Auto
+     - Containers only: ``1`` if Aedes is among the taxa found, otherwise ``0``
    * - ``full_name_signature``
      - Text
      - Yes

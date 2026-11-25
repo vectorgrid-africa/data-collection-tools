@@ -122,7 +122,7 @@ Lists ``district``, ``ward`` and ``village`` are set for each node. The example 
 Record Status Codes
 -------------------
 
-The update forms write these values to the ``status`` property of the entity record. HH-BEH and ENV-OBS list only ``active`` households, SPEC-SRT and SPEC-DIS list only ``active`` traps, and HAB-SRV lists only ``active`` habitats. TRAP-REG, SPEC-SRT and SPEC-DIS list all households in the selected district, and the update forms list all records so a status can be changed back.
+The update forms write these values to the ``status`` property of the entity record. HH-BEH and ENV-OBS list only ``active`` households, SPEC-SRT and SPEC-DIS list all traps except ``retired`` ones, and HAB-SRV lists only ``active`` habitats. TRAP-REG, SPEC-SRT and SPEC-DIS list all households in the selected district, and the update forms list all records so a status can be changed back.
 
 Household Status (HH-UPD)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1122,9 +1122,9 @@ Each code is also the prefix of that taxon's per-dip count fields, for example `
    * - Code
      - Label
    * - ``gam``
-     - An. gambiae
+     - An. gambiae s.l.
    * - ``fun``
-     - An. funestus
+     - An. funestus group
    * - ``oan``
      - Other Anopheline
    * - ``cul``

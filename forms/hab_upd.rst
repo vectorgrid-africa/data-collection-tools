@@ -1,7 +1,7 @@
 Habitat Status Update Form
 ==========================
 
-**Form Code:** ``HAB-UPD`` | **Form ID:** ``vg_hab_upd`` | **Version:** ``2026112401`` | **Component:** Larval Sampling | **SOP Links:** :doc:`SOP 3.1 <../sops/sop_3_1>`
+**Form Code:** ``HAB-UPD`` | **Form ID:** ``vg_hab_upd`` | **Version:** ``2026112101`` | **Component:** Larval Sampling | **SOP Links:** :doc:`SOP 3.1 <../sops/sop_3_1>`
 
 The Habitat Status Update Form changes the status of a registered habitat between surveys (for example seasonal drying, flooding or destruction) and records the reason, without repeating the survey measurements.
 
@@ -136,19 +136,3 @@ Section 3: Status Update
      - Additional Notes
 
        *Saved to entity property* ``status_notes``
-
-Section 4: Signature
---------------------
-
-.. list-table::
-   :widths: 24 13 9 54
-   :header-rows: 1
-
-   * - Field Name
-     - Type
-     - Required
-     - Question, Choices & Logic
-   * - ``full_name_signature``
-     - Text
-     - Yes
-     - Full name (as signature)

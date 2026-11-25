@@ -1,7 +1,7 @@
 Aquatic Habitat Registration Form
 =================================
 
-**Form Code:** ``HAB-REG`` | **Form ID:** ``vg_hab_reg`` | **Version:** ``2026112401`` | **Component:** Larval Sampling | **SOP Links:** :doc:`SOP 3.1 <../sops/sop_3_1>`
+**Form Code:** ``HAB-REG`` | **Form ID:** ``vg_hab_reg`` | **Version:** ``2026112101`` | **Component:** Larval Sampling | **SOP Links:** :doc:`SOP 3.1 <../sops/sop_3_1>`
 
 The Aquatic Habitat Registration Form registers an aquatic habitat once: its location, GPS point, Habitat ID, natural or artificial origin, permanence and habitat type. Water, vegetation and size measurements are taken at each survey on :doc:`hab_srv`, not at registration.
 

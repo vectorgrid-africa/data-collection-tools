@@ -1,7 +1,7 @@
 Household Status Update Form
 ============================
 
-**Form Code:** ``HH-UPD`` | **Form ID:** ``vg_hh_upd`` | **Version:** ``2026112401`` | **Component:** Site & Household Selection | **SOP Links:** :doc:`SOP 1.1 <../sops/sop_1_1>`, :doc:`SOP 2.1 <../sops/sop_2_1>`
+**Form Code:** ``HH-UPD`` | **Form ID:** ``vg_hh_upd`` | **Version:** ``2026112101`` | **Component:** Site & Household Selection | **SOP Links:** :doc:`SOP 1.1 <../sops/sop_1_1>`, :doc:`SOP 2.1 <../sops/sop_2_1>`
 
 The Household Status Update Form records changes to a registered household at later sampling rounds. Part A records the new status and, for active households, who slept in the house last night. Part B lets the field worker pick only the sections that changed (location, household head, members, house structure, windows and doors, bed nets, other features, nearby aquatic habitat, sleep behaviour, room details). Only the selected sections are shown.
 
@@ -148,14 +148,26 @@ Section 4: Sections to Update (Part B)
      - Type
      - Required
      - Question, Choices & Logic
+   * - ``house_changed``
+     - Select one
+     - Yes
+     - Any changes to the house since the last visit?
+
+       ``1`` = Yes; ``0`` = No
+
+       *Shown if* ``new_status = active``
    * - ``update_sections``
      - Select multiple
-     - No
+     - Conditional
      - Select sections to update:
 
        ``location`` = Location; ``head`` = Household Head; ``members`` = Household Members; ``structure`` = House Structure; ``openings`` = Windows & Doors; ``bed_nets`` = Bed Nets; ``features`` = Other Features; ``aquatic`` = Nearby Aquatic Habitat; ``sleep`` = Sleep Behaviour; ``rooms`` = Room Details
 
        *Shown if* ``new_status = active``
+
+       *Required if* ``house_changed = 1``
+
+       *Check:* when ``house_changed = 1``, include ``structure``, ``openings`` or ``rooms``
 
        *Hint:* Check all that apply
 
@@ -439,9 +451,11 @@ This section is shown only if ``update_sections includes bed_nets``.
    * - ``bed_nets``
      - Integer
      - Yes
-     - How many bed nets are used in the house?
+     - Total bed nets owned
 
        *Check:* ``range 0 to 50``
+
+       *Hint:* Functional nets owned by the household
    * - ``num_treated_nets``
      - Integer
      - Yes
@@ -467,7 +481,7 @@ This section is shown only if ``update_sections includes bed_nets``.
 
        *Shown if* ``bed_nets > 0``
 
-       *Check:* ``num_treated_nets + num_untreated_nets + value = bed_nets``
+       *Check:* ``value >= 0 and num_treated_nets + num_untreated_nets + value = bed_nets``
 
 Section 11: Other Features
 --------------------------
@@ -657,7 +671,7 @@ Section 14: Sleeping Rooms
 
        *Shown if* ``update_sections includes rooms``
 
-       *Check:* ``range 1 to 30``
+       *Check:* ``range 1 to 30``, and not more than ``total_rooms`` when it is answered
 
 Section 15: Room Details
 ------------------------

@@ -1,7 +1,7 @@
 Mosquito Collection & Sorting Form
 ==================================
 
-**Form Code:** ``SPEC-SRT`` | **Form ID:** ``vg_spec_srt`` | **Version:** ``2026112401`` | **Component:** Adult Mosquito Sampling | **SOP Links:** :doc:`SOP 2.2 <../sops/sop_2_2>`, :doc:`SOP 2.4 <../sops/sop_2_4>`
+**Form Code:** ``SPEC-SRT`` | **Form ID:** ``vg_spec_srt`` | **Version:** ``2026112101`` | **Component:** Adult Mosquito Sampling | **SOP Links:** :doc:`SOP 2.2 <../sops/sop_2_2>`, :doc:`SOP 2.4 <../sops/sop_2_4>`
 
 The Mosquito Collection and Sorting Form records one trap collection (or one batch of adults reared from larvae): collection timing and validity, then counts by species, sex and physiological status, how the mosquitoes were packed into tubes, bycatch, and how many *Anopheles* went to fresh dissection. A review screen summarises the record before it is signed.
 
@@ -55,7 +55,7 @@ Section 1: Form Information
    * - ``source_vial``
      - Text
      - Yes
-     - Source vial / habitat ID
+     - Source vial ID (from HAB-SRV)
 
        *Shown if* ``origin = 2``
 
@@ -131,7 +131,7 @@ This section is shown only if ``origin = 1``.
 
        Pick a record from the ``traps`` entity list (active traps at the selected household, or outdoor-site traps in the district)
 
-       *Hint:* Select the trap being collected
+       *Hint:* Retired traps are not listed: enter a catch before retiring its trap
    * - ``trap_id``
      - Calculated
      - Auto
@@ -278,6 +278,8 @@ This section is shown only if ``mosquitoes_caught = 1``.
      - Anopheles species
 
        Species list set for each node (see :doc:`../codebooks`)
+
+       *Check:* each species once per collection; ``other`` can be entered more than once
    * - ``an_species_other``
      - Text
      - Yes
@@ -373,7 +375,7 @@ This section is shown only if ``an_total > 0 and an_num_batches > 0``.
    * - ``an_tube_label``
      - Calculated
      - Auto
-     - Automatic tube label: Collection ID - species - sex - abdominal status (females) - tube number
+     - Automatic tube label: Collection ID - species - sex - abdominal status (females) - tube number. A write-in species is coded ``an_oth`` + entry number, e.g. ``an_oth1``
    * - ``an_batch_count``
      - Integer
      - Yes
@@ -397,7 +399,7 @@ This section is shown only if ``an_total > 0 and an_num_batches > 0``.
      - Yes
      - Box / plate position
 
-       *Hint:* e.g. 12 or A1
+       *Hint:* e.g. 12, A1 or A1-H3
    * - ``an_batch_notes``
      - Text
      - No
@@ -424,6 +426,8 @@ This section is shown only if ``mosquitoes_caught = 1``.
      - Culicine species
 
        Species list set for each node (see :doc:`../codebooks`)
+
+       *Check:* each species once per collection; ``other`` can be entered more than once
    * - ``cul_species_other``
      - Text
      - Yes
@@ -495,7 +499,7 @@ This section is shown only if ``cul_total > 0 and cul_num_batches > 0``.
    * - ``cul_tube_label``
      - Calculated
      - Auto
-     - Automatic tube label: Collection ID - species - sex - abdominal status (females) - tube number
+     - Automatic tube label: Collection ID - species - sex - abdominal status (females) - tube number. A write-in species is coded ``cul_oth`` + entry number, e.g. ``cul_oth1``
    * - ``cul_batch_count``
      - Integer
      - Yes
@@ -519,7 +523,7 @@ This section is shown only if ``cul_total > 0 and cul_num_batches > 0``.
      - Yes
      - Box / plate position
 
-       *Hint:* e.g. 12 or A1
+       *Hint:* e.g. 12, A1 or A1-H3
    * - ``cul_batch_notes``
      - Text
      - No
@@ -528,7 +532,7 @@ This section is shown only if ``cul_total > 0 and cul_num_batches > 0``.
 Section 9: Bycatch
 ------------------
 
-This section is shown only if ``mosquitoes_caught = 1``.
+This section is shown only if ``valid_catch = 1``, including collections with no mosquitoes.
 
 .. list-table::
    :widths: 24 13 9 54

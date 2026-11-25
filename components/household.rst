@@ -8,7 +8,7 @@ Scope & Objectives
 - Register each selected household (monthly sentinel or biannual supplementary) with its location and GPS point.
 - Record the people sleeping in the house by age group (under 5 years, 5 to 15 years, over 15 years) and sex, overall and room by room, including the room with the trap.
 - Characterise house construction (house type, roof, walls, interior wall surface, floor, eaves, ceiling, windows and doors).
-- Count bed nets used in the house: treated (ITN/LLIN), untreated and unidentified.
+- Count bed nets owned by the household: treated (ITN/LLIN), untreated and unidentified.
 - Track household status (active, withdrawn, refused, relocated, temporarily inactive) and changes to the house, the people living there and bed nets over time.
 - Assess proximity to animal sheds, latrines, livestock and nearby aquatic habitats.
 

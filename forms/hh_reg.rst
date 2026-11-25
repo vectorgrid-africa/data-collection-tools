@@ -1,7 +1,7 @@
 Household Registration Form
 ===========================
 
-**Form Code:** ``HH-REG`` | **Form ID:** ``vg_hh_reg`` | **Version:** ``2026112401`` | **Component:** Site & Household Selection | **SOP Links:** :doc:`SOP 1.1 <../sops/sop_1_1>`, :doc:`SOP 2.1 <../sops/sop_2_1>`
+**Form Code:** ``HH-REG`` | **Form ID:** ``vg_hh_reg`` | **Version:** ``2026112101`` | **Component:** Site & Household Selection | **SOP Links:** :doc:`SOP 1.1 <../sops/sop_1_1>`, :doc:`SOP 2.1 <../sops/sop_2_1>`
 
 The Household Registration Form registers a selected household once, at baseline. It records the household's location and GPS point, the people who sleep in the house by age group and sex, house structure, windows and doors, bed nets, other features, nearby aquatic habitats, usual sleep and wake times, and the number of people sleeping in each room.
 
@@ -332,9 +332,11 @@ Section 6: Bed Nets
    * - ``bed_nets``
      - Integer
      - Yes
-     - How many bed nets are used in the house?
+     - Total bed nets owned
 
        *Check:* ``range 0 to 50``
+
+       *Hint:* Functional nets owned by the household
    * - ``num_treated_nets``
      - Integer
      - Yes
@@ -360,7 +362,7 @@ Section 6: Bed Nets
 
        *Shown if* ``bed_nets > 0``
 
-       *Check:* ``num_treated_nets + num_untreated_nets + value = bed_nets``
+       *Check:* ``value >= 0 and num_treated_nets + num_untreated_nets + value = bed_nets``
 
 Section 7: Other Features
 -------------------------
@@ -542,7 +544,7 @@ Section 10: Sleeping Rooms
      - Yes
      - Number of sleeping rooms
 
-       *Check:* ``range 1 to 30``
+       *Check:* ``range 1 to 30``, and not more than ``total_rooms`` when it is answered
 
 Section 11: Room Details
 ------------------------

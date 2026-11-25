@@ -1,7 +1,7 @@
 Extreme Weather Event Form
 ==========================
 
-**Form Code:** ``ENV-EXT`` | **Form ID:** ``vg_env_ext`` | **Version:** ``2026112401`` | **Component:** Adult Mosquito Sampling | **SOP Links:** :doc:`SOP 2.1 <../sops/sop_2_1>`
+**Form Code:** ``ENV-EXT`` | **Form ID:** ``vg_env_ext`` | **Version:** ``2026112101`` | **Component:** Adult Mosquito Sampling | **SOP Links:** :doc:`SOP 2.1 <../sops/sop_2_1>`
 
 The Extreme Weather Event Form is completed when an extreme weather event affects a node. It records where and when the event happened, its type and severity, its impact on the environment and on people, and its effect on trapping.
 
@@ -212,7 +212,7 @@ Section 5: Impact on Human Behaviour & Displacement
      - Yes
      - People sleeping outdoors
 
-       ``1`` = Yes (increased outdoor sleeping due to heat / structural collapse); ``0`` = None
+       ``1`` = Yes (people slept outdoors because of the event); ``0`` = No
    * - ``livelihood_disrupted``
      - Select one
      - Yes
